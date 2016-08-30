@@ -10,6 +10,7 @@ import java.util.List;
  */
 @Service
 public interface SysUserService {
-    SysUser findUser(Integer yhId)throws Exception;
+    SysUser findUserByYhzh(String yhzh) ;
+    SysUser findUserById(Integer yhId)throws Exception;
     List<SysUser> findAll() throws Exception;
 }

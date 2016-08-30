@@ -12,7 +12,12 @@ public class JSONResult<T> implements Serializable{
     private int statusCode;
 
     private boolean success;
-
+    public  JSONResult(){
+        data=null;
+        message=null;
+        statusCode=0;
+        success=false;
+    }
     public  JSONResult(T data){
         this.data=data;
     }

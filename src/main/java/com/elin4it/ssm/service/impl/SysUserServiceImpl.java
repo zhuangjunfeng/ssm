@@ -22,8 +22,7 @@ public class SysUserServiceImpl implements SysUserService {
         this.userMapper = userMapper;
     }
 
-    public SysUser findUser(Integer yhId) throws Exception {
-        //调用mapper类中的selectByExample方法，如果传入类型为null，则表示无条件查找
+    public SysUser findUserById(Integer yhId) throws Exception {
         SysUser users = userMapper.selectByPrimaryKey(yhId);
         return users;
     }
@@ -31,5 +30,8 @@ public class SysUserServiceImpl implements SysUserService {
         List<SysUser> users = userMapper.selectAll();
         return users;
     }
-
+    public SysUser findUserByYhzh(String yhzh){
+        SysUser users = userMapper.selectByYhzh(yhzh);
+        return users;
+    }
 }

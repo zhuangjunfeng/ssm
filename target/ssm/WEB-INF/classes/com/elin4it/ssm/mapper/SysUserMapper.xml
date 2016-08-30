@@ -23,6 +23,12 @@
     <include refid="Base_Column_List"/>
     from sysuser
   </select>
+  <select id="selectByYhzh" resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM sysuser
+    where yhzh=#{yhzh,jdbcType=VARCHAR}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from sysuser
     where yhId = #{yhId,jdbcType=INTEGER}

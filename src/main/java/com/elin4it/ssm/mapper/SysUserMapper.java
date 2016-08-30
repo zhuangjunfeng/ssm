@@ -14,6 +14,7 @@ public interface SysUserMapper {
 
     SysUser selectByPrimaryKey(Integer yhId);
     List<SysUser> selectAll();
+    SysUser selectByYhzh(String yhzh);
 
     int updateByPrimaryKeySelective(SysUser record);
 

@@ -2,6 +2,7 @@ com\elin4it\ssm\pojo\SysUser.class
 com\elin4it\ssm\util\baidu\ueditor\define\State.class
 com\elin4it\ssm\util\baidu\ueditor\define\ActionMap.class
 com\elin4it\ssm\util\baidu\ueditor\define\BaseState.class
+com\elin4it\ssm\util\UserFilter.class
 com\elin4it\ssm\mapper\SysUserMapper.class
 com\elin4it\ssm\util\baidu\ueditor\define\FileType.class
 com\elin4it\ssm\util\baidu\ueditor\define\MIMEType.class
