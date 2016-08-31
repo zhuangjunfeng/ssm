@@ -13,4 +13,7 @@ public interface SysUserService {
     SysUser findUserByYhzh(String yhzh) ;
     SysUser findUserById(Integer yhId)throws Exception;
     List<SysUser> findAll() throws Exception;
+    boolean delUserById(Integer yhid);
+    boolean addUser(SysUser user);
+    boolean updateUser(SysUser user);
 }

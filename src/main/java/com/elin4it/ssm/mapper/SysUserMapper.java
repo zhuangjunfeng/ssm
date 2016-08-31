@@ -6,9 +6,9 @@ import java.util.List;
 
 
 public interface SysUserMapper {
-    int deleteByPrimaryKey(Integer yhId);
+    boolean deleteByPrimaryKey(Integer yhId);
 
-    int insert(SysUser record);
+    boolean insert(SysUser record);
 
     int insertSelective(SysUser record);
 
@@ -18,5 +18,5 @@ public interface SysUserMapper {
 
     int updateByPrimaryKeySelective(SysUser record);
 
-    int updateByPrimaryKey(SysUser record);
+    boolean updateByPrimaryKey(SysUser record);
 }

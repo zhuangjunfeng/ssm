@@ -34,4 +34,22 @@ public class SysUserServiceImpl implements SysUserService {
         SysUser users = userMapper.selectByYhzh(yhzh);
         return users;
     }
+    public boolean delUserById(Integer yhId){
+        if(userMapper.deleteByPrimaryKey(yhId))
+            return true;
+        else
+            return false;
+    }
+    public boolean addUser(SysUser user){
+        if(userMapper.insert(user))
+            return true;
+        else
+            return false;
+    }
+    public boolean updateUser(SysUser user){
+        if(userMapper.updateByPrimaryKey(user))
+            return true;
+        else
+            return false;
+    }
 }

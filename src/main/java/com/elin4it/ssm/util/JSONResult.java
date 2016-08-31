@@ -14,7 +14,7 @@ public class JSONResult<T> implements Serializable{
     private boolean success;
     public  JSONResult(){
         data=null;
-        message=null;
+        message="success";
         statusCode=0;
         success=false;
     }
