@@ -1,63 +1,106 @@
 package com.elin4it.ssm.util;
 
-import org.springframework.web.filter.OncePerRequestFilter;
+import com.elin4it.ssm.pojo.SysUser;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
 
-public class UserFilter extends OncePerRequestFilter {
-    @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-            throws ServletException, IOException {
-        // ²»¹ıÂËµÄuri
-        String[] notFilter = new String[]{"login.html"};
-        // ÇëÇóµÄuri
-        String uri = request.getRequestURI();
-        // uriÖĞ°üº¬backgroundÊ±²Å½øĞĞ¹ıÂË
-        if (uri.indexOf("rest") != -1) {
-            // ÊÇ·ñ¹ıÂË
-            boolean doFilter = true;
-            for (String s : notFilter) {
-                if (uri.indexOf(s) != -1) {
-                    // Èç¹ûuriÖĞ°üº¬²»¹ıÂËµÄuri£¬Ôò²»½øĞĞ¹ıÂË
-                    doFilter = false;
-                    break;
-                }
+
+public class UserFilter implements Filter{
+    private static final Logger LOGGER = Logger.getLogger(UserFilter.class.toString());
+    protected FilterConfig filterConfig;
+    public void destroy() {
+        filterConfig = null;
+    }
+
+    public void loginJsonPath(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
+        String authError = "loginError";
+        arg1.setContentType("text/javascript; charset=utf-8");
+        try {
+            PrintWriter out = arg1.getWriter();
+            out.print(authError);
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loginPath(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
+        String loginPath = "/index.jsp";
+        RequestDispatcher loginDispatcher = arg0.getRequestDispatcher(loginPath);
+        try {
+            loginDispatcher.forward(arg0, arg1);
+        } catch (ServletException e) {
+            LOGGER.warning(e.toString());
+        } catch (IOException e) {
+            LOGGER.warning(e.toString());
+        }
+    }
+
+    public void commonPath(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
+        try {
+            arg2.doFilter(arg0, arg1);
+        } catch (IOException e) {
+            LOGGER.warning(e.toString());
+        } catch (ServletException e) {
+            LOGGER.warning(e.toString());
+        }
+        return;
+    }
+    /**
+     * @decriptionï¼šåˆ¤æ–­URLæ˜¯å¦éœ€è¦è¢«è¿‡æ»¤
+     * @date 2016-8-2ä¸‹åˆ7:28:06
+     * @authorï¼šzhuangjf
+     */
+    public Boolean isAuth(String realUri) {
+        List<String> authAll =new ArrayList<String>();
+        authAll.add(0, "rest/.*");
+        Boolean rs = false;
+        for (int i = 0; i < authAll.size(); i++) {
+            if (realUri.matches(authAll.get(i))) {
+                LOGGER.info(realUri+"è¢«ç›‘å¬");
+                rs = true;
+                break;
             }
-            if (doFilter) {
-                // Ö´ĞĞ¹ıÂË
-                // ´ÓsessionÖĞ»ñÈ¡µÇÂ¼ÕßÊµÌå
-                Object obj = request.getSession().getAttribute("user");
-                if (null == obj) {
-                    // Èç¹ûsessionÖĞ²»´æÔÚµÇÂ¼ÕßÊµÌå£¬Ôòµ¯³ö¿òÌáÊ¾ÖØĞÂµÇÂ¼
-                    // ÉèÖÃrequestºÍresponseµÄ×Ö·û¼¯£¬·ÀÖ¹ÂÒÂë
-                    request.setCharacterEncoding("UTF-8");
-                    response.setCharacterEncoding("UTF-8");
-                    PrintWriter out = response.getWriter();
-                    String loginPage = "index.jsp";
-                    StringBuilder builder = new StringBuilder();
-                    builder.append("<script type=\"text/javascript\"charset=\"UTF-8\">");
-                    builder.append("alert('ÍøÒ³¹ıÆÚ£¬ÇëÖØĞÂµÇÂ¼£¡');");
-                    builder.append("window.top.location.href='");
-                    builder.append(loginPage);
-                    builder.append("';");
-                    builder.append("</script>");
-                    out.print(builder.toString());
-                } else {
-                    // Èç¹ûsessionÖĞ´æÔÚµÇÂ¼ÕßÊµÌå£¬Ôò¼ÌĞø
-                    filterChain.doFilter(request, response);
+        }
+        return rs;
+    }
+
+    public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
+        HttpServletRequest req = (HttpServletRequest) arg0;
+        HttpSession session = req.getSession();
+        String uri = req.getRequestURI();
+        int length = req.getContextPath().length();
+        String realUri = uri.substring(length+1, uri.length());
+
+        String accept=req.getHeader("Accept");
+
+        if (isAuth(realUri)&&realUri.indexOf("/login")==-1) {
+            SysUser sysUser = null;
+            sysUser = (SysUser) session.getAttribute("user");
+            if (sysUser == null) {
+                if(accept.indexOf("application/json")>-1){
+                    loginJsonPath(arg0, arg1, arg2);
+                }else{
+                    loginPath(arg0, arg1, arg2);
                 }
-            } else {
-                // Èç¹û²»Ö´ĞĞ¹ıÂË£¬Ôò¼ÌĞø
-                filterChain.doFilter(request, response);
+            }else{
+                commonPath(arg0, arg1, arg2);
+                return;
             }
         } else {
-            // Èç¹ûuriÖĞ²»°üº¬background£¬Ôò¼ÌĞø
-            filterChain.doFilter(request, response);
+            commonPath(arg0, arg1, arg2);
+            return;
         }
+    }
+
+    public void init(FilterConfig fConfig) throws ServletException {
+        filterConfig = fConfig;
     }
 }
