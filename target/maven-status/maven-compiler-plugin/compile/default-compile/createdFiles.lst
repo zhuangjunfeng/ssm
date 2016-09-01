@@ -8,10 +8,13 @@ com\elin4it\ssm\mapper\SysUserMapper.class
 com\elin4it\ssm\service\impl\NewsServiceImpl.class
 com\elin4it\ssm\util\baidu\ueditor\define\FileType.class
 com\elin4it\ssm\controller\NewsContorller.class
+com\elin4it\ssm\service\impl\DictionaryServiceImpl.class
 com\elin4it\ssm\util\baidu\ueditor\define\MIMEType.class
 com\elin4it\ssm\util\baidu\ueditor\PathFormat.class
 com\elin4it\ssm\util\JSONResult.class
 com\elin4it\ssm\service\SysUserService.class
+com\elin4it\ssm\service\DictionaryService.class
+com\elin4it\ssm\util\ServiceStartUpListener.class
 com\elin4it\ssm\mapper\NewsMapper.class
 com\elin4it\ssm\util\baidu\ueditor\define\MIMEType$1.class
 com\elin4it\ssm\util\baidu\ueditor\hunter\FileManager.class
@@ -30,6 +33,8 @@ com\elin4it\ssm\util\baidu\ueditor\hunter\ImageHunter.class
 com\elin4it\ssm\util\baidu\ueditor\define\AppInfo.class
 com\elin4it\ssm\util\baidu\ueditor\upload\Base64Uploader.class
 com\elin4it\ssm\util\baidu\ueditor\upload\Uploader.class
+com\elin4it\ssm\mapper\DictionaryMapper.class
 com\elin4it\ssm\util\baidu\ueditor\define\MultiState.class
+com\elin4it\ssm\pojo\Dictionary.class
 com\elin4it\ssm\util\baidu\ueditor\ActionEnter.class
 com\elin4it\ssm\util\baidu\ueditor\define\FileType$1.class
