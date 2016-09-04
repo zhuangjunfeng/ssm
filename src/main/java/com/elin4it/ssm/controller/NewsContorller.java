@@ -6,6 +6,7 @@ import com.elin4it.ssm.util.JSONResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
@@ -73,7 +74,7 @@ public class NewsContorller {
         }
         return result;
     }
-    @RequestMapping("/findNewsById/{NewsId}")
+    @RequestMapping(value = "/findNewsById/{NewsId}",method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findNewsById(@PathVariable("NewsId") int NewsId){
         JSONResult result;

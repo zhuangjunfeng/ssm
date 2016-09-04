@@ -2,16 +2,153 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8be8c1-5834-4efc-8faa-d2c9a5bf8ac1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/DictionaryContorller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/DictionaryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/DictionaryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/ServiceStartUpListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/listener/InitDataListener.java" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\controller\DictionaryContorller.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\util\ServiceStartUpListener.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\bootstrap\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\AdminLTE.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\AdminLTE.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\_all-skins.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\_all-skins.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-black-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-black-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-black.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-black.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-blue-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-blue-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-blue.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-green-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-green-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-green.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-purple-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-purple-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-purple.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-red-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-red-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-red.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-yellow-light.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-yellow-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\css\skins\skin-yellow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\avatar04.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\avatar2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\avatar3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\avatar5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\boxed-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\boxed-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\american-express.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\cirrus.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\mastercard.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\mestro.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\paypal2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\credit\visa.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\default-50x50.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\photo1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\photo2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\photo3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\photo4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user1-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user2-160x160.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user3-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user4-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user5-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user6-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user7-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\img\user8-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\js\app.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\js\demo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\js\pages\dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\dist\js\pages\dashboard2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\news-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\news.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.5.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.5.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\animated.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\font-awesome\4.6.3\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\css\ionicons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\css\ionicons.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\fonts\ionicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\fonts\ionicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\fonts\ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\ionicons\2.0.1\fonts\ionicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\plugins\jQuery\jquery-2.2.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\user-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\WEB-INF\views\cms\user.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\classes\com\elin4it\ssm\util\ServiceStartUpListener.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\WEB-INF\classes\com\elin4it\ssm\util\ServiceStartUpListener.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/mapper/DictionaryMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/mapper/DictionaryMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/mapper/DictionaryMapper.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/mapper/DictionaryMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/service/DictionaryService.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/service/DictionaryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/service/DictionaryService.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/service/DictionaryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/service/impl/DictionaryServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/service/impl/DictionaryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/service/impl/DictionaryServiceImpl.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/service/impl/DictionaryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/NewsContorller.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/NewsContorller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/NewsContorller.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/NewsContorller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/UEditorController.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/UEditorController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/UEditorController.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/UEditorController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/mapper/DictionaryMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/mapper/DictionaryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/mapper/DictionaryMapper.xml" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/mapper/DictionaryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/index.jsp" afterPath="$PROJECT_DIR$/target/ssm/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/target/ssm/ueditor/ueditor.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -45,34 +182,78 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DictionaryContorller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/DictionaryContorller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69863015">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/DictionaryService.java">
+      <file leaf-file-name="NewsContorller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.387097">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0677967">
+              <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UEditorController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4219178">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/news.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.642858">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InitDataListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/listener/InitDataListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,23 +262,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserContorller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
               <folding>
                 <element signature="docComment;method#delUserById#0;class#SysUserContorller#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DictionaryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/DictionaryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,9 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/application-service.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext-transaction.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/findAll.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/ActionEnter.java" />
@@ -152,11 +316,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/ueditor.config.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/conf/config.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/SysUserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/JSONResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/SysUserService.java" />
@@ -164,19 +326,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/SysUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/SysUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/NewsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/NewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/ServiceStartUpListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/DictionaryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/DictionaryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/DictionaryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/DictionaryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/listener/InitDataListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/DictionaryContorller.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/news.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/news-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java" />
       </list>
     </option>
   </component>
@@ -271,7 +438,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -349,7 +515,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,130 +560,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,6 +595,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -977,12 +1020,14 @@
       <workItem from="1472648105560" duration="2987000" />
       <workItem from="1472651214869" duration="121000" />
       <workItem from="1472651737771" duration="5952000" />
-      <workItem from="1472705750821" duration="8664000" />
+      <workItem from="1472705750821" duration="12845000" />
+      <workItem from="1472963594440" duration="8239000" />
+      <workItem from="1472995586988" duration="4646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92218000" />
+    <option name="totallyTimeSpent" value="109284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,7 +1040,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.49546143" order="13" side_tool="false" content_ui="tabs" />
@@ -1004,19 +1049,19 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5060514" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19062027" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14069591" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973898" sideWeight="0.4924357" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24130106" sideWeight="0.48734176" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.48734176" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267776" sideWeight="0.51265824" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43719414" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1043,7 +1088,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="140" />
+      <option name="time" value="154" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1052,20 +1097,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/define/FileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60273975">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/define/MIMEType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15068494">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/define/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2260274">
@@ -1178,40 +1209,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="26" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.285714">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17010309">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6554622">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1226,13 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.78571427">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73888886">
-          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,15 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5670103">
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,14 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8">
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,11 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77319586">
           <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1343,35 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6832461">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/ServiceStartUpListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3219178">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37671232">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55136985">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1379,7 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09589041">
           <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1387,21 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6672662">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="select from ..dictionary..." />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="SELECT inclu..." />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..dictionary..." />
-            <marker date="1472748669212" expanded="false" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="update dicti..." />
-            <marker date="1472748669212" expanded="true" signature="-1:-1" placeholder="update dicti..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1409,9 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41438356">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1419,7 +1340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15068494">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,21 +1347,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,7 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5650685">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,29 +1362,113 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/listener/InitDataListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="282" column="25" selection-start-line="282" selection-start-column="25" selection-end-line="282" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserContorller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
           <folding>
             <element signature="docComment;method#delUserById#0;class#SysUserContorller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/DictionaryContorller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69863015">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75601375">
+          <caret line="259" column="7" selection-start-line="259" selection-start-column="7" selection-end-line="259" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.642858">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.387097">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0677967">
+          <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4219178">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,3 @@
-C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\util\ServiceStartUpListener.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\service\impl\NewsServiceImpl.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\service\impl\SysUserServiceImpl.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\util\baidu\ueditor\define\MIMEType.java
@@ -25,6 +24,7 @@ C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\util\baidu\uedi
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\service\SysUserService.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\NewsMapper.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\controller\SysUserContorller.java
+C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\listener\InitDataListener.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\pojo\SysUser.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\service\impl\DictionaryServiceImpl.java
 C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\util\baidu\ueditor\define\MultiState.java
