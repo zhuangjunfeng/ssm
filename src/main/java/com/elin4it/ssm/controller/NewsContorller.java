@@ -49,6 +49,7 @@ public class NewsContorller {
     }
 
     /**
+     * 
      * @deprecation:通过id删除新闻
      * @return
      */
