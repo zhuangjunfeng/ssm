@@ -46,7 +46,7 @@ public class NewsContorller {
     @ResponseBody
     public JSONResult delNewsById(HttpServletRequest request){
         JSONResult result=new JSONResult();
-        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
+        int NewsId= Integer.parseInt(request.getParameter("NewsId"));
         if (!newsService.delNewsById(NewsId))
             result.setMessage("error");
         return result;
@@ -56,7 +56,7 @@ public class NewsContorller {
     public JSONResult updateNews(HttpServletRequest request)
     {
         JSONResult result;
-        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
+        int NewsId= Integer.parseInt(request.getParameter("NewsId"));
         String NewsAuthor=request.getParameter("NewsAuthor");
         String NewsContent=request.getParameter("NewsContent");
         String NewsTitle=request.getParameter("NewsTitile");
@@ -81,7 +81,7 @@ public class NewsContorller {
     @ResponseBody
     public JSONResult findNewsById(HttpServletRequest request){
         JSONResult result;
-        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
+        int NewsId= Integer.parseInt(request.getParameter("NewsId"));
         News news=newsService.findNewsById(NewsId);
         result=new JSONResult(news);
         return result;

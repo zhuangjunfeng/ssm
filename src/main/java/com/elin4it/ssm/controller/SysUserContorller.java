@@ -55,7 +55,7 @@ public class SysUserContorller {
     @RequestMapping(value = "/findUser",method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findUserById(HttpServletRequest request) throws Exception{
-         int yhId=Integer.getInteger(request.getParameter("yhId"));
+         int yhId=Integer.parseInt(request.getParameter("yhId"));
          SysUser users = userService.findUserById(yhId);
         return new JSONResult(users);
     }
@@ -80,8 +80,8 @@ public class SysUserContorller {
     @ResponseBody
     public JSONResult delUserById(HttpServletRequest request){
         JSONResult result=new JSONResult();
-        String yhid=request.getParameter("yhId");
-        int yhId=Integer.getInteger(yhid);
+        int yhId=Integer.parseInt(request.getParameter("yhId"));
+        System.out.println(yhId);
         if(!userService.delUserById(yhId))
             result.setMessage("error");
         return result;
@@ -122,7 +122,7 @@ public class SysUserContorller {
     @ResponseBody
     public JSONResult updateUser(HttpServletRequest request){
         JSONResult result=new JSONResult();
-        int yhId=Integer.getInteger(request.getParameter("yhId"));
+        int yhId=Integer.parseInt(request.getParameter("yhId"));
         String yhzh=request.getParameter("yhzh");
         String password=request.getParameter("password");
         String yhxm=request.getParameter("yhxm");

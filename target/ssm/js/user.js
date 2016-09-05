@@ -18,7 +18,7 @@ function findAllUser(){
                     +n.yhxb+"</td><td>"
                     +" " +"</td><td>"
                     +" "+"</td><td><a class='btn'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-user' data-id='"
-                    +n.yhzh+"'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
+                    +n.yhId+"'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
             })
             userListHtml=userListHtml+"</tbody>"
             $(".table").html(userListHtml);
@@ -32,7 +32,7 @@ function findAllUser(){
         $.ajax({
             type:"DELETE",
             url:"/rest/user",
-            data:{yhzh:yhId},
+            data:{yhId:yhId},
             success:function(){
                 findAllUser();
             }
