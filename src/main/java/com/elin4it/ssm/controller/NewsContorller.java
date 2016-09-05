@@ -4,12 +4,12 @@ import com.elin4it.ssm.pojo.News;
 import com.elin4it.ssm.service.NewsService;
 import com.elin4it.ssm.util.JSONResult;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -20,24 +20,18 @@ import java.util.List;
 public class NewsContorller {
     @Resource
     private NewsService newsService;
-
-    /**
-     * @deprecation:新增新闻
-     * @return
-     */
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(value = "/addNews/{NewsTitle}&{NewsType}&{NewsAuthor}&{NewContent}")
     @ResponseBody
-    public JSONResult addNews(HttpServletRequest request){
+    public JSONResult addNews(@PathVariable("NewsTitle")String NewsTitle,
+                              @PathVariable("NewsType")String NewsType,
+                              @PathVariable("NewsAuthor")String NewsAuthor,
+                              @PathVariable("NewsContent")String NewsContent){
         JSONResult result;
-        String newsType = request.getParameter("newsType");
-        String newsTitle = request.getParameter("newsTitle");
-        String newsContent = request.getParameter("newsContent");
-        String newsAuthor=request.getParameter("newsAuthor");
         News news=new News();
-        news.setNewsAuthor(newsAuthor);
-        news.setNewsContent(newsContent);
-        news.setNewsTitle(newsTitle);
-        news.setNewsType(newsType);
+        news.setNewsAuthor(NewsAuthor);
+        news.setNewsContent(NewsContent);
+        news.setNewsTitle(NewsTitle);
+        news.setNewsType(NewsType);
         if (newsService.addNews(news))
             {
                 result=new JSONResult(news);
@@ -47,42 +41,29 @@ public class NewsContorller {
                 result=new JSONResult();
         return result;
     }
-
-    /**
-     *
-     * @deprecation:通过id删除新闻
-     * @return
-     */
-    @RequestMapping(method = RequestMethod.DELETE)
+    @RequestMapping("/delNews/{newsId}")
     @ResponseBody
-    public JSONResult delNewsById(HttpServletRequest request){
+    public JSONResult delNewsById(@PathVariable("NewsId")int NewsId){
         JSONResult result=new JSONResult();
-        int newsId=Integer.parseInt(request.getParameter("newsId"));
-        if (!newsService.delNewsById(newsId))
+        if (!newsService.delNewsById(NewsId))
             result.setMessage("error");
         return result;
     }
-
-    /**
-     * @deprecation:通过id更新新闻
-     * @return
-     */
-    @RequestMapping(method = RequestMethod.PUT)
+    @RequestMapping("/updateNews/{NewsId}&{NewsTitle}&{NewsType}&{NewsAuthor}&{NewContent}")
     @ResponseBody
-    public JSONResult updateNews(HttpServletRequest request)
+    public JSONResult updateNews(@PathVariable("NewsId")int NewsId,
+                                 @PathVariable("NewsTitle")String NewsTitle,
+                                 @PathVariable("NewsType")String NewsType,
+                                 @PathVariable("NewsAuthor")String NewsAuthor,
+                                 @PathVariable("NewsContent")String NewsContent)
     {
         JSONResult result;
-        int newsId=Integer.parseInt(request.getParameter("newsId"));
-        String newsType = request.getParameter("newsType");
-        String newsTitle = request.getParameter("newsTitle");
-        String newsContent = request.getParameter("newsContent");
-        String newsAuthor=request.getParameter("newsAuthor");
         News news=new News();
-        news.setNewsId(newsId);
-        news.setNewsAuthor(newsAuthor);
-        news.setNewsContent(newsContent);
-        news.setNewsTitle(newsTitle);
-        news.setNewsType(newsType);
+        news.setNewsId(NewsId);
+        news.setNewsAuthor(NewsAuthor);
+        news.setNewsContent(NewsContent);
+        news.setNewsTitle(NewsTitle);
+        news.setNewsType(NewsType);
         if (newsService.updateNews(news)){
             result=new JSONResult(news);
             result.setMessage("success");
@@ -93,26 +74,15 @@ public class NewsContorller {
         }
         return result;
     }
-
-    /**
-     * @deprecation:通过id查询新闻
-     * @return
-     */
-    @RequestMapping(value = "/findNewsById",method = RequestMethod.GET)
+    @RequestMapping(value = "/findNewsById/{NewsId}",method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findNewsById(HttpServletRequest request){
+    public JSONResult findNewsById(@PathVariable("NewsId") int NewsId){
         JSONResult result;
-        int newsId=Integer.parseInt(request.getParameter("newsId"));
-        News news=newsService.findNewsById(newsId);
+        News news=newsService.findNewsById(NewsId);
         result=new JSONResult(news);
         return result;
     }
-
-    /**
-     * @deprecation:查询全部新闻
-     * @return：全部新闻列表
-     */
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping("/findAllNews")
     @ResponseBody
     public JSONResult findAllNews(){
         List<News> news=newsService.findAllNews();
