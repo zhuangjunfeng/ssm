@@ -5,7 +5,7 @@ $(function(){
 function findAllNews(){
 	$.ajax({
 		type:"GET",
-		url:"/rest/news/findAllNews",
+		url:"/rest/news",
 		dataType:"json",
 		success:function(data){
 			var newsList=data.data;
