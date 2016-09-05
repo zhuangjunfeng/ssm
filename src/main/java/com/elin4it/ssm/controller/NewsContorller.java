@@ -4,12 +4,12 @@ import com.elin4it.ssm.pojo.News;
 import com.elin4it.ssm.service.NewsService;
 import com.elin4it.ssm.util.JSONResult;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -20,13 +20,14 @@ import java.util.List;
 public class NewsContorller {
     @Resource
     private NewsService newsService;
-    @RequestMapping(value = "/addNews/{NewsTitle}&{NewsType}&{NewsAuthor}&{NewContent}")
+    @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public JSONResult addNews(@PathVariable("NewsTitle")String NewsTitle,
-                              @PathVariable("NewsType")String NewsType,
-                              @PathVariable("NewsAuthor")String NewsAuthor,
-                              @PathVariable("NewsContent")String NewsContent){
+    public JSONResult addNews(HttpServletRequest request){
         JSONResult result;
+        String NewsAuthor=request.getParameter("NewsAuthor");
+        String NewsContent=request.getParameter("NewsContent");
+        String NewsTitle=request.getParameter("NewsTitile");
+        String NewsType=request.getParameter("NewsType");
         News news=new News();
         news.setNewsAuthor(NewsAuthor);
         news.setNewsContent(NewsContent);
@@ -41,23 +42,25 @@ public class NewsContorller {
                 result=new JSONResult();
         return result;
     }
-    @RequestMapping("/delNews/{newsId}")
+    @RequestMapping(method = RequestMethod.DELETE)
     @ResponseBody
-    public JSONResult delNewsById(@PathVariable("NewsId")int NewsId){
+    public JSONResult delNewsById(HttpServletRequest request){
         JSONResult result=new JSONResult();
+        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
         if (!newsService.delNewsById(NewsId))
             result.setMessage("error");
         return result;
     }
-    @RequestMapping("/updateNews/{NewsId}&{NewsTitle}&{NewsType}&{NewsAuthor}&{NewContent}")
+    @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
-    public JSONResult updateNews(@PathVariable("NewsId")int NewsId,
-                                 @PathVariable("NewsTitle")String NewsTitle,
-                                 @PathVariable("NewsType")String NewsType,
-                                 @PathVariable("NewsAuthor")String NewsAuthor,
-                                 @PathVariable("NewsContent")String NewsContent)
+    public JSONResult updateNews(HttpServletRequest request)
     {
         JSONResult result;
+        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
+        String NewsAuthor=request.getParameter("NewsAuthor");
+        String NewsContent=request.getParameter("NewsContent");
+        String NewsTitle=request.getParameter("NewsTitile");
+        String NewsType=request.getParameter("NewsType");
         News news=new News();
         news.setNewsId(NewsId);
         news.setNewsAuthor(NewsAuthor);
@@ -74,15 +77,16 @@ public class NewsContorller {
         }
         return result;
     }
-    @RequestMapping(value = "/findNewsById/{NewsId}",method = RequestMethod.GET)
+    @RequestMapping(value = "/findNewsById",method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findNewsById(@PathVariable("NewsId") int NewsId){
+    public JSONResult findNewsById(HttpServletRequest request){
         JSONResult result;
+        int NewsId= Integer.getInteger(request.getParameter("NewsId"));
         News news=newsService.findNewsById(NewsId);
         result=new JSONResult(news);
         return result;
     }
-    @RequestMapping("/findAllNews")
+    @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findAllNews(){
         List<News> news=newsService.findAllNews();

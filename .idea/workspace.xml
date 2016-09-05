@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8be8c1-5834-4efc-8faa-d2c9a5bf8ac1" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\cms\news-add.html" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\news-add.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/UEditorController.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/controller/UEditorController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/UEditorController.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/controller/UEditorController.class" />
+=======
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssm.iws" />
@@ -36,8 +39,13 @@
       <file leaf-file-name="DictionaryUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state vertical-scroll-proportion="0.0">
               <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+=======
+            <state vertical-scroll-proportion="0.75342464">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -299,7 +307,10 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
+<<<<<<< Updated upstream
       <pane id="PackagesPane" />
+=======
+>>>>>>> Stashed changes
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -430,6 +441,10 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< Updated upstream
+=======
+      <pane id="PackagesPane" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -857,11 +872,22 @@
       <workItem from="1472963594440" duration="8239000" />
       <workItem from="1472995586988" duration="4646000" />
       <workItem from="1473001576190" duration="732000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1473002405101" duration="1812000" />
+      <workItem from="1473039608149" duration="3147000" />
+      <workItem from="1473042921046" duration="1302000" />
+      <workItem from="1473046090121" duration="37000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="110016000" />
+=======
+    <option name="totallyTimeSpent" value="116314000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1300,9 +1326,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/news-add.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.45808384">
           <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.75342464">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

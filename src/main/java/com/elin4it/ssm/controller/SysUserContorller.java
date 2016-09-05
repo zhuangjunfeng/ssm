@@ -24,7 +24,7 @@ public class SysUserContorller {
      * @param session 存储用户
      * @return 用户信息
      */
-    @RequestMapping(value = "/login}",method = RequestMethod.GET)
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
     @ResponseBody
     public JSONResult login(HttpServletRequest request, HttpSession session){
         JSONResult result;
