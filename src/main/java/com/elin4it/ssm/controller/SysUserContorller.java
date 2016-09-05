@@ -37,7 +37,7 @@ public class SysUserContorller {
         }
         SysUser users=userService.findUserByYhzh(yhzh);
         if(users.equals(null)||!users.getPassword().equals(password)){
-            result=new JSONResult(users);
+            result=new JSONResult();
             result.setMessage("error_error");
             return result;
         }
@@ -80,12 +80,12 @@ public class SysUserContorller {
     @ResponseBody
     public JSONResult delUserById(HttpServletRequest request){
         JSONResult result=new JSONResult();
-        int yhId=Integer.getInteger(request.getParameter("yhId"));
+        String yhid=request.getParameter("yhId");
+        int yhId=Integer.getInteger(yhid);
         if(!userService.delUserById(yhId))
             result.setMessage("error");
         return result;
     }
-
     /**
      * @deprecation：添加用户
      * @return 返回添加成功与否
