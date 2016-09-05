@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de8be8c1-5834-4efc-8faa-d2c9a5bf8ac1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="de8be8c1-5834-4efc-8faa-d2c9a5bf8ac1" name="Default" comment="" />
     <ignored path="ssm.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -818,12 +815,12 @@
       <workItem from="1473001576190" duration="732000" />
       <workItem from="1473002405101" duration="1812000" />
       <workItem from="1473039608149" duration="3147000" />
-      <workItem from="1473042921046" duration="702000" />
+      <workItem from="1473042921046" duration="758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115677000" />
+    <option name="totallyTimeSpent" value="115733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
