@@ -17,7 +17,8 @@ function findAllUser(){
                     +n.yhxm+"</td><td>"
                     +n.yhxb+"</td><td>"
                     +" " +"</td><td>"
-                    +" "+"</td><td><a class='btn'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-user' data-id='"
+                    +" "+"</td><td><a class='btn' href='user-editor.html?yhId="
+                    +n.yhId+"'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-user' data-id='"
                     +n.yhId+"'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
             })
             userListHtml=userListHtml+"</tbody>"
@@ -30,9 +31,9 @@ function findAllUser(){
 
     function delUser(yhId){
         $.ajax({
-            type:"DELETE",
+            type:"POST",
             url:"/rest/user",
-            data:{yhId:yhId},
+            data:{yhId:yhId ,_method: 'DELETE'},
             success:function(){
                 findAllUser();
             }

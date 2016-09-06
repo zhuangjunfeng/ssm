@@ -80,7 +80,8 @@ public class SysUserContorller {
     @ResponseBody
     public JSONResult delUserById(HttpServletRequest request){
         JSONResult result=new JSONResult();
-        int yhId=Integer.parseInt(request.getParameter("yhId"));
+        String Yhid=request.getParameter("yhId");
+        int yhId=Integer.parseInt(Yhid);
         System.out.println(yhId);
         if(!userService.delUserById(yhId))
             result.setMessage("error");
