@@ -7,16 +7,16 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="cms/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="cms/plugins/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="cms/plugins/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="plugins/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="cms/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="cms/dist/css/skins/_all-skins.min.css"></head>
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css"></head>
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
 
@@ -43,13 +43,13 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="cms/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                 <span class="hidden-xs">李小龙</span> <i class="fa fa-gears"></i>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="cms/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                   <p>
                     admin
                     <small>10001</small>
@@ -131,20 +131,20 @@
               <form class="form-horizontal">
                 <div class="box-body">
                   <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">新闻标题：</label>
+                    <label for="newsTitle" class="col-sm-2 control-label" >新闻标题：</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3"></div>
+                      <input type="email" class="form-control" id="newsTitle"></div>
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">新闻作者：</label>
+                    <label for="newsAuthor" class="col-sm-2 control-label" >新闻作者：</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3"></div>
+                      <input type="password" class="form-control" id="newsAuthor"></div>
                   </div>
 
                   <div class="form-group">
                     <label class="col-sm-2 control-label">新闻类型：</label>
                     <div class="col-sm-10">
-                      <select class="form-control">
+                      <select class="form-control" id="newsType">
                         <option>公司新闻</option>
                         <option>行业新闻</option>
                         <option>练习我们</option>
@@ -152,7 +152,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">新闻内容：</label>
+                    <label  class="col-sm-2 control-label">新闻内容：</label>
                     <div class="col-sm-10"></div>
                   </div>
                   <script type="text/javascript" src="../ueditor/ueditor.config.js"></script>
@@ -164,7 +164,7 @@
                   <div class="form-group">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10">
-                      <button type="submit" class="btn btn-info">确认保存</button>
+                      <a id="add-news" class="btn btn-info">确认保存</a>
                     </div>
                   </div>
 
@@ -184,11 +184,12 @@
   </div>
   <!-- ./wrapper -->
   <!-- jQuery 2.2.3 -->
-  <script src="cms/plugins/jQuery/jquery-2.2.3.min.js"></script>
+  <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <!-- Bootstrap 3.3.6 -->
-  <script src="cms/bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="cms/dist/js/app.min.js"></script>
+  <script src="dist/js/app.min.js"></script>
+  <script src="js/news-add.js"></script>
 </body>
 </html>

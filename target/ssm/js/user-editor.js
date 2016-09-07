@@ -50,17 +50,16 @@ function findUserById(){
  */
 function updateUser(){
     $.ajax({
-        type:"PUT",
+        type:"POST",
         dataType:"json",
-        url: '/rest/user',
+        url:"/rest/user",
         data:{
             yhId:GetRequest().yhId,
             yhzh:$("#e_yhzh").val(),
             yhxb:$("#e_yhxb").val(),
-            password:$("#e_password"),
-            _method:'PUT'
-             },
-        success : function(data) {
+            password:$("#e_password").val(),
+            _method:"PUT"},
+        success:function(data){
             window.location.href="user.html";
         }
     });
