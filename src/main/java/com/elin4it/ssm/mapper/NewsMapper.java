@@ -11,5 +11,5 @@ public interface NewsMapper {
     News selectByPrimaryKey(Integer newsId);
     List<News> selectAllNews();
     int updateByPrimaryKeySelective(News record);
-   boolean updateByPrimaryKey(News record);
+    boolean updateByPrimaryKey(News record);
 }

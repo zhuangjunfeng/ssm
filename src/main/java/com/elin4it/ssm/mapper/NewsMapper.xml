@@ -1,18 +1,131 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.elin4it.ssm.mapper.NewsMapper" >
-  <resultMap id="BaseResultMap" type="com.elin4it.ssm.pojo.News" >
-    <id column="NewsId" property="newsId" jdbcType="INTEGER" />
-    <result column="NewsType" property="newsType" jdbcType="VARCHAR" />
-    <result column="NewsTitle" property="newsTitle" jdbcType="VARCHAR" />
-    <result column="NewsAuthor" property="newsAuthor" jdbcType="VARCHAR" />
-    <result column="NewsContent" property="newsContent" jdbcType="VARCHAR" />
-    <result column="EditorTime" property="editorTime" jdbcType="VARCHAR" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elin4it.ssm.mapper.NewsMapper">
+  <resultMap id="BaseResultMap" type="com.elin4it.ssm.pojo.News">
+    <id column="NewsId" jdbcType="INTEGER" property="newsId" />
+    <result column="NewsType" jdbcType="VARCHAR" property="newsType" />
+    <result column="NewsTitle" jdbcType="VARCHAR" property="newsTitle" />
+    <result column="NewsAuthor" jdbcType="VARCHAR" property="newsAuthor" />
+    <result column="NewsContent" jdbcType="VARCHAR" property="newsContent" />
+    <result column="EditorTime" jdbcType="VARCHAR" property="editorTime" />
+    <result column="NewsProgram" jdbcType="VARCHAR" property="newsProgram" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
+    NewsId, NewsType, NewsTitle, NewsAuthor, NewsContent, EditorTime, NewsProgram
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from news
+    where NewsId = #{newsId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from news
+    where NewsId = #{newsId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elin4it.ssm.pojo.News">
+    insert into news (NewsId, NewsType, NewsTitle, 
+      NewsAuthor, NewsContent, EditorTime, 
+      NewsProgram)
+    values (#{newsId,jdbcType=INTEGER}, #{newsType,jdbcType=VARCHAR}, #{newsTitle,jdbcType=VARCHAR}, 
+      #{newsAuthor,jdbcType=VARCHAR}, #{newsContent,jdbcType=VARCHAR}, #{editorTime,jdbcType=VARCHAR}, 
+      #{newsProgram,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elin4it.ssm.pojo.News">
+    insert into news
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
+        NewsId,
+      </if>
+      <if test="newsType != null">
+        NewsType,
+      </if>
+      <if test="newsTitle != null">
+        NewsTitle,
+      </if>
+      <if test="newsAuthor != null">
+        NewsAuthor,
+      </if>
+      <if test="newsContent != null">
+        NewsContent,
+      </if>
+      <if test="editorTime != null">
+        EditorTime,
+      </if>
+      <if test="newsProgram != null">
+        NewsProgram,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
+        #{newsId,jdbcType=INTEGER},
+      </if>
+      <if test="newsType != null">
+        #{newsType,jdbcType=VARCHAR},
+      </if>
+      <if test="newsTitle != null">
+        #{newsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="newsAuthor != null">
+        #{newsAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="newsContent != null">
+        #{newsContent,jdbcType=VARCHAR},
+      </if>
+      <if test="editorTime != null">
+        #{editorTime,jdbcType=VARCHAR},
+      </if>
+      <if test="newsProgram != null">
+        #{newsProgram,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elin4it.ssm.pojo.News">
+    update news
+    <set>
+      <if test="newsType != null">
+        NewsType = #{newsType,jdbcType=VARCHAR},
+      </if>
+      <if test="newsTitle != null">
+        NewsTitle = #{newsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="newsAuthor != null">
+        NewsAuthor = #{newsAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="newsContent != null">
+        NewsContent = #{newsContent,jdbcType=VARCHAR},
+      </if>
+      <if test="editorTime != null">
+        EditorTime = #{editorTime,jdbcType=VARCHAR},
+      </if>
+      <if test="newsProgram != null">
+        NewsProgram = #{newsProgram,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where NewsId = #{newsId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elin4it.ssm.pojo.News">
+    update news
+    set NewsType = #{newsType,jdbcType=VARCHAR},
+      NewsTitle = #{newsTitle,jdbcType=VARCHAR},
+      NewsAuthor = #{newsAuthor,jdbcType=VARCHAR},
+      NewsContent = #{newsContent,jdbcType=VARCHAR},
+      EditorTime = #{editorTime,jdbcType=VARCHAR},
+      NewsProgram = #{newsProgram,jdbcType=VARCHAR}
+    where NewsId = #{newsId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="com.elin4it.ssm.pojo.News">
+    <id column="NewsId" jdbcType="INTEGER" property="newsId" />
+    <result column="NewsType" jdbcType="VARCHAR" property="newsType" />
+    <result column="NewsTitle" jdbcType="VARCHAR" property="newsTitle" />
+    <result column="NewsAuthor" jdbcType="VARCHAR" property="newsAuthor" />
+    <result column="NewsContent" jdbcType="VARCHAR" property="newsContent" />
+    <result column="EditorTime" jdbcType="VARCHAR" property="editorTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
     NewsId, NewsType, NewsTitle, NewsAuthor, NewsContent, EditorTime
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from news
@@ -20,14 +133,14 @@
   </select>
   <select id="selectAllNews" resultMap="BaseResultMap">
     SELECT
-    <include refid="Base_Column_List"/>
+    <include refid="Base_Column_List" />
     FROM news
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from news
     where NewsId = #{newsId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.elin4it.ssm.pojo.News" >
+  <insert id="insert" parameterType="com.elin4it.ssm.pojo.News">
     insert into news (NewsId, NewsType, NewsTitle, 
       NewsAuthor, NewsContent, EditorTime
       )
@@ -35,71 +148,71 @@
       #{newsAuthor,jdbcType=VARCHAR}, #{newsContent,jdbcType=VARCHAR}, #{editorTime,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.elin4it.ssm.pojo.News" >
+  <insert id="insertSelective" parameterType="com.elin4it.ssm.pojo.News">
     insert into news
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="newsId != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
         NewsId,
       </if>
-      <if test="newsType != null" >
+      <if test="newsType != null">
         NewsType,
       </if>
-      <if test="newsTitle != null" >
+      <if test="newsTitle != null">
         NewsTitle,
       </if>
-      <if test="newsAuthor != null" >
+      <if test="newsAuthor != null">
         NewsAuthor,
       </if>
-      <if test="newsContent != null" >
+      <if test="newsContent != null">
         NewsContent,
       </if>
-      <if test="editorTime != null" >
+      <if test="editorTime != null">
         EditorTime,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="newsId != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="newsId != null">
         #{newsId,jdbcType=INTEGER},
       </if>
-      <if test="newsType != null" >
+      <if test="newsType != null">
         #{newsType,jdbcType=VARCHAR},
       </if>
-      <if test="newsTitle != null" >
+      <if test="newsTitle != null">
         #{newsTitle,jdbcType=VARCHAR},
       </if>
-      <if test="newsAuthor != null" >
+      <if test="newsAuthor != null">
         #{newsAuthor,jdbcType=VARCHAR},
       </if>
-      <if test="newsContent != null" >
+      <if test="newsContent != null">
         #{newsContent,jdbcType=VARCHAR},
       </if>
-      <if test="editorTime != null" >
+      <if test="editorTime != null">
         #{editorTime,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.elin4it.ssm.pojo.News" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.elin4it.ssm.pojo.News">
     update news
-    <set >
-      <if test="newsType != null" >
+    <set>
+      <if test="newsType != null">
         NewsType = #{newsType,jdbcType=VARCHAR},
       </if>
-      <if test="newsTitle != null" >
+      <if test="newsTitle != null">
         NewsTitle = #{newsTitle,jdbcType=VARCHAR},
       </if>
-      <if test="newsAuthor != null" >
+      <if test="newsAuthor != null">
         NewsAuthor = #{newsAuthor,jdbcType=VARCHAR},
       </if>
-      <if test="newsContent != null" >
+      <if test="newsContent != null">
         NewsContent = #{newsContent,jdbcType=VARCHAR},
       </if>
-      <if test="editorTime != null" >
+      <if test="editorTime != null">
         EditorTime = #{editorTime,jdbcType=VARCHAR},
       </if>
     </set>
     where NewsId = #{newsId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.elin4it.ssm.pojo.News" >
+  <update id="updateByPrimaryKey" parameterType="com.elin4it.ssm.pojo.News">
     update news
     set NewsType = #{newsType,jdbcType=VARCHAR},
       NewsTitle = #{newsTitle,jdbcType=VARCHAR},

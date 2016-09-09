@@ -13,6 +13,10 @@ public class SysUser {
 
     private String yhzh;
 
+    private String yhjs;
+
+    private String cjsj;
+
     public Integer getYhId() {
         return yhId;
     }
@@ -59,5 +63,21 @@ public class SysUser {
 
     public void setYhzh(String yhzh) {
         this.yhzh = yhzh == null ? null : yhzh.trim();
+    }
+
+    public String getYhjs() {
+        return yhjs;
+    }
+
+    public void setYhjs(String yhjs) {
+        this.yhjs = yhjs == null ? null : yhjs.trim();
+    }
+
+    public String getCjsj() {
+        return cjsj;
+    }
+
+    public void setCjsj(String cjsj) {
+        this.cjsj = cjsj == null ? null : cjsj.trim();
     }
 }

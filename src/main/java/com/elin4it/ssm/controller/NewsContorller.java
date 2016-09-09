@@ -26,7 +26,7 @@ public class NewsContorller {
         JSONResult result;
         String NewsAuthor=request.getParameter("NewsAuthor");
         String NewsContent=request.getParameter("NewsContent");
-        String NewsTitle=request.getParameter("NewsTitile");
+        String NewsTitle=request.getParameter("NewsTitle");
         String NewsType=request.getParameter("NewsType");
         News news=new News();
         news.setNewsAuthor(NewsAuthor);
@@ -59,7 +59,7 @@ public class NewsContorller {
         int NewsId= Integer.parseInt(request.getParameter("NewsId"));
         String NewsAuthor=request.getParameter("NewsAuthor");
         String NewsContent=request.getParameter("NewsContent");
-        String NewsTitle=request.getParameter("NewsTitile");
+        String NewsTitle=request.getParameter("NewsTitle");
         String NewsType=request.getParameter("NewsType");
         News news=new News();
         news.setNewsId(NewsId);

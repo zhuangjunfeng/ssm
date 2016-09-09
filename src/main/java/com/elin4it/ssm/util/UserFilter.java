@@ -32,7 +32,7 @@ public class UserFilter implements Filter{
     }
 
     public void loginPath(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
-        String loginPath = "/index.jsp";
+        String loginPath = "/login.html";
         RequestDispatcher loginDispatcher = arg0.getRequestDispatcher(loginPath);
         try {
             loginDispatcher.forward(arg0, arg1);
@@ -78,25 +78,22 @@ public class UserFilter implements Filter{
         String uri = req.getRequestURI();
         int length = req.getContextPath().length();
         String realUri = uri.substring(length+1, uri.length());
-
         String accept=req.getHeader("Accept");
 
-        if (isAuth(realUri)&&realUri.indexOf("/login")==-1) {
+        if (isAuth(realUri)&& !realUri.contains("/login")) {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {
-                if(accept.indexOf("application/json")>-1){
+                if(accept.contains("application/json")){
                     loginJsonPath(arg0, arg1, arg2);
                 }else{
                     loginPath(arg0, arg1, arg2);
                 }
             }else{
                 commonPath(arg0, arg1, arg2);
-                return;
             }
         } else {
             commonPath(arg0, arg1, arg2);
-            return;
         }
     }
 

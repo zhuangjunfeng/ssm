@@ -4,29 +4,25 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+
     <!--设置spring 配置文件的位置-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:config/spring/applicationContext.xml</param-value>
-
     </context-param>
     <!--配置spring listener-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-
-    <!--<listener>-->
-        <!--<listener-class>com.elin4it.ssm.util.ServiceStartUpListener</listener-class>-->
-    <!--</listener>-->
     <!--配置用户过滤器-->
-    <!--<filter>-->
-        <!--<filter-name>sessionFilter</filter-name>-->
-        <!--<filter-class>com.elin4it.ssm.util.UserFilter</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>sessionFilter</filter-name>-->
-        <!--<url-pattern>/*</url-pattern>-->
-    <!--</filter-mapping>-->
+    <filter>
+        <filter-name>sessionFilter</filter-name>
+        <filter-class>com.elin4it.ssm.util.UserFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sessionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <!--解决POST乱码问题-->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
@@ -49,7 +45,6 @@
         <filter-name>CharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
     <!--springmvc前端控制器配置-->
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
@@ -60,9 +55,13 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-
+    <!--配置容器及拦截请求路径-->
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
+    <!--配置首页-->
+    <welcome-file-list>
+        <welcome-file>/login.html</welcome-file>
+    </welcome-file-list>
 </web-app>

@@ -4,7 +4,6 @@ import com.elin4it.ssm.pojo.SysUser;
 
 import java.util.List;
 
-
 public interface SysUserMapper {
     boolean deleteByPrimaryKey(Integer yhId);
 

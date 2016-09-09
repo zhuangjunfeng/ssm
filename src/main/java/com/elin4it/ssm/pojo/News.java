@@ -13,6 +13,8 @@ public class News {
 
     private String editorTime;
 
+    private String newsProgram;
+
     public Integer getNewsId() {
         return newsId;
     }
@@ -59,5 +61,13 @@ public class News {
 
     public void setEditorTime(String editorTime) {
         this.editorTime = editorTime == null ? null : editorTime.trim();
+    }
+
+    public String getNewsProgram() {
+        return newsProgram;
+    }
+
+    public void setNewsProgram(String newsProgram) {
+        this.newsProgram = newsProgram == null ? null : newsProgram.trim();
     }
 }

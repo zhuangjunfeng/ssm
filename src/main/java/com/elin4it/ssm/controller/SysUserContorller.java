@@ -46,7 +46,12 @@ public class SysUserContorller {
         session.setAttribute("user",users);
         return result;
     }
-
+    @RequestMapping(value = "/logout",method = RequestMethod.POST)
+    @ResponseBody
+public JSONResult logout(HttpSession session){
+        session.setAttribute("user", null);
+        return new JSONResult();
+    }
     /**
      * @deprecation：通过用户Id查询用户
      * @return用户信息

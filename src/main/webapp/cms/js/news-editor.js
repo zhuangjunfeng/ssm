@@ -4,15 +4,31 @@ $(function(){
         type:"GET",
         dataType:"json",
         data:{type:"newsType"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/login.html";
+            }
+        },
         success:function(data){
             var typeList=data.data;
             var typeHtml="";
             $.each(typeList,function(i,n){
                 typeHtml+="<option>"+n.dictName+"</option>";
             });
-            $("#newsType").html(typeHtml);
+            $("#e_newsType").html(typeHtml);
         }
     });
+
+    $("#logout").click(function(){
+        $.ajax({
+            url:"/rest/user/logout",
+            type:"POST",
+            success:function(){
+                window.location.href="/login.html";
+            }
+        });
+    });
+
     $("#editor-news").click(function(){
         updateNews();
     });
@@ -23,8 +39,13 @@ function findNewsById(){
     $.ajax({
         type:"GET",
         dataType:"json",
-        url:"/rest/user/findNewsById",
-        data:{yhId:GetRequest().newsId,_method:"GET"},
+        url:"/rest/news/findNewsById",
+        data:{NewsId:GetRequest().newsId,_method:"GET"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/login.html";
+            }
+        },
         success:function(data){
             var news=data.data;
             $("#e_newsTitle").val(news.newsTitle);
@@ -44,12 +65,17 @@ function updateNews(){
         dataType:"json",
         url:"/rest/news",
         data:{
-            newsId:GetRequest().newsId,
-            newsTitle:$("#e_newsTitle").val(),
-            newsAuthor:$("#e_newsAuthor").val(),
-            newsType:$("#e_newsType").val(),
-            newsContent:editor.getContent(),
+            NewsId:GetRequest().newsId,
+            NewsTitle:$("#e_newsTitle").val(),
+            NewsAuthor:$("#e_newsAuthor").val(),
+            NewsType:$("#e_newsType").val(),
+            NewsContent:editor.getContent(),
             _method:"PUT"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/login.html";
+            }
+        },
         success:function(data){
             window.location.href="news.html";
         }

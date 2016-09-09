@@ -1,6 +1,7 @@
 package com.elin4it.ssm.mapper;
 
 import com.elin4it.ssm.pojo.Dictionary;
+
 import java.util.List;
 
 public interface DictionaryMapper {
