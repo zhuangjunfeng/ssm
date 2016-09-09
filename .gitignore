@@ -1,2 +1,5 @@
 /.idea
 /target
+/.idea/workspace.xml
+/target/ssm
+/target/classes
