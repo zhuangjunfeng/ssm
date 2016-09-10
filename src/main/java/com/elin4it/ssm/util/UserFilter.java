@@ -80,7 +80,7 @@ public class UserFilter implements Filter{
         String realUri = uri.substring(length+1, uri.length());
         String accept=req.getHeader("Accept");
 
-        if (isAuth(realUri)&& !realUri.contains("/login")) {
+        if (isAuth(realUri)&& !realUri.contains("/login")&& !realUri.contains("/comweb")) {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {

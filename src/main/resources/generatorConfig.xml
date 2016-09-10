@@ -51,16 +51,16 @@
         </javaClientGenerator>
         <!-- 指定数据库表 -->
 
-        <table schema="general" tableName="sysuser" domainObjectName="SysUser"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false" >
-            <property name="useActualColumnNames" value="true"/>
-        </table>
-        <!--<table schema="general" tableName="news" domainObjectName="News"-->
+        <!--<table schema="general" tableName="sysuser" domainObjectName="SysUser"-->
                <!--enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
                <!--enableSelectByExample="false" selectByExampleQueryId="false" >-->
             <!--<property name="useActualColumnNames" value="true"/>-->
         <!--</table>-->
+        <table schema="general" tableName="news" domainObjectName="News"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+            <property name="useActualColumnNames" value="true"/>
+        </table>
         <!--<table schema="general" tableName="dictionary" domainObjectName="Dictionary"-->
                <!--enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
                <!--enableSelectByExample="false" selectByExampleQueryId="false" >-->

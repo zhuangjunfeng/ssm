@@ -19,6 +19,15 @@ $(function(){
         }
     });
 
+    $("#logout").click(function(){
+        $.ajax({
+            url:"/rest/user/logout",
+            type:"POST",
+            success:function(){
+                window.location.href="/login.html";
+            }
+        });
+    });
     $("#add-user").click(function(){
         var params = "yhxb="+ $("#yhxb").val()
             + "&password=" + $("#password").val()

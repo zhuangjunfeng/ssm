@@ -18,6 +18,17 @@ $(function(){
             $("#e_newsType").html(typeHtml);
         }
     });
+
+    $("#logout").click(function(){
+        $.ajax({
+            url:"/rest/user/logout",
+            type:"POST",
+            success:function(){
+                window.location.href="/login.html";
+            }
+        });
+    });
+
     $("#editor-news").click(function(){
         updateNews();
     });
