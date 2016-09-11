@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.elin4it.ssm.mapper.SysUserMapper" >
+  <resultMap id="BaseResultMap" type="com.elin4it.ssm.pojo.SysUser" >
+    <id column="yhId" property="yhId" jdbcType="INTEGER" />
+    <result column="yhxm" property="yhxm" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="yhxb" property="yhxb" jdbcType="VARCHAR" />
+    <result column="yhyx" property="yhyx" jdbcType="VARCHAR" />
+    <result column="yhzh" property="yhzh" jdbcType="VARCHAR" />
+    <result column="yhjs" property="yhjs" jdbcType="VARCHAR" />
+    <result column="cjsj" property="cjsj" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    yhId, yhxm, password, yhxb, yhyx, yhzh, yhjs, cjsj
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from sysuser
+    where yhId = #{yhId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sysuser
+  </select>
+  <select id="selectByYhzh" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from sysuser
+    where yhzh = #{yhzh,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from sysuser
+    where yhId = #{yhId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.elin4it.ssm.pojo.SysUser" >
+    insert into sysuser (yhId, yhxm, password, 
+      yhxb, yhyx, yhzh, yhjs, 
+      cjsj)
+    values (#{yhId,jdbcType=INTEGER}, #{yhxm,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{yhxb,jdbcType=VARCHAR}, #{yhyx,jdbcType=VARCHAR}, #{yhzh,jdbcType=VARCHAR}, #{yhjs,jdbcType=VARCHAR}, 
+      #{cjsj,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elin4it.ssm.pojo.SysUser" >
+    insert into sysuser
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="yhId != null" >
+        yhId,
+      </if>
+      <if test="yhxm != null" >
+        yhxm,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="yhxb != null" >
+        yhxb,
+      </if>
+      <if test="yhyx != null" >
+        yhyx,
+      </if>
+      <if test="yhzh != null" >
+        yhzh,
+      </if>
+      <if test="yhjs != null" >
+        yhjs,
+      </if>
+      <if test="cjsj != null" >
+        cjsj,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="yhId != null" >
+        #{yhId,jdbcType=INTEGER},
+      </if>
+      <if test="yhxm != null" >
+        #{yhxm,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="yhxb != null" >
+        #{yhxb,jdbcType=VARCHAR},
+      </if>
+      <if test="yhyx != null" >
+        #{yhyx,jdbcType=VARCHAR},
+      </if>
+      <if test="yhzh != null" >
+        #{yhzh,jdbcType=VARCHAR},
+      </if>
+      <if test="yhjs != null" >
+        #{yhjs,jdbcType=VARCHAR},
+      </if>
+      <if test="cjsj != null" >
+        #{cjsj,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elin4it.ssm.pojo.SysUser" >
+    update sysuser
+    <set >
+      <if test="yhxm != null" >
+        yhxm = #{yhxm,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="yhxb != null" >
+        yhxb = #{yhxb,jdbcType=VARCHAR},
+      </if>
+      <if test="yhyx != null" >
+        yhyx = #{yhyx,jdbcType=VARCHAR},
+      </if>
+      <if test="yhzh != null" >
+        yhzh = #{yhzh,jdbcType=VARCHAR},
+      </if>
+      <if test="yhjs != null" >
+        yhjs = #{yhjs,jdbcType=VARCHAR},
+      </if>
+      <if test="cjsj != null" >
+        cjsj = #{cjsj,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where yhId = #{yhId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elin4it.ssm.pojo.SysUser" >
+    update sysuser
+    set yhxm = #{yhxm,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      yhxb = #{yhxb,jdbcType=VARCHAR},
+      yhyx = #{yhyx,jdbcType=VARCHAR},
+      yhzh = #{yhzh,jdbcType=VARCHAR},
+      yhjs = #{yhjs,jdbcType=VARCHAR},
+      cjsj = #{cjsj,jdbcType=VARCHAR}
+    where yhId = #{yhId,jdbcType=INTEGER}
+  </update>
+</mapper>

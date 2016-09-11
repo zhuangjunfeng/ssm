@@ -1,0 +1,152 @@
+body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family:"Microsoft YaHei";
+}
+ul{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style-type: none;
+}
+h3{
+	margin: 20px 0 10px;
+	padding-bottom:10px; 
+	border-bottom: 3px solid #073763;
+	color: #073763;
+	font-size: 18px;
+	line-height: 24px;
+	font-family:"Microsoft YaHei";
+}
+a{
+	cursor:pointer;
+}
+.title{
+	color:#fcda4a;
+	font-size: 16px !important;
+	font-weight: bold;
+	text-align: center;
+	line-height: 18px;
+	height: 18px;
+	width: 18px !important;
+	margin:3px 0; 
+	float: left;
+	display: block;
+}
+/*---------header begin-------*/
+.header{
+	background-color: #073763;
+	height:62px;
+	width: 100%;
+}
+.menu{
+	height: 62px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.menu i{
+	background: #fff;
+	width: 280px;
+	height: 62px;
+	padding: 20px;
+	display: block;
+	float: left;
+}
+.menu ul{
+	width: 720px;
+	height: 62px;
+	padding-left: 60px;
+	float: left;
+}
+.menu ul li{
+	float: left;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	width: 120px;
+}
+.menu ul li:hover{
+	float: left;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	width: 120px;
+	background: #F1C232;
+}
+.menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size:14px;
+}
+/*---------header end-------*/
+
+/*---------footer begin-------*/
+.footer{
+	margin-top:60px; 
+	background: #010101;
+	color: #fff;
+	padding-top: 20px;
+	height: 68px;
+	width: 100%;
+}
+.footer p{
+	font-size: 12px;
+	height: 22px;
+	line-height: 22px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align:center;
+}
+
+/*---------header end-------*/
+
+/*---------barnar begin-------*/
+.barnar{
+	height: 480px;
+	width: 100%;
+	background:#3592CF;
+}
+/*---------barnar end-------*/
+.content{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+}
+.c-menu{
+	width: 230px;
+	height: 500px;
+	float: left;
+}
+.c-main{
+	width: 935px;
+	margin-left:35px;
+	height: 500px; 
+	float: left;
+}
+
+.com-text{
+	width: 453px;
+	height: 265px;
+	float: left;
+}
+.com-text img{
+	margin: 0 10px; 
+	width: 165px;
+	height: 195px;
+	display: block;
+	float: left;
+}
+.com-text>span{
+	width: 190px;
+	margin-right:10px; 
+	font-size: 14px;
+	line-height: 28px;
+	color: #5a5a5a;
+}
+.new-list{
+	margin: 0 0 0 30px; 
+	width: 717px;
+	height: 265px;
+	float: left;
+}

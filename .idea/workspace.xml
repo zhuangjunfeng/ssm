@@ -2,42 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831bcfe2-76f7-48dc-af99-6c08f7001a83" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/comweb/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/comweb/js/jquery-2.2.3.min.js" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\DictionaryMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\DictionaryMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\NewsMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\NewsMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\SysUserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\mapper\SysUserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\classes\com\elin4it\ssm\controller\NewsContorller.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\classes\com\elin4it\ssm\controller\SysUserContorller.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\WEB-INF\classes\com\elin4it\ssm\controller\NewsContorller.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\WEB-INF\classes\com\elin4it\ssm\controller\SysUserContorller.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\controller\NewsContorller.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java" />
-      <change type="MOVED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\java\com\elin4it\ssm\controller\SysUserContorller.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/util/UserFilter.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/util/UserFilter.class" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\case.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\company.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\contact.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\css\global.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\img\company.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\img\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\js\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\js\jquery-2.2.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\news.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\product.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm.war" afterPath="$PROJECT_DIR$/target/ssm.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/SysUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/SysUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/login.html" afterPath="$PROJECT_DIR$/target/ssm/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/login.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/news-add.html" afterPath="$PROJECT_DIR$/target/ssm/cms/news-add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/news-add.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/news-add.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/news-editor.html" afterPath="$PROJECT_DIR$/target/ssm/cms/news-editor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/news-editor.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/news-editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/news.html" afterPath="$PROJECT_DIR$/target/ssm/cms/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/news.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssm.iml" afterPath="$PROJECT_DIR$/ssm.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user-add.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user-add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user-add.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user-add.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user-editor.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user-editor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user-editor.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user-editor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssm.iws" />
@@ -64,41 +51,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18282549">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.7627119">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6101694">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/news.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9830508">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state vertical-scroll-proportion="-6.096774">
+              <caret line="30" column="41" selection-start-line="29" selection-start-column="12" selection-end-line="30" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8333335">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6935933">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state vertical-scroll-proportion="-3.6271186">
+              <caret line="18" column="87" selection-start-line="14" selection-start-column="16" selection-end-line="18" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -125,19 +132,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/usesr-editor.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user-editor.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/news.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/login.js" />
         <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.all.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/text.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/text.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
@@ -145,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/cms/news.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserContorller.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js" />
@@ -154,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user-add.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user-editor.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/DictionaryMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/DictionaryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/service/impl/DictionaryServiceImpl.java" />
@@ -170,8 +165,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/product.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/comweb/news.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/css/global.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/case.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/company.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/contact.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/comweb/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/comweb/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/news.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/contact.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/product.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/company.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/case.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
       </list>
     </option>
   </component>
@@ -250,8 +261,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="2" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -278,7 +289,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,97 +363,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,6 +388,10 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -487,8 +413,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -900,11 +825,15 @@
       <workItem from="1473495808054" duration="78000" />
       <workItem from="1473495907802" duration="1202000" />
       <workItem from="1473497144401" duration="14950000" />
+      <workItem from="1473532964705" duration="177000" />
+      <workItem from="1473563942841" duration="70000" />
+      <workItem from="1473571167008" duration="2817000" />
+      <workItem from="1473580632842" duration="17768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64661000" />
+    <option name="totallyTimeSpent" value="85493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,35 +845,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="2" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28548124" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28384992" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29690048" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.120272316" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32300162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299545" sideWeight="0.4918415" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.4918415" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26399395" sideWeight="0.5081585" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26399395" sideWeight="0.5081585" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3670473" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36378467" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -981,13 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38308457">
           <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94527364">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1033,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/pojo/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68421054">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55741626">
@@ -1052,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5714286">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,23 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2557077">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1460177">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,15 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.483871">
           <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9086758">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,20 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34851936">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55474454">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-          <folding>
-            <element signature="e#1547#1563#0" expanded="true" />
-            <element signature="e#1605#1618#0" expanded="true" />
-            <element signature="e#1657#1675#0" expanded="true" />
-            <element signature="e#1718#1736#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,23 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47482014">
           <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="select from ..dictionary..." />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..dictionary..." />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="update dicti..." />
-            <marker date="1473500679407" expanded="true" signature="-1:-1" placeholder="update dicti..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,9 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5650685">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37671232">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30136988">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4520548">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,18 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3323263">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="select from ..news..." />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..news..." />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="update news ..." />
-            <marker date="1473501235646" expanded="true" signature="-1:-1" placeholder="update news ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1030641">
           <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,9 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91922003">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,9 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61281335">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1250,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73537606">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,38 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84679663">
           <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="select from ..sysuser..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="select from ..sysuser..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="select from ..sysuser..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="update sysus..." />
-            <marker date="1473501411840" expanded="true" signature="-1:-1" placeholder="update sysus..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.573816">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30640668">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,39 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0668693">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8333335">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4695122">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.548387">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,54 +1108,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3259053">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/js/jquery-2.2.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9830508">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4094708">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.060941827">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66463417">
-          <caret line="247" column="30" selection-start-line="247" selection-start-column="30" selection-end-line="247" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.33240998">
+          <caret line="992" column="0" selection-start-line="992" selection-start-column="0" selection-end-line="992" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36768803">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/comweb/js/common.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6935933">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="95" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.260606">
+          <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/pojo/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8282548">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7267267">
+          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
+          <folding>
+            <element signature="e#1547#1563#0" expanded="false" />
+            <element signature="e#1605#1618#0" expanded="false" />
+            <element signature="e#1657#1675#0" expanded="false" />
+            <element signature="e#1718#1736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7267267">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/JSONResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.033240996">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6565096">
+          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6094183">
+          <caret line="79" column="70" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34242424">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4265928">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18282549">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.096774">
+          <caret line="30" column="41" selection-start-line="29" selection-start-column="12" selection-end-line="30" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6271186">
+          <caret line="18" column="87" selection-start-line="14" selection-start-column="16" selection-end-line="18" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6101694">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7627119">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18282549">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
