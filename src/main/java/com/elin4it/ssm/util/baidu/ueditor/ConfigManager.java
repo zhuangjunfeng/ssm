@@ -165,7 +165,7 @@ public final class ConfigManager {
 	
 	private String getConfigPath () {
 		return this.rootPath
-				+ File.separator + "conf"
+				+ File.separator + "config/conf"
 				+ File.separator + ConfigManager.configFileName;
 	}
 

@@ -10,7 +10,7 @@ $(function(){
         data:{type:"sexType"},
         error:function(XMLHttpRequest, textStatus, errorThrown){
             if(XMLHttpRequest.responseText=="loginError"){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         },
         success:function(data){
@@ -28,7 +28,7 @@ $(function(){
             url:"/rest/user/logout",
             type:"POST",
             success:function(){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         });
     });
@@ -53,7 +53,7 @@ function findUserById(){
         data:{yhId:GetRequest().yhId,_method:"GET"},
         error:function(XMLHttpRequest, textStatus, errorThrown){
             if(XMLHttpRequest.responseText=="loginError"){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         },
         success:function(data){
@@ -81,7 +81,7 @@ function updateUser(){
             _method:"PUT"},
         error:function(XMLHttpRequest, textStatus, errorThrown){
             if(XMLHttpRequest.responseText=="loginError"){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         },
         success:function(data){

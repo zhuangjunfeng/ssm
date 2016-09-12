@@ -6,7 +6,7 @@ $(function(){
         data:{type:"newsType"},
         error:function(XMLHttpRequest, textStatus, errorThrown){
             if(XMLHttpRequest.responseText=="loginError"){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         },
         success:function(data){
@@ -24,7 +24,7 @@ $(function(){
             url:"/rest/user/logout",
             type:"POST",
             success:function(){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         });
     });
@@ -41,7 +41,7 @@ $(function(){
             },
             error:function(XMLHttpRequest, textStatus, errorThrown){
                 if(XMLHttpRequest.responseText=="loginError"){
-                    window.location.href="/login.html";
+                    window.location.href="/cms/login.html";
                 }
             },
             success:function(){

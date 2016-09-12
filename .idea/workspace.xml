@@ -2,29 +2,323 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831bcfe2-76f7-48dc-af99-6c08f7001a83" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\case.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\company.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\contact.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\css\global.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\img\company.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\img\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\js\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\js\jquery-2.2.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\news.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\comweb\product.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm.war" afterPath="$PROJECT_DIR$/target/ssm.war" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\conf\config.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\login.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\anchor\anchor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\attachment.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\attachment.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\attachment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\alignicon.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\alignicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\progress.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\success.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\attachment\images\success.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\background\background.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\background\background.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\background\background.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\background\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\background\images\success.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\chart.config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\charts.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\charts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\charts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\charts\images\charts5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\emotion.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\emotion.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\emotion.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\0.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\bface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\cface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\fface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\jxface2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\tface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\wface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\emotion\images\yface.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\gmap\gmap.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\help\help.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\help\help.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\help\help.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\image.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\image.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\image.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\alignicon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\progress.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\success.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\image\images\success.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\insertframe\insertframe.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\internal.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\link\link.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\map\map.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\map\show.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\music\music.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\music\music.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\music\music.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\preview\preview.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\addimg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\brush.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\delimg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\delimgH.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\empty.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\emptyH.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\eraser.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\redo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\redoH.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\scale.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\scaleH.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\size.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\undo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\images\undoH.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\scrawl.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\scrawl.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\scrawl\scrawl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\searchreplace\searchreplace.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\searchreplace\searchreplace.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\snapscreen\snapscreen.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\spechars\spechars.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\spechars\spechars.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\dragicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\edittable.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\edittable.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\edittable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\edittd.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\table\edittip.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\pre0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\pre1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\pre2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\pre3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\images\pre4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\template.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\template.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\template\template.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\center_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\file-icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\file-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\left_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\none_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\progress.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\right_focus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\success.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\images\success.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\video.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\video.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\video\video.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\webapp\webapp.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\wordimage\imageUploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\wordimage\tangram.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\wordimage\wordimage.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\dialogs\wordimage\wordimage.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\addimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\alldeletebtnhoverskin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\alldeletebtnupskin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\background.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\deletedisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\deleteenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\listbackground.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\music.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\rotateleftdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\rotateleftenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\rotaterightdisable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\rotaterightenable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\en\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\zh-cn\images\copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\zh-cn\images\localimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\zh-cn\images\music.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\zh-cn\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\lang\zh-cn\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\autotypesetpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\buttonicon.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\cellalignpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\colorbutton.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\colorpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\combox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\contextmenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\menubutton.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\message.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\multiMenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\paragraphpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\pastepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\popup.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\separtor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\shortcutmenu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\splitbutton.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\tablepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\ueditor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\css\uibase.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\dialogbase.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\arrow_down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\arrow_up.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\button-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\cancelbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\charts.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\cursor_h.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\cursor_h.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\cursor_v.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\cursor_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\dialog-title-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\filescan.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\highlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\icons-all.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\icons.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\loaderror.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\lock.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\neweditor-tab-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\scale.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\sortable.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\sparator_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\table-cell-align.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\tangram-colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\toolbar_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\unhighlighted.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\upload.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\videologo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\word.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\default\images\wordpaste.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\themes\iframe.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\SyntaxHighlighter\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\codemirror\codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\codemirror\codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\mootools-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\prototype-adapter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\standalone-framework.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\adapters\standalone-framework.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\highcharts-more.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\highcharts-more.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\highcharts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\highcharts.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\annotations.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\annotations.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\canvas-tools.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\canvas-tools.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\data.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\drilldown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\drilldown.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\exporting.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\exporting.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\funnel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\funnel.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\heatmap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\heatmap.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\map.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\map.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\no-data-to-display.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\modules\no-data-to-display.src.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\themes\dark-blue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\themes\dark-green.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\themes\gray.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\themes\grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\highcharts\themes\skies.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\font\vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\font\vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\font\vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\font\vjs.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\video-js\video.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\Uploader.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.flashonly.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.flashonly.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.html5only.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.html5only.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.withoutimage.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\webuploader\webuploader.withoutimage.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\xss.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\zeroclipboard\ZeroClipboard.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\third-party\zeroclipboard\ZeroClipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\ueditor.all.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\ueditor.config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\src\main\webapp\ueditor\ueditor.parse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm.war" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\WEB-INF\classes\com\elin4it\ssm\util\UserFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\news-add.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\news-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user-add.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\news-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\news-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/ConfigManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/ConfigManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/news-add.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/news-add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/news-editor.html" afterPath="$PROJECT_DIR$/target/ssm/cms/news-editor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/news-editor.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/news-editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user-add.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user-add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user-add.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user-add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user-editor.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user-editor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user-editor.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user-editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/user.html" afterPath="$PROJECT_DIR$/target/ssm/cms/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/cms/js/user.js" afterPath="$PROJECT_DIR$/target/ssm/cms/js/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/login.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/news-add.html" afterPath="$PROJECT_DIR$/src/main/webapp/cms/news-add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/news-editor.html" afterPath="$PROJECT_DIR$/src/main/webapp/cms/news-editor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/news.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/news.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/cms/js/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/cms/js/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssm.iws" />
@@ -51,61 +345,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="case.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
+      <file leaf-file-name="ConfigManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/ConfigManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18282549">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="company.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
+      <file leaf-file-name="news-add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7627119">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
+      <file leaf-file-name="news-editor.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6101694">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.6703601">
+              <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.096774">
-              <caret line="30" column="41" selection-start-line="29" selection-start-column="12" selection-end-line="30" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
+      <file leaf-file-name="user-add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6271186">
-              <caret line="18" column="87" selection-start-line="14" selection-start-column="16" selection-end-line="18" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-editor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5161295">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -132,21 +456,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.all.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/text.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/text.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/news.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserContorller.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/news-add.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/news-editor.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user-add.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/cms/user-editor.html" />
@@ -163,9 +478,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContorller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsContoller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/comweb/product.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/comweb/news.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/comweb/css/global.css" />
@@ -183,6 +495,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/company.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/case.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/news-add.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/news-editor.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/login.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/cms/js/login.js" />
       </list>
     </option>
   </component>
@@ -289,8 +613,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,7 +687,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,11 +713,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,12 +740,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -828,12 +1186,13 @@
       <workItem from="1473532964705" duration="177000" />
       <workItem from="1473563942841" duration="70000" />
       <workItem from="1473571167008" duration="2817000" />
-      <workItem from="1473580632842" duration="17768000" />
+      <workItem from="1473580632842" duration="17876000" />
+      <workItem from="1473647586701" duration="3299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85493000" />
+    <option name="totallyTimeSpent" value="88900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,14 +1209,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28384992" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2822186" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29690048" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.120272316" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31973898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31810766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25037822" sideWeight="0.4918415" order="0" side_tool="false" content_ui="combo" />
@@ -899,70 +1258,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38372093">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38308457">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76616913">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2131147">
-          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2131147">
-          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8524591">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user-editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5040431">
-          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56218904">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55741626">
-          <caret line="207" column="29" selection-start-line="207" selection-start-column="29" selection-end-line="207" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5714286">
@@ -974,13 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2557077">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.483871">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1090,32 +1378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30640668">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/controller/UEditorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0668693">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3259053">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.060941827">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,35 +1393,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="95" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.260606">
-          <caret line="243" column="14" selection-start-line="243" selection-start-column="14" selection-end-line="243" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/pojo/News.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.8282548">
           <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,15 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.033240996">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6565096">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1228,50 +1460,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.096774">
-          <caret line="30" column="41" selection-start-line="29" selection-start-column="12" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6271186">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="87" selection-start-line="14" selection-start-column="16" selection-end-line="18" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6101694">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7627119">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18282549">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/plugins/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9">
+          <caret line="495" column="5" selection-start-line="495" selection-start-column="5" selection-end-line="495" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.93333334">
+          <caret line="238" column="20" selection-start-line="238" selection-start-column="20" selection-end-line="238" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.967742">
+          <caret line="159" column="63" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/news-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="157" column="50" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.733333">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/user-editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1151514">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46666667">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44875348">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/user-editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5161295">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4666667">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="13.666667">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/baidu/ueditor/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53333336">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/cms/js/news-editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6703601">
+          <caret line="95" column="1" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
           <folding />
         </state>
       </provider>

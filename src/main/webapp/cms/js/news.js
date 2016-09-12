@@ -19,7 +19,7 @@ function findAllNews(){
 		dataType:"json",
 		error:function(XMLHttpRequest, textStatus, errorThrown){
 			if(XMLHttpRequest.responseText=="loginError"){
-				window.location.href="/login.html";
+				window.location.href="/cms/login.html";
 			}
 		},
 		success:function(data){

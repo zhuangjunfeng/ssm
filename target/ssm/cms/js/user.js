@@ -18,7 +18,7 @@ function findAllUser(){
         dataType:"json",
         error:function(XMLHttpRequest, textStatus, errorThrown){
             if(XMLHttpRequest.responseText=="loginError"){
-                window.location.href="/login.html";
+                window.location.href="/cms/login.html";
             }
         },
         success:function(data){
@@ -50,7 +50,7 @@ function findAllUser(){
             data:{yhId:yhId ,_method: 'DELETE'},
             error:function(XMLHttpRequest, textStatus, errorThrown){
                 if(XMLHttpRequest.responseText=="loginError"){
-                    window.location.href="/login.html";
+                    window.location.href="/cms/login.html";
                 }
             },
             success:function(){

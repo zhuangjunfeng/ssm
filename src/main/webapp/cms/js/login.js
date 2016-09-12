@@ -14,7 +14,7 @@ $(function(){
                         alert(types);
                     }
                     else{
-                        window.location.href="cms/index.html";
+                        window.location.href="index.html";
                     }
                 },
                 error: function () {alert("用户名密码验证失败");

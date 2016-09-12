@@ -32,7 +32,7 @@ public class UserFilter implements Filter{
     }
 
     public void loginPath(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
-        String loginPath = "/login.html";
+        String loginPath = "/cms/login.html";
         RequestDispatcher loginDispatcher = arg0.getRequestDispatcher(loginPath);
         try {
             loginDispatcher.forward(arg0, arg1);
