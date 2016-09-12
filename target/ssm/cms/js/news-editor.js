@@ -19,6 +19,26 @@ $(function(){
         }
     });
 
+    $.ajax({
+        url:"/rest/dict",
+        type:"GET",
+        dataType:"json",
+        data:{type:"newsProgram"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/cms/login.html";
+            }
+        },
+        success:function(data){
+            var typeList=data.data;
+            var typeHtml="";
+            $.each(typeList,function(i,n){
+                typeHtml+="<option>"+n.dictName+"</option>";
+            });
+            $("#e_newsProgram").html(typeHtml);
+        }
+    });
+
     $("#logout").click(function(){
         $.ajax({
             url:"/rest/user/logout",
@@ -50,6 +70,7 @@ function findNewsById(){
             var news=data.data;
             $("#e_newsTitle").val(news.newsTitle);
             $("#e_newsType").val(news.newsType);
+            $("#e_newsProgram").val(news.newsProgram);
             $("#e_newsAuthor").val(news.newsAuthor);
             var newsContent=news.newsContent;
             editor.addListener("ready", function () {

@@ -15,6 +15,8 @@ public class News {
 
     private String newsProgram;
 
+    private String newsStatus;
+
     public Integer getNewsId() {
         return newsId;
     }
@@ -69,5 +71,13 @@ public class News {
 
     public void setNewsProgram(String newsProgram) {
         this.newsProgram = newsProgram == null ? null : newsProgram.trim();
+    }
+
+    public String getNewsStatus() {
+        return newsStatus;
+    }
+
+    public void setNewsStatus(String newsStatus) {
+        this.newsStatus = newsStatus == null ? null : newsStatus.trim();
     }
 }

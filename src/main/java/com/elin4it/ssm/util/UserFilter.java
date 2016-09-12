@@ -61,6 +61,7 @@ public class UserFilter implements Filter{
     public Boolean isAuth(String realUri) {
         List<String> authAll =new ArrayList<String>();
         authAll.add(0, "rest/.*");
+        authAll.add(0, "/cms");
         Boolean rs = false;
         for (int i = 0; i < authAll.size(); i++) {
             if (realUri.matches(authAll.get(i))) {

@@ -86,10 +86,26 @@ public class NewsController {
         result=new JSONResult(news);
         return result;
     }
+
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findAllNews(){
         List<News> news=newsService.findAllNews();
         return new JSONResult(news);
     }
+
+@RequestMapping(value = "/publishNews",method = RequestMethod.PUT)
+@ResponseBody
+public JSONResult publishAllNews(){
+    JSONResult result=new JSONResult();
+    List<News> news=newsService.findAllNews();
+    for(News news1:news){
+        if (news1.getNewsStatus().equals("0")){
+            news1.setNewsStatus("1");
+            newsService.updateNews(news1);
+        }
+    }
+    result.setMessage("success");
+    return result;
+}
 }

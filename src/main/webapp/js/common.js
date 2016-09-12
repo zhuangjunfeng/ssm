@@ -3,7 +3,7 @@ $(function(){
 });
 
 function findAllNews(){
-    var name=GetRequest().program;
+    var name=decodeURI(window.location.href);;
     $.ajax({
         type:"GET",
         url:"/rest/comweb/news",
@@ -12,7 +12,7 @@ function findAllNews(){
             var news=[];
             var newsList=data.data;
             $.each(newsList,function(i,n){
-                if(n.newsProgram==name){
+                if(name.indexOf(n.newsProgram)!=-1){
                      news.unshift(n);
                 }
             });
@@ -31,25 +31,38 @@ function findAllNews(){
             else{
                 newsListHtml="<ul>";
                 $.each(news,function(i,n){
-                    newsListHtml=newsListHtml+"<li><a>"+ n.newsTitle+"</a></li>";
+                    newsListHtml=newsListHtml+"<li><a class='news-detail' data-id='"+ n.newsId+"'>"+ n.newsTitle+"</a></li>";
                 });
                 newsListHtml=newsListHtml+"</ul>";
                 $("#news-show").html(newsListHtml);
                 $("#news-content").html("");
+                $(".news-detail").click(function(){
+                    findNewsById($(this).attr("data-id"));
+                })
             }
         }
     });
 }
 
-function GetRequest() {
-    var url = decodeURI(location.search);
-    var theRequest = new Object();
-    if (url.indexOf("?") != -1) {
-        var str = url.substr(1);
-        strs = str.split("&");
-        for(var i = 0; i < strs.length; i ++) {
-            theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+
+function findNewsById(newsId){
+    var NewsId=newsId
+    $.ajax({
+        type:"GET",
+        dataType:"json",
+        url:"/rest/comweb/news/findNewsById",
+        data:{NewsId:NewsId,_method:"GET"},
+        success:function(data){
+            var news=data.data;
+            var news_content=news.newsContent;
+           var newsListHtml="<span> <b>"
+                +news.newsTitle+"</b></span><span>作者："
+                +news.newsAuthor+"</span><span>发布时间："
+                +news.editorTime+"</span>";
+            $("#news-show").html(newsListHtml);
+            $("#news-content").html(news_content);
         }
-    }
-    return theRequest;
+    });
 }
+
+

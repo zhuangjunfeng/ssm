@@ -1,12 +1,11 @@
 $(function(){
 	findAllNews();
-
 	$("#logout").click(function(){
 		$.ajax({
 			url:"/rest/user/logout",
 			type:"POST",
 			success:function(){
-				window.location.href="/login.html";
+				window.location.href="/cms/login.html";
 			}
 		});
 	});
@@ -29,7 +28,7 @@ function findAllNews(){
 				newsListHtml=newsListHtml+"<tbody><tr><td>"
 				+n.newsId+"</td><td>"
 				+n.newsTitle+"</td><td>"
-				+" "+"</td><td>"
+				+n.newsProgram+"</td><td>"
 				+n.newsType+"</td><td><a class='btn' href='news-editor.html?newsId="
 				+n.newsId+"'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-news'  data-id='"
 				+n.newsId+"'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
@@ -39,6 +38,9 @@ function findAllNews(){
 			$(".del-news").click(function(){
 				delNews($(this).attr("data-id"));
 			});
+			$("#news-publish").click(function(){
+				publishNews();
+			})
 		}
 	});
 }
@@ -50,11 +52,32 @@ function delNews(newsId){
 		data:{NewsId:newsId ,_method: 'DELETE'},
 		error:function(XMLHttpRequest, textStatus, errorThrown){
 			if(XMLHttpRequest.responseText=="loginError"){
-				window.location.href="/login.html";
+				window.location.href="/cms/login.html";
 			}
 		},
 		success:function(){
 			findAllNews();
+		}
+	});
+}
+function publishNews(){
+	$.ajax({
+		type:"POST",
+		url:"/rest/news/publishNews",
+		dataType:"json",
+		data:{_method:"PUT"},
+		error:function(XMLHttpRequest, textStatus, errorThrown){
+			if(XMLHttpRequest.responseText=="loginError"){
+				window.location.href="cms/login.html";
+			}
+		},
+		success:function(data){
+			if(data.message=="success"){
+				alert("发布成功");
+			}
+			else{
+				alert("发布失败");
+			}
 		}
 	});
 }
