@@ -15,4 +15,7 @@ public interface NewsService {
     boolean updateNews(News news);
     News findNewsById(Integer newsId);
     List<News> findAllNews();
+    String findDetailById(Integer newsId);
+    List<News> findNewsByNewsProgram(String newsProgram);
+    List<News> findNewsByNewsType(String newsType);
 }

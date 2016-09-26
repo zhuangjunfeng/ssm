@@ -61,12 +61,14 @@ public class NewsController {
         String NewsContent=request.getParameter("NewsContent");
         String NewsTitle=request.getParameter("NewsTitle");
         String NewsType=request.getParameter("NewsType");
+        String NewsProgram=request.getParameter("NewsProgram");
         News news=new News();
         news.setNewsId(NewsId);
         news.setNewsAuthor(NewsAuthor);
         news.setNewsContent(NewsContent);
         news.setNewsTitle(NewsTitle);
         news.setNewsType(NewsType);
+        news.setNewsProgram(NewsProgram);
         if (newsService.updateNews(news)){
             result=new JSONResult(news);
             result.setMessage("success");
@@ -86,6 +88,20 @@ public class NewsController {
         result=new JSONResult(news);
         return result;
     }
+    @RequestMapping(value = "/findNewsByProgram",method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findNewsByProgram(HttpServletRequest request){
+        String NewsProgram=request.getParameter("NewsProgram");
+        List<News> news=newsService.findNewsByNewsProgram(NewsProgram);
+        return new JSONResult(news);
+    }
+    @RequestMapping(value = "/findNewsByType",method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findNewsByType(HttpServletRequest request){
+        String NewsType=request.getParameter("NewsType");
+        List<News> news=newsService.findNewsByNewsType(NewsType);
+        return new JSONResult(news);
+    }
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
@@ -93,6 +109,16 @@ public class NewsController {
         List<News> news=newsService.findAllNews();
         return new JSONResult(news);
     }
+
+    @RequestMapping(value = "/findDetail",method =RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findDetail(HttpServletRequest request){
+        int NewsId= Integer.parseInt(request.getParameter("NewsId"));
+        String newsContent=newsService.findDetailById(NewsId);
+        return new JSONResult(newsContent);
+    }
+
+
 
 @RequestMapping(value = "/publishNews",method = RequestMethod.PUT)
 @ResponseBody

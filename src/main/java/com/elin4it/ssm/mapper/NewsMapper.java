@@ -12,4 +12,7 @@ public interface NewsMapper {
     List<News> selectAllNews();
     int updateByPrimaryKeySelective(News record);
     boolean updateByPrimaryKey(News record);
+    String selectDetailByPrimaryKey(Integer newsId);
+    List<News> selectNewsByNewsProgram(String newsProgram);
+    List<News> selectNewsByNewsType(String newsType);
 }

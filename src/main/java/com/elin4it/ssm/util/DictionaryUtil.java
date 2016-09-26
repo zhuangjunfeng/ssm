@@ -35,4 +35,20 @@ public class DictionaryUtil {
         }
         return new JSONResult(resList);
     }
+    @RequestMapping(value = "/findDictType",method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findDictType(HttpServletRequest  request){
+        WebApplicationContext webApplicationContext=
+                org.springframework.web.context.ContextLoader.getCurrentWebApplicationContext();
+        ServletContext servletContext=webApplicationContext.getServletContext();
+        String type=request.getParameter("type");
+        List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
+        List<Dictionary> resList=new ArrayList();
+        for(Dictionary dictionary:list){
+            if(dictionary.getDictFather().equals(type)){
+                resList.add(dictionary);
+            }
+        }
+        return new JSONResult(resList);
+    }
 }

@@ -14,6 +14,12 @@
   <sql id="Base_Column_List" >
     NewsId, NewsType, NewsTitle, NewsAuthor, NewsContent, EditorTime, NewsProgram, NewsStatus
   </sql>
+  <sql id="detail">
+    NewsContent
+  </sql>
+  <sql id="News_List">
+     NewsId, NewsType, NewsTitle, NewsAuthor, NewsContent
+  </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
@@ -24,6 +30,24 @@
     SELECT
     <include refid="Base_Column_List" />
     FROM news
+  </select>
+  <select id="selectDetailByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="detail" />
+    from news
+    where NewsId = #{newsId,jdbcType=INTEGER}
+  </select>
+  <select id="selectNewsByNewsProgram"  resultMap="BaseResultMap" parameterType="java.lang.String">
+   SELECT
+    <include refid="News_List" />
+    FROM  news
+    WHERE  NewsProgram = #{newsProgram,jdbcType=VARCHAR}
+  </select>
+  <select id="selectNewsByNewsType"  resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT
+    <include refid="News_List" />
+    FROM  news
+    WHERE  NewsType = #{newsType,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from news

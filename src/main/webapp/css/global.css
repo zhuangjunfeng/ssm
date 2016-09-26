@@ -19,9 +19,6 @@ h3{
 	line-height: 24px;
 	font-family:"Microsoft YaHei";
 }
-a{
-	cursor:pointer;
-}
 .title{
 	color:#fcda4a;
 	font-size: 16px !important;
@@ -33,6 +30,10 @@ a{
 	margin:3px 0; 
 	float: left;
 	display: block;
+}
+.container {
+	min-height:100%; /*使内容高度和body一样*/
+	margin-bottom:-80px;/*向上缩减80像素，不至于footer超出屏幕可视范围*/
 }
 /*---------header begin-------*/
 .header{
@@ -83,7 +84,6 @@ a{
 
 /*---------footer begin-------*/
 .footer{
-	margin-top:60px; 
 	background: #010101;
 	color: #fff;
 	padding-top: 20px;
@@ -110,8 +110,8 @@ a{
 /*---------barnar end-------*/
 .content{
 	width: 1200px;
-	height: 600px;
-	margin: 0 auto;
+	margin: 0 auto 140px;
+	min-height: 650px;
 }
 .c-menu{
 	width: 230px;
@@ -124,7 +124,13 @@ a{
 	height: 500px; 
 	float: left;
 }
-
+.c-row{
+	width: 1200px;
+	margin: 0 auto;
+}
+.com{
+	height: 285px;
+}
 .com-text{
 	width: 453px;
 	height: 265px;
@@ -149,4 +155,119 @@ a{
 	width: 717px;
 	height: 265px;
 	float: left;
+}
+.new-list ul{
+	margin-left:10px;
+	float: left; 
+}
+.new-list li{
+	height: 24px;
+	margin-bottom:20px;
+	width: 470px;
+	border-bottom:1px solid #cdcdcd
+}
+.new-list img {
+	display:block;
+	width: 235px;
+	height: 200px;
+	float: left;
+}
+.new-list i{
+	background: url(../img/list-icon.png) no-repeat;
+	width: 10px;
+	height: 10px;
+	display: block;
+	float: left;
+	margin:7px 10px;
+}
+.new-list .news-t{
+	font-size: 14px;
+	color: #5a5a5a;
+	float: left;
+	line-height: 24px;
+}
+.new-list .news-d{
+	font-size: 14px;
+	color: #5a5a5a;
+	float: right;
+	line-height: 24px;
+}
+.pro-list{
+	margin: 0 auto;
+	height: 220px;
+	width: 1200px;
+}
+.pro-list ul li{
+	float: left;
+	margin-left:20px;
+}
+.pro-list img{
+	width: 220px;
+	height: 150px;
+}
+
+.cas{
+	height: 220px;
+}
+.cas-list{
+	float: left;
+	width: 750px;
+	height: 220px;
+}
+
+.cas-list ul li{
+	float: left;
+	margin-left:20px;
+}
+.cas-list img{
+	width: 220px;
+	height: 150px;
+}
+.con-text{
+	width: 415px;
+	height: 220px;
+	margin-left: 25px;
+	float: left;
+}
+
+.c-menu ul{
+	background: #006BC3;
+	width: 195px;
+	margin: 20px auto;
+	padding: 0 10px 20px 10px;
+
+}
+
+.c-menu ul li{
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 12px;
+	border-bottom: 1px solid #aaa;
+}
+.c-menu ul li a{
+	padding-left: 10px;
+}
+.c-main ul{
+	margin: 20px 10px;
+	color: #5a5a5a;
+
+}
+
+.c-main ul li{
+	border-bottom: 1px solid #e2e2e2;
+	padding: 10px 0;
+}
+
+.c-main ul li p{
+	line-height: 20px;
+	padding:0;
+	margin: 0;
+}
+
+.c-main ul li span{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	color: #929292;
 }
