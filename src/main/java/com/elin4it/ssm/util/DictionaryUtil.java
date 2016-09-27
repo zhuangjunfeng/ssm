@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Administrator on 2016/9/1.
  */
 @Controller
-@RequestMapping("/dict")
+@RequestMapping("/**/dict")
 public class DictionaryUtil {
     private final static String DICTIONARY_CACHE = "dictionary";
     @RequestMapping(method = RequestMethod.GET)
@@ -45,7 +45,7 @@ public class DictionaryUtil {
         List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
         List<Dictionary> resList=new ArrayList();
         for(Dictionary dictionary:list){
-            if(dictionary.getDictFather().equals(type)){
+            if(type.indexOf(dictionary.getDictFather())!=-1){
                 resList.add(dictionary);
             }
         }

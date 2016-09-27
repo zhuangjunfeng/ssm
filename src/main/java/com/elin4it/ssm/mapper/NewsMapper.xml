@@ -29,7 +29,7 @@
   <select id="selectAllNews" resultMap="BaseResultMap">
     SELECT
     <include refid="Base_Column_List" />
-    FROM news
+    FROM news ORDER BY EditorTime DESC
   </select>
   <select id="selectDetailByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select

@@ -64,7 +64,7 @@ public class NewsServiceImpl implements NewsService {
     }
 
     public  List<News> findNewsByNewsType(String newsType){
-        List<News> news=newsMapper.selectNewsByNewsProgram(newsType);
+        List<News> news=newsMapper.selectNewsByNewsType(newsType);
         return news;
     }
 }

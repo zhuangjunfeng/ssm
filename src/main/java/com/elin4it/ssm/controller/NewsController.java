@@ -97,7 +97,7 @@ public class NewsController {
     }
     @RequestMapping(value = "/findNewsByType",method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findNewsByType(HttpServletRequest request){
+    public JSONResult findNewsByType(HttpServletRequest request)  {
         String NewsType=request.getParameter("NewsType");
         List<News> news=newsService.findNewsByNewsType(NewsType);
         return new JSONResult(news);
