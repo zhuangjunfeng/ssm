@@ -28,11 +28,13 @@ public class NewsController {
         String NewsContent=request.getParameter("NewsContent");
         String NewsTitle=request.getParameter("NewsTitle");
         String NewsType=request.getParameter("NewsType");
+        String NewsProgram=request.getParameter("NewsProgram");
         News news=new News();
         news.setNewsAuthor(NewsAuthor);
         news.setNewsContent(NewsContent);
         news.setNewsTitle(NewsTitle);
         news.setNewsType(NewsType);
+        news.setNewsProgram(NewsProgram);
         if (newsService.addNews(news))
             {
                 result=new JSONResult(news);

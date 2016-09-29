@@ -1,6 +1,6 @@
 $(function(){
     $.ajax({
-        url:"/rest/dict",
+        url:"/rest/dict/findDictProgram",
         type:"GET",
         dataType:"json",
         data:{type:"newsType"},
@@ -10,12 +10,17 @@ $(function(){
             }
         },
         success:function(data){
-            var typeList=data.data;
-            var typeHtml="";
-            $.each(typeList,function(i,n){
-                typeHtml+="<option>"+n.dictName+"</option>";
+            var programList=data.data;
+            var programHtml="";
+            $.each(programList,function(i,n){
+                programHtml+="<option>"+n.dictName+"</option>";
             });
-            $("#newsType").html(typeHtml);
+            $("#newsProgram").html(programHtml);
+            var NewsProgram=$("#newsProgram").val();
+            findDictType(NewsProgram);
+            $("#newsProgram").change(function(){
+                findDictType($("#newsProgram").val());
+            });
         }
     });
 
@@ -37,6 +42,7 @@ $(function(){
                 NewsTitle:$("#newsTitle").val(),
                 NewsAuthor:$("#newsAuthor").val(),
                 NewsType:$("#newsType").val(),
+                NewsProgram:$("#newsProgram").val(),
                 NewsContent:editor.getContent()
             },
             error:function(XMLHttpRequest, textStatus, errorThrown){
@@ -50,3 +56,26 @@ $(function(){
         });
     });
 });
+
+function findDictType(newsProgram){
+    $.ajax({
+        url:"/rest/dict/findDictType",
+        type:"GET",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        dataType:"json",
+        data:{type:encodeURI(newsProgram),_method:"GET"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/cms/login.html";
+            }
+        },
+        success:function(data){
+            var typeList=data.data;
+            var typeHtml="";
+            $.each(typeList,function(i,n){
+                typeHtml+="<option>"+n.dictName+"</option>";
+            });
+            $("#newsType").html(typeHtml);
+        }
+    });
+}

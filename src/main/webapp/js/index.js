@@ -12,9 +12,9 @@ function findNews(){
             var newsListHtml="";
             $.each(newsList,function(i,n){
                 if(i<=listSize-1){
-                newsListHtml=newsListHtml+"<li><a style='cursor:pointer' class='news-detail' data-id='"
-                    + n.newsId+"'>"
-                    + n.newsTitle+"</a></li>";
+                newsListHtml=newsListHtml+"<li><i></i><span class='news-t'>"
+                    + n.newsTitle+"</span><span class='news-d'>"
+                    + n.editorTime+"</li>";
                 }
                 $("#show-news").html(newsListHtml);
             });

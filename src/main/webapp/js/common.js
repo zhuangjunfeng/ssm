@@ -5,36 +5,52 @@ $(function(){
 
 function findAllNews(){
     var name=decodeURI(window.location.href);
+    var newsProgram;
     $.ajax({
         type:"GET",
-        url:"/rest/comweb/news",
         dataType:"json",
-        success:function(data){
-            var news=[];
-            var newsList=data.data;
-            $.each(newsList,function(i,n){
-                if(name.indexOf(n.newsProgram)!=-1){
-                     news.unshift(n);
+        url:"/rest/comweb/dict/findDict",
+        data:{type:name},
+        success: function (data) {
+            var programsList=data.data;
+            $.each(programsList,function(i,n){
+                newsProgram=newsProgram+ n.dictName;
+            })
+            $.ajax({
+                type:"GET",
+                url:"/rest/comweb/news",
+                dataType:"json",
+                success:function(data){
+                    var news=[];
+                    var newsList=data.data;
+                    $.each(newsList,function(i,n){
+                        if(newsProgram.indexOf(n.newsProgram)==-1){
+                            news.unshift(n);
+                        }
+                    });
+                    var newsListHtml="";
+                    if(news.length==1){
+                        $.each(news,function(i,n){
+                            var news_content=n.newsContent;
+                            $("#show-news").html(news_content);
+                        });
+                    }
+                    else{
+                        newsListHtml="<ul>";
+                        $.each(news,function(i,n){
+                            newsListHtml=newsListHtml+"<li><p><a style='cursor:pointer' class='news-detail' data-id='"
+                                + n.newsId+"'>"
+                                + n.newsTitle+"</a></p><span>"
+                                + n.editorTime+"</span></li>";
+                        });
+                        newsListHtml=newsListHtml+"</ul>";
+                        $("#show-news").html(newsListHtml);
+                        $(".news-detail").click(function(){
+                            findNewsById($(this).attr("data-id"));
+                        })
+                    }
                 }
             });
-            var newsListHtml="";
-            if(news.length==1){
-                $.each(news,function(i,n){
-                var news_content=n.newsContent;
-                $("#show-news").html(news_content);
-                });
-            }
-            else{
-                newsListHtml="<ul>";
-                $.each(news,function(i,n){
-                    newsListHtml=newsListHtml+"<li><a style='cursor:pointer' class='news-detail' data-id='"+ n.newsId+"'>"+ n.newsTitle+"</a></li>";
-                });
-                newsListHtml=newsListHtml+"</ul>";
-                $("#show-news").html(newsListHtml);
-                $(".news-detail").click(function(){
-                    findNewsById($(this).attr("data-id"));
-                })
-            }
         }
     });
 }
@@ -43,7 +59,7 @@ function findTypeList(){
     $.ajax({
         type:"GET",
         dataType:"json",
-        url:"/rest/comweb/dict/findDictType",
+        url:"/rest/comweb/dict/findDict",
         data:{type:programs},
         success: function (data) {
             var typeList=data.data;

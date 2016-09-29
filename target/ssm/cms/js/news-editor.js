@@ -1,6 +1,6 @@
 $(function(){
     $.ajax({
-        url:"/rest/dict",
+        url:"/rest/dict/findDictProgram",
         type:"GET",
         dataType:"json",
         data:{type:"newsType"},
@@ -10,12 +10,12 @@ $(function(){
             }
         },
         success:function(data){
-            var typeList=data.data;
-            var typeHtml="";
-            $.each(typeList,function(i,n){
-                typeHtml+="<option>"+n.dictName+"</option>";
+            var programList=data.data;
+            var programHtml="";
+            $.each(programList,function(i,n){
+                programHtml+="<option>"+n.dictName+"</option>";
             });
-            $("#e_newsType").html(typeHtml);
+            $("#e_newsProgram").html(programHtml);
         }
     });
 
@@ -49,12 +49,16 @@ function findNewsById(){
         success:function(data){
             var news=data.data;
             $("#e_newsTitle").val(news.newsTitle);
-            $("#e_newsType").val(news.newsType);
             $("#e_newsProgram").val(news.newsProgram);
             $("#e_newsAuthor").val(news.newsAuthor);
             var newsContent=news.newsContent;
             editor.addListener("ready", function () {
                 editor.setContent(newsContent,true);
+            });
+            var NewsProgram=$("#e_newsProgram").val();
+            findDictType(NewsProgram);
+            $("#e_newsProgram").change(function(){
+                findDictType($("#e_newsProgram").val());
             });
         }
     });
@@ -70,6 +74,7 @@ function updateNews(){
             NewsTitle:$("#e_newsTitle").val(),
             NewsAuthor:$("#e_newsAuthor").val(),
             NewsType:$("#e_newsType").val(),
+            NewsProgram:$("#e_newsProgram").val(),
             NewsContent:editor.getContent(),
             _method:"PUT"},
         error:function(XMLHttpRequest, textStatus, errorThrown){
@@ -95,4 +100,25 @@ function GetRequest() {
     }
     return theRequest;
 }
-
+function findDictType(newsProgram){
+    $.ajax({
+        url:"/rest/dict/findDictType",
+        type:"GET",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        dataType:"json",
+        data:{type:encodeURI(newsProgram),_method:"GET"},
+        error:function(XMLHttpRequest, textStatus, errorThrown){
+            if(XMLHttpRequest.responseText=="loginError"){
+                window.location.href="/cms/login.html";
+            }
+        },
+        success:function(data){
+            var typeList=data.data;
+            var typeHtml="";
+            $.each(typeList,function(i,n){
+                typeHtml+="<option>"+n.dictName+"</option>";
+            });
+            $("#e_newsType").html(typeHtml);
+        }
+    });
+}

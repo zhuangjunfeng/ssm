@@ -1,10 +1,9 @@
 $(function(){
-
 	$.ajax({
-		url:"/rest/dict",
+		url:"/rest/dict/findDictProgram",
 		type:"GET",
 		dataType:"json",
-		data:{type:"newsProgram"},
+		data:{type:"newsType"},
 		error:function(XMLHttpRequest, textStatus, errorThrown){
 			if(XMLHttpRequest.responseText=="loginError"){
 				window.location.href="/cms/login.html";
@@ -17,6 +16,11 @@ $(function(){
 				typeHtml+="<option>"+n.dictName+"</option>";
 			});
 			$("#newsPrograms").html(typeHtml);
+			var NewsProgram=$("#newsPrograms").val();
+			findDictType(NewsProgram);
+			$("#newsPrograms").change(function(){
+				findDictType($("#newsPrograms").val());
+			});
 		}
 	});
 	findAllNews();
@@ -43,9 +47,9 @@ function findAllNews(){
 		},
 		success:function(data){
 			var newsList=data.data;
-			var newsListHtml="<thead><tr><th>新闻编号</th><th>新闻标题</th><th>新闻栏目</th><th>新闻类型</th><th>操作</th></tr></thead>";
+			var newsListHtml="<thead><tr><th>新闻编号</th><th>新闻标题</th><th>新闻栏目</th><th>新闻类型</th><th>操作</th></tr></thead><tbody>";
 			$.each(newsList,function(i,n){
-				newsListHtml=newsListHtml+"<tbody><tr><td>"
+				newsListHtml=newsListHtml+"<tr><td>"
 				+n.newsId+"</td><td>"
 				+n.newsTitle+"</td><td>"
 				+n.newsProgram+"</td><td>"
@@ -98,6 +102,28 @@ function publishNews(){
 			else{
 				alert("发布失败");
 			}
+		}
+	});
+}
+function findDictType(newsProgram){
+	$.ajax({
+		url:"/rest/dict/findDictType",
+		type:"GET",
+		contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+		dataType:"json",
+		data:{type:encodeURI(newsProgram),_method:"GET"},
+		error:function(XMLHttpRequest, textStatus, errorThrown){
+			if(XMLHttpRequest.responseText=="loginError"){
+				window.location.href="/cms/login.html";
+			}
+		},
+		success:function(data){
+			var typeList=data.data;
+			var typeHtml="";
+			$.each(typeList,function(i,n){
+				typeHtml+="<option>"+n.dictName+"</option>";
+			});
+			$("#newsType").html(typeHtml);
 		}
 	});
 }
