@@ -15,77 +15,101 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/9/1.
+ * 字典表工具类
  */
 @Controller
 @RequestMapping("/**/dict")
 public class DictionaryUtil {
     private final static String DICTIONARY_CACHE = "dictionary";
+
+    /**
+     * 根据传入类型查询字典数据
+     * @param request 请求类型
+     * @return 符合请求类型的字典数据列表
+     */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public  static JSONResult queryData(HttpServletRequest  request){
-        WebApplicationContext webApplicationContext=
+    public static JSONResult queryData(HttpServletRequest request) {
+        WebApplicationContext webApplicationContext =
                 org.springframework.web.context.ContextLoader.getCurrentWebApplicationContext();
-        ServletContext servletContext=webApplicationContext.getServletContext();
-        String type=request.getParameter("type");
-        List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
-        List<Dictionary> resList=new ArrayList();
-        for(Dictionary dictionary:list){
-            if(dictionary.getDictType().equals(type)){
+        ServletContext servletContext = webApplicationContext.getServletContext();
+        String type = request.getParameter("type");
+        List<Dictionary> list = (List<Dictionary>) servletContext.getAttribute("dicList");
+        List<Dictionary> resList = new ArrayList();
+        for (Dictionary dictionary : list) {
+            if (dictionary.getDictType().equals(type)) {
                 resList.add(dictionary);
             }
         }
         return new JSONResult(resList);
     }
 
-    @RequestMapping(value = "/findDictProgram",method = RequestMethod.GET)
+    /**
+     * 根据传入类型查询子类字典数据
+     * @param request 请求类型
+     * @return 父类为请求类型的字典数据列表
+     */
+    @RequestMapping(value = "/findDictProgram", method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findDictProgram(HttpServletRequest  request){
-        WebApplicationContext webApplicationContext=
+    public JSONResult findDictProgram(HttpServletRequest request) {
+        WebApplicationContext webApplicationContext =
                 org.springframework.web.context.ContextLoader.getCurrentWebApplicationContext();
-        ServletContext servletContext=webApplicationContext.getServletContext();
-        String type=request.getParameter("type");
-        List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
-        List<Dictionary> resList=new ArrayList();
-        for(Dictionary dictionary:list){
-            if(type.equals(dictionary.getDictFather())){
+        ServletContext servletContext = webApplicationContext.getServletContext();
+        String type = request.getParameter("type");
+        List<Dictionary> list = (List<Dictionary>) servletContext.getAttribute("dicList");
+        List<Dictionary> resList = new ArrayList();
+        for (Dictionary dictionary : list) {
+            if (type.equals(dictionary.getDictFather())) {
                 resList.add(dictionary);
             }
         }
         return new JSONResult(resList);
     }
-    @RequestMapping(value = "/findDict",method = RequestMethod.GET)
+
+    /**
+     * 根据传入类型查询子类字典数据
+     * @param request 请求类型
+     * @return 请求类型包含其父类的字典数据列表
+     */
+    @RequestMapping(value = "/findDict", method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findDict(HttpServletRequest  request){
-        WebApplicationContext webApplicationContext=
+    public JSONResult findDict(HttpServletRequest request) {
+        WebApplicationContext webApplicationContext =
                 org.springframework.web.context.ContextLoader.getCurrentWebApplicationContext();
-        ServletContext servletContext=webApplicationContext.getServletContext();
-        String type=request.getParameter("type");
-        List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
-        List<Dictionary> resList=new ArrayList();
-        for(Dictionary dictionary:list){
-            if(type.indexOf(dictionary.getDictFather())!=-1){
+        ServletContext servletContext = webApplicationContext.getServletContext();
+        String type = request.getParameter("type");
+        List<Dictionary> list = (List<Dictionary>) servletContext.getAttribute("dicList");
+        List<Dictionary> resList = new ArrayList();
+        for (Dictionary dictionary : list) {
+            if (type.indexOf(dictionary.getDictFather()) != -1) {
                 resList.add(dictionary);
             }
         }
         return new JSONResult(resList);
     }
-    @RequestMapping(value = "/findDictType",method = RequestMethod.GET)
+
+    /**
+     * 查询子类列表
+     * @param request 请求类型
+     * @return 请求类型的子类列表
+     * @throws UnsupportedEncodingException
+     */
+    @RequestMapping(value = "/findDictType", method = RequestMethod.GET)
     @ResponseBody
-    public JSONResult findDictType(HttpServletRequest  request) throws UnsupportedEncodingException {
-        WebApplicationContext webApplicationContext=
+    public JSONResult findDictType(HttpServletRequest request) throws UnsupportedEncodingException {
+        WebApplicationContext webApplicationContext =
                 org.springframework.web.context.ContextLoader.getCurrentWebApplicationContext();
-        ServletContext servletContext=webApplicationContext.getServletContext();
-        String type=request.getParameter("type");
-        type= URLDecoder.decode(type, "UTF-8");
-        List<Dictionary> list=(List<Dictionary>) servletContext.getAttribute("dicList");
-        List<Dictionary> resList=new ArrayList();
-        for(Dictionary dictionary:list){
-            if(type.equals(dictionary.getDictName())){
-                String dictType=dictionary.getDictType();
-                for(Dictionary dictionarys:list){
-                if(dictType.equals(dictionarys.getDictFather()))
-                    resList.add(dictionarys);
+        ServletContext servletContext = webApplicationContext.getServletContext();
+        String type = request.getParameter("type");
+        type = URLDecoder.decode(type, "UTF-8");
+        List<Dictionary> list = (List<Dictionary>) servletContext.getAttribute("dicList");
+        List<Dictionary> resList = new ArrayList();
+        for (Dictionary dictionary : list) {
+            if (type.equals(dictionary.getDictName())) {
+                String dictType = dictionary.getDictType();
+                for (Dictionary dictionarys : list) {
+                    if (dictType.equals(dictionarys.getDictFather()))
+                        resList.add(dictionarys);
                 }
             }
         }

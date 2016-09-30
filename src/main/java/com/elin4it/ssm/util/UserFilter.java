@@ -12,9 +12,10 @@ import java.util.List;
 import java.util.logging.Logger;
 
 
-public class UserFilter implements Filter{
+public class UserFilter implements Filter {
     private static final Logger LOGGER = Logger.getLogger(UserFilter.class.toString());
     protected FilterConfig filterConfig;
+
     public void destroy() {
         filterConfig = null;
     }
@@ -53,19 +54,20 @@ public class UserFilter implements Filter{
         }
         return;
     }
+
     /**
-     * @decription：判断URL是否需要被过滤
-     * @date 2016-8-2下午7:28:06
-     * @author：zhuangjf
+     * 判断URL是否需要被过滤
+     * 2016-8-2下午7:28:06
+     * zhuangjf
      */
     public Boolean isAuth(String realUri) {
-        List<String> authAll =new ArrayList<String>();
+        List<String> authAll = new ArrayList<String>();
         authAll.add(0, "rest/.*");
         authAll.add(0, "cms/");
         Boolean rs = false;
         for (int i = 0; i < authAll.size(); i++) {
             if (realUri.matches(authAll.get(i))) {
-                LOGGER.info(realUri+"被监听");
+                LOGGER.info(realUri + "被监听");
                 rs = true;
                 break;
             }
@@ -78,19 +80,19 @@ public class UserFilter implements Filter{
         HttpSession session = req.getSession();
         String uri = req.getRequestURI();
         int length = req.getContextPath().length();
-        String realUri = uri.substring(length+1, uri.length());
-        String accept=req.getHeader("Accept");
+        String realUri = uri.substring(length + 1, uri.length());
+        String accept = req.getHeader("Accept");
 
-        if (isAuth(realUri)&& !realUri.contains("/login")&& !realUri.contains("/comweb")) {
+        if (isAuth(realUri) && !realUri.contains("/login") && !realUri.contains("/comweb")) {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {
-                if(accept.contains("application/json")){
+                if (accept.contains("application/json")) {
                     loginJsonPath(arg0, arg1, arg2);
-                }else{
+                } else {
                     loginPath(arg0, arg1, arg2);
                 }
-            }else{
+            } else {
                 commonPath(arg0, arg1, arg2);
             }
         } else {

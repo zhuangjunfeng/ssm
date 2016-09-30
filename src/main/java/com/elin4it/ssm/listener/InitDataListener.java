@@ -11,6 +11,8 @@ import javax.servlet.ServletContext;
 import java.util.List;
 
 /**
+ * 内容管理平台服务启动监听器
+ * 查询字典数据存入缓存
  * Created by Administrator on 2016/9/2.
  */
 @Controller

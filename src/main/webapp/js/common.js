@@ -1,59 +1,6 @@
 $(function(){
-        findAllNews();
         findTypeList();
 });
-
-function findAllNews(){
-    var name=decodeURI(window.location.href);
-    var newsProgram;
-    $.ajax({
-        type:"GET",
-        dataType:"json",
-        url:"/rest/comweb/dict/findDict",
-        data:{type:name},
-        success: function (data) {
-            var programsList=data.data;
-            $.each(programsList,function(i,n){
-                newsProgram=newsProgram+ n.dictName;
-            })
-            $.ajax({
-                type:"GET",
-                url:"/rest/comweb/news",
-                dataType:"json",
-                success:function(data){
-                    var news=[];
-                    var newsList=data.data;
-                    $.each(newsList,function(i,n){
-                        if(newsProgram.indexOf(n.newsProgram)==-1){
-                            news.unshift(n);
-                        }
-                    });
-                    var newsListHtml="";
-                    if(news.length==1){
-                        $.each(news,function(i,n){
-                            var news_content=n.newsContent;
-                            $("#show-news").html(news_content);
-                        });
-                    }
-                    else{
-                        newsListHtml="<ul>";
-                        $.each(news,function(i,n){
-                            newsListHtml=newsListHtml+"<li><p><a style='cursor:pointer' class='news-detail' data-id='"
-                                + n.newsId+"'>"
-                                + n.newsTitle+"</a></p><span>"
-                                + n.editorTime+"</span></li>";
-                        });
-                        newsListHtml=newsListHtml+"</ul>";
-                        $("#show-news").html(newsListHtml);
-                        $(".news-detail").click(function(){
-                            findNewsById($(this).attr("data-id"));
-                        })
-                    }
-                }
-            });
-        }
-    });
-}
 function findTypeList(){
     var programs=decodeURI(window.location.href);
     $.ajax({
@@ -65,6 +12,10 @@ function findTypeList(){
             var typeList=data.data;
             var typeHtml="";
             $.each(typeList,function(i,n){
+                if(i==0)
+                {
+                findNewsByType(n.dictName);
+                }
                 typeHtml+="<li><a class='news-type' data-type='"+ n.dictName+"'>"+n.dictName+"</a></li>";
             });
             $("#show-program-list").html(typeHtml);
@@ -104,9 +55,10 @@ function findNewsByType(newsType){
             var newsList=data.data;
             var newsListHtml="";
             $.each(newsList,function(i,n){
-                newsListHtml+="<li><a style='cursor:pointer' class='news-detail' data-id='"
-                    + n.newsId+"'>"
-                    + n.newsTitle+"</a></li>";
+                newsListHtml=newsListHtml+"<li><p><a style='cursor:pointer' class='news-detail' data-id='"
+                               + n.newsId+"'>"
+                               + n.newsTitle+"</a></p><span>"
+                               + n.editorTime+"</span></li>";
             });
             $("#show-news").html(newsListHtml);
             $(".news-detail").click(function(){
