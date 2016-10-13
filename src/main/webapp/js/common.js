@@ -4,26 +4,38 @@ $(function(){
 function findTypeList(){
     var programs=decodeURI(window.location.href);
     $.ajax({
-        type:"GET",
+        type:"POST",
         dataType:"json",
-        url:"/rest/comweb/dict/findDict",
-        data:{type:programs},
-        success: function (data) {
+        url:"/rest/comweb/dict",
+        data:{type:programs,_method:"GET"},
+        success:function(data){
             var typeList=data.data;
             var typeHtml="";
             $.each(typeList,function(i,n){
-                if(i==0)
-                {
-                findNewsByType(n.dictName);
-                }
-                typeHtml+="<li><a class='news-type' data-type='"+ n.dictName+"'>"+n.dictName+"</a></li>";
+                typeHtml= "<li class='current'><a href='javascript:;'>"+ n.dictName+"</a></li>";
             });
-            $("#show-program-list").html(typeHtml);
-            $(".news-type").click(function(){
-                findNewsByType($(this).attr("data-type"))
-            })
+            $.ajax({
+                type:"GET",
+                dataType:"json",
+                url:"/rest/comweb/dict/findDict",
+                data:{type:programs},
+                success: function (data) {
+                    var typeList=data.data;
+                    $.each(typeList,function(i,n){
+                        if(i==0)
+                        {
+                            findNewsByType(n.dictName);
+                        }
+                        typeHtml+="<li class='current_detail'><a  class='news-type' data-type='"+ n.dictName+"'>"+n.dictName+"</a></li>";
+                    });
+                    $("#show-program-list").html(typeHtml);
+                    $(".news-type").click(function(){
+                        findNewsByType($(this).attr("data-type"))
+                    })
+                }
+            });
         }
-    });
+    })
 }
 
 function findNewsById(newsId){
@@ -35,12 +47,16 @@ function findNewsById(newsId){
         data:{NewsId:NewsId,_method:"GET"},
         success:function(data){
             var news=data.data;
-           var newsListHtml="<span> <b>"
-                +news.newsTitle+"</b></span><span>作者："
+           var newsListHtml=" <article><h1>"
+                +news.newsTitle+"</h1><span>作者："
                 +news.newsAuthor+"</span><span>发布时间："
-                +news.editorTime+"</span><div>"
-                +news.newsContent+"</div>";
+                +news.editorTime+"</span><div class='art_txt'>"
+                +news.newsContent+"</div></article>";
+           var location="<li><a href='javacript:;'>"
+                +news.newsProgram+"</a></li><li><a href='javascript:;'>"
+                +news.newsType+"</a></li>"
             $("#show-news").html(newsListHtml);
+            $("#show-location").html(location);
         }
     });
 }
@@ -55,9 +71,9 @@ function findNewsByType(newsType){
             var newsList=data.data;
             var newsListHtml="";
             $.each(newsList,function(i,n){
-                newsListHtml=newsListHtml+"<li><p><a style='cursor:pointer' class='news-detail' data-id='"
+                newsListHtml=newsListHtml+"<li><a style='cursor:pointer' class='news-detail' data-id='"
                                + n.newsId+"'>"
-                               + n.newsTitle+"</a></p><span>"
+                               + n.newsTitle+"</a><span>"
                                + n.editorTime+"</span></li>";
             });
             $("#show-news").html(newsListHtml);

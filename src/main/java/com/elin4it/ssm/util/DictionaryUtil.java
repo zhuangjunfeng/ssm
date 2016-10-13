@@ -37,7 +37,7 @@ public class DictionaryUtil {
         List<Dictionary> list = (List<Dictionary>) servletContext.getAttribute("dicList");
         List<Dictionary> resList = new ArrayList();
         for (Dictionary dictionary : list) {
-            if (dictionary.getDictType().equals(type)) {
+            if (type.indexOf(dictionary.getDictType())!= -1) {
                 resList.add(dictionary);
             }
         }
