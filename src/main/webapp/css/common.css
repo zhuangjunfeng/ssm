@@ -1,4 +1,4 @@
-/*reset*/
+﻿/*reset*/
 html{
     font-size: 62.5%;
     font-family: '微软雅黑';
@@ -153,7 +153,7 @@ nav{
     background: #bd9d80;
 }
     .top_bnrs{
-        max-width: 1350px;
+       
         margin: 0 auto;
     }
     .slick-dots{

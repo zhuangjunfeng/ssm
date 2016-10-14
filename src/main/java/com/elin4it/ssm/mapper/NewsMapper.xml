@@ -52,10 +52,10 @@
   </delete>
   <insert id="insert" parameterType="com.elin4it.ssm.pojo.News" >
     insert into news (NewsId, NewsType, NewsTitle, 
-      NewsAuthor, NewsContent, EditorTime, 
+      NewsAuthor, NewsContent,
       NewsProgram, NewsStatus)
     values (#{newsId,jdbcType=INTEGER}, #{newsType,jdbcType=VARCHAR}, #{newsTitle,jdbcType=VARCHAR}, 
-      #{newsAuthor,jdbcType=VARCHAR}, #{newsContent,jdbcType=VARCHAR}, #{editorTime,jdbcType=VARCHAR}, 
+      #{newsAuthor,jdbcType=VARCHAR}, #{newsContent,jdbcType=VARCHAR},
       #{newsProgram,jdbcType=VARCHAR}, #{newsStatus,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.elin4it.ssm.pojo.News" >
@@ -128,9 +128,6 @@
       <if test="newsContent != null" >
         NewsContent = #{newsContent,jdbcType=VARCHAR},
       </if>
-      <if test="editorTime != null" >
-        EditorTime = #{editorTime,jdbcType=VARCHAR},
-      </if>
       <if test="newsProgram != null" >
         NewsProgram = #{newsProgram,jdbcType=VARCHAR},
       </if>
@@ -146,7 +143,6 @@
       NewsTitle = #{newsTitle,jdbcType=VARCHAR},
       NewsAuthor = #{newsAuthor,jdbcType=VARCHAR},
       NewsContent = #{newsContent,jdbcType=VARCHAR},
-      EditorTime = #{editorTime,jdbcType=VARCHAR},
       NewsProgram = #{newsProgram,jdbcType=VARCHAR},
       NewsStatus = #{newsStatus,jdbcType=VARCHAR}
     where NewsId = #{newsId,jdbcType=INTEGER}
