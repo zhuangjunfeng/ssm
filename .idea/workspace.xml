@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831bcfe2-76f7-48dc-af99-6c08f7001a83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/elin4it/ssm/util/UserFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/util/UserFilter.class" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/elin4it/ssm/util/UserFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/banner.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/banner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm.war" afterPath="$PROJECT_DIR$/target/ssm.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/about_us.html" afterPath="$PROJECT_DIR$/src/main/webapp/about_us.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/case.html" afterPath="$PROJECT_DIR$/src/main/webapp/case.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/common.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/company.html" afterPath="$PROJECT_DIR$/src/main/webapp/company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/contact.html" afterPath="$PROJECT_DIR$/src/main/webapp/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/detection.html" afterPath="$PROJECT_DIR$/src/main/webapp/detection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/product.html" afterPath="$PROJECT_DIR$/src/main/webapp/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/db.properties" />
     </list>
     <ignored path="ssm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +31,8 @@
       <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10891089">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.20496894">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -964,12 +951,12 @@
       <workItem from="1476357845973" duration="597000" />
       <workItem from="1476361430700" duration="11826000" />
       <workItem from="1476438189344" duration="8834000" />
-      <workItem from="1476457965553" duration="2067000" />
+      <workItem from="1476457965553" duration="2154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198354000" />
+    <option name="totallyTimeSpent" value="198441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -981,8 +968,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -993,7 +980,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12859304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29363784" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29363784" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26928896" sideWeight="0.48199445" order="0" side_tool="false" content_ui="combo" />
@@ -1419,8 +1406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10891089">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.20496894">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
