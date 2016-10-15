@@ -2,7 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831bcfe2-76f7-48dc-af99-6c08f7001a83" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\WEB-INF\classes\com\elin4it\ssm\util\UserFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\news-add.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\news-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user-add.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\js\user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\news-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\news-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user-add.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user-editor.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Administrator\Desktop\ssm\target\ssm\cms\user.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/QR.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/QR.png" />
+      <change type="MODIFICATION" beforePath="C:\Users\Administrator\Desktop\ssm\target\classes\com\elin4it\ssm\util\UserFilter.class" afterPath="C:\Users\Administrator\Desktop\ssm\target\classes\com\elin4it\ssm\util\UserFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/about.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/about.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/arrow_next.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/arrow_next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/arrow_pre.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/arrow_pre.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/banner.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/banner.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/breadcrumb_icon.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/breadcrumb_icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/company.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/company.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/icon_list.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/icon_list.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/logo.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/logo_7e6m.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/logo_7e6m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/news.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/news.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/news_bg.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/news_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/product01.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/product01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/product02.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/product02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/product03.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/product03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/service_bg.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/service_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/txt_img01.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/txt_img01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/txt_img02.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/txt_img02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/img/txt_img03.png" afterPath="$PROJECT_DIR$/src/main/webapp/img/txt_img03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/about_us.html" afterPath="$PROJECT_DIR$/src/main/webapp/about_us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/case.html" afterPath="$PROJECT_DIR$/src/main/webapp/case.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/company.html" afterPath="$PROJECT_DIR$/src/main/webapp/company.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/contact.html" afterPath="$PROJECT_DIR$/src/main/webapp/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/db.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/detection.html" afterPath="$PROJECT_DIR$/src/main/webapp/detection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/news.html" afterPath="$PROJECT_DIR$/src/main/webapp/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/product.html" afterPath="$PROJECT_DIR$/src/main/webapp/product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.20496894">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -50,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state vertical-scroll-proportion="-7.806452">
+              <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -122,15 +161,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/util/DictionaryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/production_detection.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/news.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/about_us.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/news.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/case.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/company.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/contact.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/detection.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/product.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/elin4it/ssm/mapper/NewsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/db.properties" />
       </list>
     </option>
@@ -238,9 +277,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -513,6 +549,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -952,11 +991,13 @@
       <workItem from="1476361430700" duration="11826000" />
       <workItem from="1476438189344" duration="8834000" />
       <workItem from="1476457965553" duration="2154000" />
+      <workItem from="1476461747023" duration="177000" />
+      <workItem from="1476538723823" duration="1702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198441000" />
+    <option name="totallyTimeSpent" value="200320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,19 +1009,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26916802" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2675367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30016312" sideWeight="0.51059" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12859304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29363784" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29200652" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26928896" sideWeight="0.48199445" order="0" side_tool="false" content_ui="combo" />
@@ -990,7 +1031,7 @@
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26399395" sideWeight="0.5081585" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4274062" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4274062" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1311,63 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33229813">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/about_us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742">
-          <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.83871">
-          <caret line="62" column="62" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2580647">
-          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/detection.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2580647">
-          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68041235">
-          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,15 +1365,6 @@
             <element signature="n#select#0;n#mapper#0;n#!!top" expanded="false" />
             <element signature="n#select#1;n#mapper#0;n#!!top" expanded="false" />
             <element signature="n#select#2;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="select from ..news..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..news..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="select from ..news..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..news..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="SELECT FROM ..news..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="update news ..." />
-            <marker date="1476461112950" expanded="true" signature="-1:-1" placeholder="update news ..." />
           </folding>
         </state>
       </provider>
@@ -1404,10 +1379,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/about_us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.064516">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.548387">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/detection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2580647">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.806452">
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20496894">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
