@@ -54,7 +54,7 @@ public final class ConfigManager {
 	 * @return 配置管理器实例或者null
 	 */
 	public static ConfigManager getInstance ( String rootPath, String contextPath, String uri ) {
-		
+
 		try {
 			return new ConfigManager(rootPath, contextPath, uri);
 		} catch ( Exception e ) {
@@ -165,8 +165,8 @@ public final class ConfigManager {
 	
 	private String getConfigPath () {
 		return this.rootPath
-				+ File.separator + "config/conf"
-				+ File.separator + ConfigManager.configFileName;
+				+ "WEB-INF/classes/config/conf/"
+				+  ConfigManager.configFileName;
 	}
 
 	private String[] getArray ( String key ) {

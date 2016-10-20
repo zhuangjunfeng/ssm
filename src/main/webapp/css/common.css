@@ -5,6 +5,9 @@ html{
     position: relative;
     height: 100%;
 }
+body{
+    font-size: 1.4rem;
+}
 body,html,ul,p,h1,div,a{
     margin: 0;
     padding:0;
@@ -36,7 +39,7 @@ a,a:active,a:visited{
 
 .container{
     position: relative;
-    width: 1000px;
+    width: 1002px;
     margin: 0 auto;
 }
 /*通用*/
@@ -80,10 +83,26 @@ header{
     }
         .header_inner .logo{
             float: left;
-            padding: 15px 0;
+            padding: 10px 0;
+            color: #fff;
         }
             .header_inner .logo img{
                 border: none;
+                display: inline-block;
+                margin-right: 25px;
+            }
+            .header_inner .logo h1{
+                display: inline-block;
+                font-size: 2.9rem;
+                vertical-align: top;
+                font-weight:normal;
+                letter-spacing: 0.1em;
+                padding-top: 5px;
+            }
+            .header_inner .logo h1 small{
+                display: block;
+                font-size: 1.4rem;
+                padding-top: 5px;
             }
         .header_inner .phone{
             float: right;
@@ -106,7 +125,7 @@ header{
 
 /*nav*/
 nav{
-    font-size: 1.6rem;
+
     background: #4eabcd;
     width: 100%;
     min-width: 1000px;
@@ -119,11 +138,9 @@ nav{
     }
          nav .top_nav li{
              float: left;
-             margin-right: 55px;
-          }
-         nav .top_nav li:first-child{
              margin-right: 70px;
-         }
+          }
+
          nav .top_nav li:last-child{
                 margin-right: 0;
             }
@@ -208,7 +225,6 @@ nav{
     padding:35px 0 0 125px;
     line-height: 2em;
     text-indent: 2em;
-    font-size: 1.4rem;
     color: #676969;
 }
     .btn_more{
@@ -252,8 +268,8 @@ nav{
     }
         .service_main li{
             float: left;
-            width: 180px;
-            margin-right: 93px;
+            width: 182px;
+            margin-right: 90px;
         }
         .service_main li:last-child{
             margin-right: 0;
@@ -266,16 +282,16 @@ nav{
                 background: #5faeeb url("../img/icon_list.png") no-repeat;
             }
                 .service_main li:nth-of-type(1) .icon{
-                    background-position:32px 30px;
+                    background-position:40px 30px;
                 }
                 .service_main li:nth-of-type(2) .icon{
-                    background-position:-211px 30px ;
+                    background-position:-205px 30px ;
                 }
                 .service_main li:nth-of-type(3) .icon{
-                    background-position:-458px 30px;
+                    background-position:-445px 30px;
                 }
                 .service_main li:nth-of-type(4) .icon{
-                    background-position:-702px 30px;
+                    background-position:-695px 30px;
                 }
                 .main_txt p{
                     padding: 30px 0 20px 0;
@@ -470,19 +486,19 @@ main{
     .main_left ul li{
         display: block;
         text-align: center;
-    }
-    .main_left ul li{
         border: 1px solid #d2d2d2;
         border-top: none;
+        cursor: pointer;
     }
+
     .main_left ul li:first-child{
         border-top: 1px solid #d2d2d2;
     }
         .main_left ul li a{
             display: block;
             color: #000;
-            font-size: 1.8rem;
-            padding: 15px 0;
+            font-size: 1.4rem;
+            padding: 11px 0;
         }
         .main_left ul .current a{
             background: #4eabcd;
@@ -504,7 +520,6 @@ main{
         .breadcrumb{
             width: 100%;
             border-bottom: 1px solid #b4b0b0;
-            font-size: 1.6rem;
             padding-bottom: 5px;
             padding-top: 10px;
         }
@@ -557,8 +572,9 @@ main{
         line-height: 2em;
     }
     article h1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 20px 0 15px 0;
+        font-weight: normal;
     }
     article .art_txt{
         margin-top: 20px;

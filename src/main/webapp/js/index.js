@@ -62,8 +62,8 @@ function initMap(){
 //创建地图函数：
 function createMap(){
     var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-    var point = new BMap.Point(118.690528,24.630332);//定义一个中心点坐标
-    map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+    var point = new BMap.Point(118.09949,24.475141);//定义一个中心点坐标
+    map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
     window.map = map;//将map变量存储在全局
 }
 
@@ -86,7 +86,7 @@ function addMapControl(){
 }
 
 //标注点数组
-var markerArr = [{title:"晋江西峰天然石黄砂有限公司",content:"晋江西峰天然石黄砂有限公司",point:"118.688102|24.633664",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+var markerArr = [{title:"晋江西峰天然石英有限公司",content:"地址：厦门市思明区湖滨南路90号立信广场1105单元",point:"118.09887|24.475108",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 ];
 //创建marker
 function addMarker(){

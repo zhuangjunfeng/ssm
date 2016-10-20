@@ -83,16 +83,27 @@ function findNewsByType(newsType, Location){
             var newsList=data.data;
             var newsListHtml="";
             var location="";
+
             if(newsList!=""){
+                if(newsList.length!=1){
             $.each(newsList,function(i,n){
                 newsListHtml=newsListHtml+"<li><a style='cursor:pointer' class='news-detail' data-id='"
                                + n.newsId+"'>"
                                + n.newsTitle+"</a><span>"
                                + n.editorTime+"</span></li>";
-                 location="<li class='bc_icon'>当前位置</li><li><a href='javacript:;'>"
+                 location="<li class='bc_icon'>当前位置</li><li><a href='javascript:;'>"
                     + n.newsProgram+"</a> </li><li> <a href='javascript:;'>"
                     +newsType+"</a> </li>";
             });
+                }
+                else{
+                    $.each(newsList,function(i,n){
+                        newsListHtml+= n.newsContent;
+                        location="<li class='bc_icon'>当前位置</li><li><a href='javascript:;'>"
+                            + n.newsProgram+"</a> </li><li> <a href='javascript:;'>"
+                            +newsType+"</a> </li>";
+                    });
+                }
             }
             else{
                 location+=Location+"<li> <a href='javascript:;'>"

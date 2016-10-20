@@ -206,6 +206,7 @@
 	top:50%;
 	margin-top:-50px;
 	z-index: 999;
+	background: url("../img/arrow_pre.png");
 }
 
 .slick-next{
@@ -214,7 +215,7 @@
 	overflow:hidden;
 	cursor:pointer;
 	right:25px;
-	background: url("../images/arrow_next.png") no-repeat;
+	background: url("../img/arrow_next.png");
 }
 
 .slick-prev{
@@ -223,7 +224,7 @@
 	overflow:hidden;
 	cursor:pointer;
 	left:25px;
-	background: url("../images/arrow_pre.png") no-repeat;
+	
 }
 
 @media screen and (max-width:640px){
