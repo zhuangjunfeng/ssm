@@ -20,9 +20,9 @@ function findAllUser() {
         },
         success: function (data) {
             var userList = data.data;
-            var userListHtml = "<thead><tr><th>用户编号</th><th>用户账户</th><th>真实姓名</th><th>性别</th><th>用户角色</th><th>创建时间</th>操作</tr></thead>";
+            var userListHtml = "<thead><tr><th>用户编号</th><th>用户账户</th><th>真实姓名</th><th>性别</th><th>用户角色</th><th>创建时间</th>操作</tr></thead><tbody>";
             $.each(userList, function (i, n) {
-                userListHtml = userListHtml + "<tbody><tr><td>"
+                userListHtml = userListHtml + "<tr><td>"
                     + n.yhId + "</td><td>"
                     + n.yhzh + "</td><td>"
                     + n.yhxm + "</td><td>"
