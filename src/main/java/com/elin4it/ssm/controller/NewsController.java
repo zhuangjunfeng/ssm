@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨ĞÂÎÅÄ£¿é¿ØÖÆ²ã
+ * å†…å®¹ç®¡ç†å¹³å°æ–°é—»æ¨¡å—æ§åˆ¶å±‚
  * Created by Administrator on 2016/8/31.
  */
 @Controller
@@ -22,10 +22,10 @@ public class NewsController {
     @Resource
     private NewsService newsService;
     /**
-     * Ìí¼ÓĞÂÎÅ
+     * æ·»åŠ æ–°é—»
      *
-     * @param request ÇëÇóÌí¼ÓµÄĞÂÎÅĞÅÏ¢
-     * @return Ìí¼Ó³É¹¦Óë·ñĞÅÏ¢
+     * @param request è¯·æ±‚æ·»åŠ çš„æ–°é—»ä¿¡æ¯
+     * @return æ·»åŠ æˆåŠŸä¸å¦ä¿¡æ¯
      */
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
@@ -51,10 +51,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅIDÉ¾³ıĞÂÎÅ
+     * æ ¹æ®æ–°é—»IDåˆ é™¤æ–°é—»
      *
-     * @param request Ä¿±êĞÂÎÅID
-     * @return ³É¹¦Óë·ñĞÅÏ¢
+     * @param request ç›®æ ‡æ–°é—»ID
+     * @return æˆåŠŸä¸å¦ä¿¡æ¯
      */
     @RequestMapping(method = RequestMethod.DELETE)
     @ResponseBody
@@ -67,10 +67,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅID¸üĞÂĞÂÎÅ
+     * æ ¹æ®æ–°é—»IDæ›´æ–°æ–°é—»
      *
-     * @param request Ä¿±êĞÂÎÅID
-     * @return ³É¹¦Óë·ñĞÅÏ¢
+     * @param request ç›®æ ‡æ–°é—»ID
+     * @return æˆåŠŸä¸å¦ä¿¡æ¯
      */
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
@@ -100,10 +100,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅIDµ¥Ìõ²éÑ¯ĞÂÎÅ
+     * æ ¹æ®æ–°é—»IDå•æ¡æŸ¥è¯¢æ–°é—»
      *
-     * @param request Ä¿±êĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅĞÅÏ¢
+     * @param request ç›®æ ‡æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»ä¿¡æ¯
      */
     @RequestMapping(value = "/findNewsById", method = RequestMethod.GET)
     @ResponseBody
@@ -116,10 +116,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅÀ¸Ä¿²éÑ¯ĞÂÎÅ
+     * æ ¹æ®æ–°é—»æ ç›®æŸ¥è¯¢æ–°é—»
      *
-     * @param request ĞÂÎÅÀ¸Ä¿
-     * @return ĞÂÎÅÀ¸Ä¿¶ÔÓ¦µÄĞÂÎÅÁĞ±í
+     * @param request æ–°é—»æ ç›®
+     * @return æ–°é—»æ ç›®å¯¹åº”çš„æ–°é—»åˆ—è¡¨
      */
     @RequestMapping(value = "/findNewsByProgram", method = RequestMethod.GET)
     @ResponseBody
@@ -130,10 +130,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅÀàĞÍ²éÑ¯ĞÂÎÅ
+     * æ ¹æ®æ–°é—»ç±»å‹æŸ¥è¯¢æ–°é—»
      *
-     * @param request ĞÂÎÅÀàĞÍ
-     * @return ĞÂÎÅÀàĞÍ¶ÔÓ¦µÄĞÂÎÅÁĞ±í
+     * @param request æ–°é—»ç±»å‹
+     * @return æ–°é—»ç±»å‹å¯¹åº”çš„æ–°é—»åˆ—è¡¨
      */
     @RequestMapping(value = "/findNewsByType", method = RequestMethod.GET)
     @ResponseBody
@@ -144,9 +144,9 @@ public class NewsController {
     }
 
     /**
-     * ²éÑ¯ËùÓĞĞÂÎÅ
+     * æŸ¥è¯¢æ‰€æœ‰æ–°é—»
      *
-     * @return ËùÓĞĞÂÎÅÁĞ±í
+     * @return æ‰€æœ‰æ–°é—»åˆ—è¡¨
      */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
@@ -156,10 +156,10 @@ public class NewsController {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅID²éÑ¯ĞÂÎÅÏêÇé
+     * æ ¹æ®æ–°é—»IDæŸ¥è¯¢æ–°é—»è¯¦æƒ…
      *
-     * @param request ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅÏêÇé
+     * @param request æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»è¯¦æƒ…
      */
     @RequestMapping(value = "/findDetail", method = RequestMethod.GET)
     @ResponseBody
@@ -171,9 +171,9 @@ public class NewsController {
 
 
     /**
-     * ·¢²¼ËùÓĞÎ´·¢²¼µÄĞÂÎÅ
+     * å‘å¸ƒæ‰€æœ‰æœªå‘å¸ƒçš„æ–°é—»
      *
-     * @return ³É¹¦Óë·ñĞÅÏ¢
+     * @return æˆåŠŸä¸å¦ä¿¡æ¯
      */
     @RequestMapping(value = "/publishNews", method = RequestMethod.PUT)
     @ResponseBody
