@@ -6,51 +6,51 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½´øÓÃ»§Ä£¿éÒµÎñ²ã½Ó¿Ú
+ * å†…å®¹ç®¡ç†å¹³å¸¦ç”¨æˆ·æ¨¡å—ä¸šåŠ¡å±‚æ¥å£
  * Created by Administrator on 2016/8/25.
  */
 @Service
 public interface SysUserService {
     /**
-     * ¸ù¾İÓÃ»§ÕË»§²éÑ¯ÓÃ»§
-     * @param yhzh ÓÃ»§ÕË»§
-     * @return ¶ÔÓ¦ÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·è´¦æˆ·æŸ¥è¯¢ç”¨æˆ·
+     * @param yhzh ç”¨æˆ·è´¦æˆ·
+     * @return å¯¹åº”ç”¨æˆ·ä¿¡æ¯
      */
     SysUser findUserByYhzh(String yhzh) ;
 
     /**
-     * ¸ù¾İÓÃ»§ID²éÑ¯ÓÃ»§
-     * @param yhId ÓÃ»§ID
-     * @return ¶ÔÓ¦ÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·IDæŸ¥è¯¢ç”¨æˆ·
+     * @param yhId ç”¨æˆ·ID
+     * @return å¯¹åº”ç”¨æˆ·ä¿¡æ¯
      * @throws Exception
      */
     SysUser findUserById(Integer yhId)throws Exception;
 
     /**
-     * ²éÑ¯È«²¿ÓÃ»§
-     * @return ÓÃ»§ÁĞ±í
+     * æŸ¥è¯¢å…¨éƒ¨ç”¨æˆ·
+     * @return ç”¨æˆ·åˆ—è¡¨
      * @throws Exception
      */
     List<SysUser> findAll() throws Exception;
 
     /**
-     * ¸ù¾İÓÃ»§IDÉ¾³ıÓÃ»§
-     * @param yhid ÓÃ»§ID
-     * @return ÊÇ·ñ³É¹¦
+     * æ ¹æ®ç”¨æˆ·IDåˆ é™¤ç”¨æˆ·
+     * @param yhid ç”¨æˆ·ID
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean delUserById(Integer yhid);
 
     /**
-     * Ìí¼ÓÓÃ»§
-     * @param user Ìí¼ÓÓÃ»§µÄĞÅÏ¢
-     * @returnÊÇ·ñ³É¹¦
+     * æ·»åŠ ç”¨æˆ·
+     * @param user æ·»åŠ ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean addUser(SysUser user);
 
     /**
-     * ¸üĞÂÓÃ»§
-     * @param user ¸üĞÂµÄÓÃ»§µÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ›´æ–°ç”¨æˆ·
+     * @param user æ›´æ–°çš„ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean updateUser(SysUser user);
 }

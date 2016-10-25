@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨×ÖµäÄ£¿éÒµÎñ²ã½Ó¿Ú
+ * å†…å®¹ç®¡ç†å¹³å°å­—å…¸æ¨¡å—ä¸šåŠ¡å±‚æ¥å£
  * Created by Administrator on 2016/9/1.
  */
 @Service
 public interface DictionaryService {
     /**
-     * ²éÕÒ×ÖµäÊı¾İ
-     * @return ×ÖµäÊı¾İÁĞ±í
+     * æŸ¥æ‰¾å­—å…¸æ•°æ®
+     * @return å­—å…¸æ•°æ®åˆ—è¡¨
      */
     List<Dictionary> findDictionary();
 }
