@@ -5,68 +5,68 @@ import com.elin4it.ssm.pojo.News;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨ĞÂÎÅÄ£¿é³Ö¾Ã²ã½Ó¿Ú
+ * å†…å®¹ç®¡ç†å¹³å°æ–°é—»æ¨¡å—æŒä¹…å±‚æ¥å£
  * Created by Administrator on 2016/8/31.
  */
 public interface NewsMapper {
     /**
-     * ¸ù¾İÓÃ»§IDÉ¾³ıĞÂÎÅ
+     * æ ¹æ®ç”¨æˆ·IDåˆ é™¤æ–°é—»
      *
-     * @param newsId ĞÂÎÅID
-     * @returnÊÇ·ñ³É¹¦
+     * @param newsId æ–°é—»ID
+     * @returnæ˜¯å¦æˆåŠŸ
      */
     boolean deleteByPrimaryKey(Integer newsId);
 
     /**
-     * Ìí¼ÓĞÂÎÅ
+     * æ·»åŠ æ–°é—»
      *
-     * @param record Ìí¼ÓĞÂÎÅµÄĞÅÏ¢
-     * @returnÊÇ·ñ³É¹¦
+     * @param record æ·»åŠ æ–°é—»çš„ä¿¡æ¯
+     * @returnæ˜¯å¦æˆåŠŸ
      */
     boolean insert(News record);
 
     int insertSelective(News record);
 
     /**
-     * ¸ù¾İĞÂÎÅID²éÑ¯ĞÂÎÅ
-     * @param newsId ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅĞÅÏ¢
+     * æ ¹æ®æ–°é—»IDæŸ¥è¯¢æ–°é—»
+     * @param newsId æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»ä¿¡æ¯
      */
     News selectByPrimaryKey(Integer newsId);
 
     /**
-     * ²éÑ¯È«²¿ĞÂÎÅ
-     * @return È«²¿ĞÂÎÅÁĞ±í
+     * æŸ¥è¯¢å…¨éƒ¨æ–°é—»
+     * @return å…¨éƒ¨æ–°é—»åˆ—è¡¨
      */
     List<News> selectAllNews();
 
     int updateByPrimaryKeySelective(News record);
 
     /**
-     * ¸üĞÂĞÂÎÅ
-     * @param record ¸üĞÂĞÂÎÅµÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ›´æ–°æ–°é—»
+     * @param record æ›´æ–°æ–°é—»çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean updateByPrimaryKey(News record);
 
     /**
-     * ¸ù¾İĞÂÎÅId²éÑ¯ĞÂÎÅÏêÇé
-     * @param newsId ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅĞÂÎÅÏêÇé
+     * æ ¹æ®æ–°é—»IdæŸ¥è¯¢æ–°é—»è¯¦æƒ…
+     * @param newsId æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»æ–°é—»è¯¦æƒ…
      */
     String selectDetailByPrimaryKey(Integer newsId);
 
     /**
-     * ¸ù¾İĞÂÎÅÀ¸Ä¿²éÑ¯ĞÂÎÅ
-     * @param newsProgram ĞÂÎÅÀ¸Ä¿
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»æ ç›®æŸ¥è¯¢æ–°é—»
+     * @param newsProgram æ–°é—»æ ç›®
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     List<News> selectNewsByNewsProgram(String newsProgram);
 
     /**
-     * ¸ù¾İĞÂÎÅÀàĞÍ²éÑ¯ĞÂÎÅ
-     * @param newsType ĞÂÎÅÀàĞÍ
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»ç±»å‹æŸ¥è¯¢æ–°é—»
+     * @param newsType æ–°é—»ç±»å‹
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     List<News> selectNewsByNewsType(String newsType);
 }

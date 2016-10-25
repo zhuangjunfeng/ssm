@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 内容管理平台字典模块业务层实现类
+ * 鍐呭绠＄悊骞冲彴瀛楀吀妯″潡涓氬姟灞傚疄鐜扮被
  * Created by Administrator on 2016/9/1.
  */
 @Service
@@ -18,8 +18,8 @@ public class DictionaryServiceImpl implements DictionaryService{
     private DictionaryMapper dictionaryMapper;
 
     /**
-     * 查询字典数据
-     * @return 字典数据列表
+     * 鏌ヨ瀛楀吀鏁版嵁
+     * @return 瀛楀吀鏁版嵁鍒楄〃
      */
     public List<Dictionary> findDictionary() {
         return dictionaryMapper.selectDictionary();

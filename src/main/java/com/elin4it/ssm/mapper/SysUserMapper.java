@@ -5,52 +5,52 @@ import com.elin4it.ssm.pojo.SysUser;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨ÓÃ»§Ä£¿é³Ö¾Ã²ã
+ * å†…å®¹ç®¡ç†å¹³å°ç”¨æˆ·æ¨¡å—æŒä¹…å±‚
  * Created by Administrator on 2016/8/31.
  */
 public interface SysUserMapper {
     /**
-     * ¸ù¾İĞÂÎÅIDÉ¾³ıÓÃ»§
-     * @param yhId ÓÃ»§ID
-     * @return ÊÇ·ñ³É¹¦
+     * æ ¹æ®æ–°é—»IDåˆ é™¤ç”¨æˆ·
+     * @param yhId ç”¨æˆ·ID
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean deleteByPrimaryKey(Integer yhId);
 
     /**
-     * Ìí¼ÓÓÃ»§
-     * @param record Ìí¼ÓÓÃ»§µÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ·»åŠ ç”¨æˆ·
+     * @param record æ·»åŠ ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean insert(SysUser record);
 
     int insertSelective(SysUser record);
 
     /**
-     * ¸ù¾İÓÃ»§ID²éÑ¯ÓÃ»§
-     * @param yhId ÓÃ»§ID
-     * @return Ä¿±êÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·IDæŸ¥è¯¢ç”¨æˆ·
+     * @param yhId ç”¨æˆ·ID
+     * @return ç›®æ ‡ç”¨æˆ·ä¿¡æ¯
      */
     SysUser selectByPrimaryKey(Integer yhId);
 
     /**
-     * ²éÕÒÈ«²¿ÓÃ»§
-     * @return ÓÃ»§ÁĞ±í
+     * æŸ¥æ‰¾å…¨éƒ¨ç”¨æˆ·
+     * @return ç”¨æˆ·åˆ—è¡¨
      */
     List<SysUser> selectAll();
 
     /**
-     * ¸ù¾İÓÃ»§ÕË»§²éÑ¯ÓÃ»§
-     * @param yhzh ÓÃ»§ÕË»§
-     * @return ¶ÔÓ¦ÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·è´¦æˆ·æŸ¥è¯¢ç”¨æˆ·
+     * @param yhzh ç”¨æˆ·è´¦æˆ·
+     * @return å¯¹åº”ç”¨æˆ·ä¿¡æ¯
      */
     SysUser selectByYhzh(String yhzh);
 
     int updateByPrimaryKeySelective(SysUser record);
 
     /**
-     * ¸üĞÂÓÃ»§
-     * @param record ¸üĞÂÓÃ»§µÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ›´æ–°ç”¨æˆ·
+     * @param record æ›´æ–°ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean updateByPrimaryKey(SysUser record);
 }
