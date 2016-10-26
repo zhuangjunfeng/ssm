@@ -72,6 +72,9 @@ a,a:active,a:visited{
     .normal_list li a span{
         float: right;
     }
+#show-news{
+    overflow: hidden;
+}
     /*header*/
 header{
     width: 100%;
@@ -548,7 +551,7 @@ main{
                 content: '';
                 width: 23px;
                 height: 23px;
-                background: url("../images/breadcrumb_icon.png") no-repeat;
+                background: url("../img/breadcrumb_icon.png") no-repeat;
                 left:0;
                 top:-4px;
             }

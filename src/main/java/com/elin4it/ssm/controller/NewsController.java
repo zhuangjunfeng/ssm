@@ -23,7 +23,6 @@ public class NewsController {
     private NewsService newsService;
     /**
      * 添加新闻
-     *
      * @param request 请求添加的新闻信息
      * @return 添加成功与否信息
      */
@@ -52,7 +51,6 @@ public class NewsController {
 
     /**
      * 根据新闻ID删除新闻
-     *
      * @param request 目标新闻ID
      * @return 成功与否信息
      */
@@ -68,7 +66,6 @@ public class NewsController {
 
     /**
      * 根据新闻ID更新新闻
-     *
      * @param request 目标新闻ID
      * @return 成功与否信息
      */
@@ -101,7 +98,6 @@ public class NewsController {
 
     /**
      * 根据新闻ID单条查询新闻
-     *
      * @param request 目标新闻ID
      * @return 目标新闻信息
      */
@@ -117,7 +113,6 @@ public class NewsController {
 
     /**
      * 根据新闻栏目查询新闻
-     *
      * @param request 新闻栏目
      * @return 新闻栏目对应的新闻列表
      */
@@ -131,7 +126,6 @@ public class NewsController {
 
     /**
      * 根据新闻类型查询新闻
-     *
      * @param request 新闻类型
      * @return 新闻类型对应的新闻列表
      */
@@ -145,7 +139,6 @@ public class NewsController {
 
     /**
      * 查询所有新闻
-     *
      * @return 所有新闻列表
      */
     @RequestMapping(method = RequestMethod.GET)
@@ -157,7 +150,6 @@ public class NewsController {
 
     /**
      * 根据新闻ID查询新闻详情
-     *
      * @param request 新闻ID
      * @return 目标新闻详情
      */
@@ -172,7 +164,6 @@ public class NewsController {
 
     /**
      * 发布所有未发布的新闻
-     *
      * @return 成功与否信息
      */
     @RequestMapping(value = "/publishNews", method = RequestMethod.PUT)

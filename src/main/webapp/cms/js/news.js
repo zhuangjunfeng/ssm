@@ -43,7 +43,7 @@ function findAllNews() {
         },
         success: function (data) {
             var newsList = data.data;
-            var newsListHtml = "<thead><tr><th>新闻编号</th><th>新闻标题</th><th>新闻栏目</th><th>新闻类型</th><th>操作</th></tr></thead><tbody>";
+            var newsListHtml = "<thead><tr><th>内容编号</th><th>内容标题</th><th>内容栏目</th><th>内容类型</th><th>操作</th></tr></thead><tbody>";
             $.each(newsList, function (i, n) {
                 newsListHtml = newsListHtml + "<tr><td>"
                     + n.newsId + "</td><td>"

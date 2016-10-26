@@ -134,12 +134,14 @@ public class SysUserController {
         String yhxm = request.getParameter("yhxm");
         String yhxb = request.getParameter("yhxb");
         String yhyx = request.getParameter("yhyx");
+        String yhjs =request.getParameter("yhjs");
         SysUser user = new SysUser();
         user.setYhzh(yhzh);
         user.setPassword(password);
         user.setYhxm(yhxm);
         user.setYhxb(yhxb);
         user.setYhyx(yhyx);
+        user.setYhjs(yhjs);
         if (userService.addUser(user)) {
             result = new JSONResult(user);
             result.setMessage("success");
@@ -165,6 +167,7 @@ public class SysUserController {
         String yhxm = request.getParameter("yhxm");
         String yhxb = request.getParameter("yhxb");
         String yhyx = request.getParameter("yhyx");
+        String yhjs =request.getParameter("yhjs");
         SysUser user = new SysUser();
         user.setYhId(yhId);
         user.setYhzh(yhzh);
@@ -172,6 +175,7 @@ public class SysUserController {
         user.setYhxm(yhxm);
         user.setYhxb(yhxb);
         user.setYhyx(yhyx);
+        user.setYhjs(yhjs);
         if (userService.updateUser(user)) {
             result.setMessage("success");
         } else {

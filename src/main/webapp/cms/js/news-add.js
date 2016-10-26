@@ -1,4 +1,7 @@
+var userName;
 $(function () {
+    //查询登录用户信息
+    findLoginUser();
     //查询新闻栏目和对应的新闻类型
     $.ajax({
         url: "/rest/dict/findDictProgram",
@@ -28,28 +31,9 @@ $(function () {
      * 添加新闻
      */
     $("#add-news").click(function () {
-        $.ajax({
-            url: "/rest/news",
-            type: "POST",
-            data: {
-                NewsTitle: $("#newsTitle").val(),
-                NewsAuthor: $("#newsAuthor").val(),
-                NewsType: $("#newsType").val(),
-                NewsProgram: $("#newsProgram").val(),
-                NewsContent: editor.getContent()
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                if (XMLHttpRequest.responseText == "loginError") {
-                    window.location.href = "/cms/login.html";
-                }
-            },
-            success: function () {
-                window.location.href = "news.html";
-            }
-        });
+        addNews(userName);
     });
-    //查询登录用户信息
-    findLoginUser();
+
 });
 //-----------------------独立方法--------------------
 /**
@@ -81,6 +65,7 @@ function findDictType(newsProgram) {
 /**
  * 查询登录用户信息
  */
+
 function findLoginUser() {
     $.ajax({
         type: "POST",
@@ -94,6 +79,7 @@ function findLoginUser() {
         },
         success: function (data) {
             var userMessage = data.data;
+            userName=userMessage.yhxm;
             var userHtml = "";
             userHtml += "<li class='dropdown user user-menu'>"
                 + "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>"
@@ -113,6 +99,27 @@ function findLoginUser() {
             $("#logout").click(function () {
                 logout()
             });
+        }
+    });
+}
+function addNews(newsAuthor){
+    $.ajax({
+        url: "/rest/news",
+        type: "POST",
+        data: {
+            NewsTitle: $("#newsTitle").val(),
+            NewsAuthor: newsAuthor,
+            NewsType: $("#newsType").val(),
+            NewsProgram: $("#newsProgram").val(),
+            NewsContent: editor.getContent()
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            if (XMLHttpRequest.responseText == "loginError") {
+                window.location.href = "/cms/login.html";
+            }
+        },
+        success: function () {
+            window.location.href = "news.html";
         }
     });
 }

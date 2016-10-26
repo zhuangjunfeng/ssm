@@ -25,7 +25,9 @@ $(function () {
     $("#add-user").click(function () {
         var params = "yhxb=" + $("#yhxb").val()
             + "&password=" + $("#password").val()
-            + "&yhzh=" + $("#yhzh").val();
+            + "&yhzh=" + $("#yhzh").val()
+            + "&yhxm=" + $("#yhxm").val()
+            +"&yhjs="+$("#yhjs").val();
         $.ajax({
             url: "/rest/user",
             type: "POST",

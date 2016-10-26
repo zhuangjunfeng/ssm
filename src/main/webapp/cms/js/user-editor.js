@@ -52,6 +52,8 @@ function findUserById() {
             $("#e_yhzh").val(user.yhzh);
             $("#e_password").val(user.password);
             $("#e_yhxb").val(user.yhxb);
+            $("#e_yhjs").val(user.yhjs);
+            $("#e_yhxm").val(user.yhxm);
         }
     });
 }
@@ -68,6 +70,8 @@ function updateUser() {
             yhId: GetRequest().yhId,
             yhzh: $("#e_yhzh").val(),
             yhxb: $("#e_yhxb").val(),
+            yhjs: $("#e_yhjs").val(),
+            yhxm: $("#e_yhxm").val(),
             password: $("#e_password").val(),
             _method: "PUT"
         },

@@ -95,7 +95,7 @@
                 <li class="active treeview">
                     <a href="news.html">
                         <i class="fa fa-edit"></i>
-                        <span>新闻管理</span>
+                        <span>内容管理</span>
                     </a>
                 </li>
                 <li class="treeview">
@@ -114,7 +114,7 @@
         <section class="content-header">
             <h1>
                 <i class="fa fa-users"></i>
-                新闻管理
+                内容管理
             </h1>
 
         </section>
@@ -126,22 +126,22 @@
                 <div class="col-xs-12">
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">新增新闻</h3>
+                            <h3 class="box-title">新增内容</h3>
                         </div>
                         <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="e_newsTitle" class="col-sm-2 control-label" >新闻标题：</label>
+                                    <label for="e_newsTitle" class="col-sm-2 control-label" >内容标题：</label>
                                     <div class="col-sm-10">
                                         <input  class="form-control" id="e_newsTitle"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="e_newsAuthor" class="col-sm-2 control-label" >新闻作者：</label>
+                                    <label for="e_newsAuthor" class="col-sm-2 control-label" >内容作者：</label>
                                     <div class="col-sm-10">
                                         <input  class="form-control" id="e_newsAuthor"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">新闻栏目：</label>
+                                    <label class="col-sm-2 control-label">内容栏目：</label>
                                     <div class="col-sm-10">
                                         <select class="form-control" id="e_newsProgram">
                                             <option>公司新闻</option>
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">新闻类型：</label>
+                                    <label class="col-sm-2 control-label">内容类型：</label>
                                     <div class="col-sm-10">
                                         <select class="form-control" id="e_newsType">
                                             <option>公司新闻</option>
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label  class="col-sm-2 control-label">新闻内容：</label>
+                                    <label  class="col-sm-2 control-label">内容详情：</label>
                                     <div class="col-sm-10">
                                         <script id="container" name="content" type="text/plain"></script>
                                     </div>
@@ -196,7 +196,7 @@
 <!-- AdminLTE App -->
 <script type="text/javascript" src="dist/js/app.min.js"></script>
 <script type="text/javascript" src="plugins/ueditor/ueditor.config.js"></script>
-<script type="text/javascript" src="plugins/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" src="plugins/ueditor/ueditor.all.js"></script>
 <script type="text/javascript" src="plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
 <script type="text/javascript">
     var editor = UE.getEditor('container');

@@ -1,4 +1,7 @@
+var userName;
 $(function () {
+    //查询登录用户信息
+    findLoginUser();
     //查询新闻栏目和新闻类型
     $.ajax({
         url: "/rest/dict/findDictProgram",
@@ -21,12 +24,10 @@ $(function () {
     });
     //更新新闻方法
     $("#editor-news").click(function () {
-        updateNews();
+        updateNews(userName);
     });
     //根据ID单条查询新闻
     findNewsById();
-    //查询登录用户信息
-    findLoginUser();
 });
 //-----------------------独立方法-----------------------------
 /**
@@ -63,7 +64,7 @@ function findNewsById() {
 /**
  * 更新新闻
  */
-function updateNews() {
+function updateNews(newsAuthor) {
     $.ajax({
         type: "POST",
         dataType: "json",
@@ -71,7 +72,7 @@ function updateNews() {
         data: {
             NewsId: GetRequest().newsId,
             NewsTitle: $("#e_newsTitle").val(),
-            NewsAuthor: $("#e_newsAuthor").val(),
+            NewsAuthor: newsAuthor,
             NewsType: $("#e_newsType").val(),
             NewsProgram: $("#e_newsProgram").val(),
             NewsContent: editor.getContent(),
@@ -145,6 +146,7 @@ function findLoginUser() {
         },
         success: function (data) {
             var userMessage = data.data;
+            userName=userMessage.yhxm;
             var userHtml = "";
             userHtml += "<li class='dropdown user user-menu'>"
                 + "<a href='#' class='dropdown-toggle' data-toggle='dropdown'>"
