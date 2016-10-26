@@ -4,7 +4,7 @@ import com.elin4it.ssm.pojo.Dictionary;
 
 import java.util.List;
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨×ÖµäÄ£¿é³Ö¾Ã²ã
+ * å†…å®¹ç®¡ç†å¹³å°å­—å…¸æ¨¡å—æŒä¹…å±‚
  * Created by Administrator on 2016/8/31.
  */
 public interface DictionaryMapper {
@@ -15,8 +15,8 @@ public interface DictionaryMapper {
     int insertSelective(Dictionary record);
 
     /**
-     * ²éÑ¯×ÖµäÊı¾İ
-     * @return ×ÖµäÊı¾İÁĞ±í
+     * æŸ¥è¯¢å­—å…¸æ•°æ®
+     * @return å­—å…¸æ•°æ®åˆ—è¡¨
      */
     List<Dictionary> selectDictionary();
 

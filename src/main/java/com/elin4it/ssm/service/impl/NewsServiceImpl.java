@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨ĞÂÎÅÄ£¿éÒµÎñ²ãÊµÏÖÀà
+ * å†…å®¹ç®¡ç†å¹³å°æ–°é—»æ¨¡å—ä¸šåŠ¡å±‚å®ç°ç±»
  * Created by Administrator on 2016/8/31.
  */
 @Service
@@ -18,10 +18,10 @@ public class NewsServiceImpl implements NewsService {
     private NewsMapper newsMapper;
 
     /**
-     * Ìí¼ÓĞÂÎÅ
+     * æ·»åŠ æ–°é—»
      *
-     * @param news Ìí¼ÓµÄĞÂÎÅĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * @param news æ·»åŠ çš„æ–°é—»ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean addNews(News news) {
         if (newsMapper.insert(news))
@@ -30,10 +30,10 @@ public class NewsServiceImpl implements NewsService {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅIDÉ¾³ıĞÂÎÅ
+     * æ ¹æ®æ–°é—»IDåˆ é™¤æ–°é—»
      *
-     * @param newsId ĞÂÎÅID
-     * @return ÊÇ·ñ³É¹¦
+     * @param newsId æ–°é—»ID
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean delNewsById(Integer newsId) {
         if (newsMapper.deleteByPrimaryKey(newsId))
@@ -42,10 +42,10 @@ public class NewsServiceImpl implements NewsService {
     }
 
     /**
-     * ¸üĞÂĞÂÎÅ
+     * æ›´æ–°æ–°é—»
      *
-     * @param news ¸üĞÂĞÂÎÅµÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * @param news æ›´æ–°æ–°é—»çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean updateNews(News news) {
         if (newsMapper.updateByPrimaryKey(news))
@@ -55,18 +55,18 @@ public class NewsServiceImpl implements NewsService {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅID²éÑ¯ĞÂÎÅ
+     * æ ¹æ®æ–°é—»IDæŸ¥è¯¢æ–°é—»
      *
-     * @param NewsId ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅĞÅÏ¢
+     * @param NewsId æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»ä¿¡æ¯
      */
     public News findNewsById(Integer NewsId) {
         return newsMapper.selectByPrimaryKey(NewsId);
     }
 
     /**
-     * ²éÑ¯È«²¿ĞÂÎÅ
-     * @return È«²¿ĞÂÎÅÁĞ±í
+     * æŸ¥è¯¢å…¨éƒ¨æ–°é—»
+     * @return å…¨éƒ¨æ–°é—»åˆ—è¡¨
      */
     public List<News> findAllNews() {
         List<News> news = newsMapper.selectAllNews();
@@ -74,18 +74,18 @@ public class NewsServiceImpl implements NewsService {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅIDÉ¾³ıĞÂÎÅ
-     * @param NewsId ĞÂÎÅID
-     * @return ÊÇ·ñ³É¹¦
+     * æ ¹æ®æ–°é—»IDåˆ é™¤æ–°é—»
+     * @param NewsId æ–°é—»ID
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public String findDetailById(Integer NewsId) {
         return newsMapper.selectDetailByPrimaryKey(NewsId);
     }
 
     /**
-     * ¸ù¾İĞÂÎÅÀ¸Ä¿²éÑ¯ĞÂÎÅ
-     * @param newsProgram ĞÂÎÅÀ¸Ä¿
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»æ ç›®æŸ¥è¯¢æ–°é—»
+     * @param newsProgram æ–°é—»æ ç›®
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     public List<News> findNewsByNewsProgram(String newsProgram) {
         List<News> news = newsMapper.selectNewsByNewsProgram(newsProgram);
@@ -93,9 +93,9 @@ public class NewsServiceImpl implements NewsService {
     }
 
     /**
-     * ¸ù¾İĞÂÎÅÀàĞÍ²éÑ¯ĞÂÎÅ
-     * @param newsType ĞÂÎÅÀàĞÍ
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»ç±»å‹æŸ¥è¯¢æ–°é—»
+     * @param newsType æ–°é—»ç±»å‹
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     public List<News> findNewsByNewsType(String newsType) {
         List<News> news = newsMapper.selectNewsByNewsType(newsType);

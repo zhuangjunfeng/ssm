@@ -6,63 +6,63 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨×ÖµäÄ£¿éÒµÎñ²ã½Ó¿Ú
+ * å†…å®¹ç®¡ç†å¹³å°å­—å…¸æ¨¡å—ä¸šåŠ¡å±‚æ¥å£
  * Created by Administrator on 2016/8/31.
  */
 @Service
 public interface NewsService {
     /**
-     * Ôö¼ÓĞÂÎÅ
-     * @param news Ìí¼ÓµÄĞÂÎÅĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * å¢åŠ æ–°é—»
+     * @param news æ·»åŠ çš„æ–°é—»ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean addNews(News news);
 
     /**
-     * ¸ù¾İIDÉ¾³ıĞÂÎÅ
-     * @param newsId ĞÂÎÅID
-     * @return ÊÇ·ñ³É¹¦
+     * æ ¹æ®IDåˆ é™¤æ–°é—»
+     * @param newsId æ–°é—»ID
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean delNewsById(Integer newsId);
 
     /**
-     * ¸üĞÂĞÂÎÅ
-     * @param news ¸üĞÂĞÂÎÅµÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ›´æ–°æ–°é—»
+     * @param news æ›´æ–°æ–°é—»çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     boolean updateNews(News news);
 
     /**
-     * ¸ù¾İID²éÑ¯ĞÂÎÅ
-     * @param newsId ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅĞÅÏ¢
+     * æ ¹æ®IDæŸ¥è¯¢æ–°é—»
+     * @param newsId æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»ä¿¡æ¯
      */
     News findNewsById(Integer newsId);
 
     /**
-     * ²éÑ¯ËùÓĞĞÂÎÅ
-     * @return ËùÓĞĞÂÎÅÁĞ±í
+     * æŸ¥è¯¢æ‰€æœ‰æ–°é—»
+     * @return æ‰€æœ‰æ–°é—»åˆ—è¡¨
      */
     List<News> findAllNews();
 
     /**
-     * ¸ù¾İID²éÑ¯ĞÂÎÅÏêÇé
-     * @param newsId ĞÂÎÅID
-     * @return Ä¿±êĞÂÎÅÄÚÈİ
+     * æ ¹æ®IDæŸ¥è¯¢æ–°é—»è¯¦æƒ…
+     * @param newsId æ–°é—»ID
+     * @return ç›®æ ‡æ–°é—»å†…å®¹
      */
     String findDetailById(Integer newsId);
 
     /**
-     * ¸ù¾İĞÂÎÅÀ¸Ä¿²éÑ¯ĞÂÎÅ
-     * @param newsProgram ĞÂÎÅÀ¸Ä¿
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»æ ç›®æŸ¥è¯¢æ–°é—»
+     * @param newsProgram æ–°é—»æ ç›®
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     List<News> findNewsByNewsProgram(String newsProgram);
 
     /**
-     * ¸ù¾İĞÂÎÅÀàĞÍ²éÑ¯ĞÂÎÅ
-     * @param newsType ĞÂÎÅÀàĞÍ
-     * @return ¶ÔÓ¦ĞÂÎÅÁĞ±í
+     * æ ¹æ®æ–°é—»ç±»å‹æŸ¥è¯¢æ–°é—»
+     * @param newsType æ–°é—»ç±»å‹
+     * @return å¯¹åº”æ–°é—»åˆ—è¡¨
      */
     List<News> findNewsByNewsType(String newsType);
 }

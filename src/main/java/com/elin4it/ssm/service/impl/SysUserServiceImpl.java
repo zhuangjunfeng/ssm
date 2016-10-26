@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * ÄÚÈİ¹ÜÀíÆ½Ì¨ÓÃ»§Ä£¿éÒµÎñ²ãÊµÏÖÀà
+ * å†…å®¹ç®¡ç†å¹³å°ç”¨æˆ·æ¨¡å—ä¸šåŠ¡å±‚å®ç°ç±»
  * Created by Administrator on 2016/8/31.
  */
 @Service
@@ -18,9 +18,9 @@ public class SysUserServiceImpl implements SysUserService {
     private SysUserMapper userMapper;
 
     /**
-     * ¸ù¾İÓÃ»§ID²éÑ¯ÓÃ»§
-     * @param yhId ÓÃ»§ID
-     * @return Ä¿±êÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·IDæŸ¥è¯¢ç”¨æˆ·
+     * @param yhId ç”¨æˆ·ID
+     * @return ç›®æ ‡ç”¨æˆ·ä¿¡æ¯
      * @throws Exception
      */
     public SysUser findUserById(Integer yhId) throws Exception {
@@ -29,8 +29,8 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     /**
-     * ²éÑ¯È«²¿ÓÃ»§
-     * @return È«²¿ÓÃ»§ÁĞ±í
+     * æŸ¥è¯¢å…¨éƒ¨ç”¨æˆ·
+     * @return å…¨éƒ¨ç”¨æˆ·åˆ—è¡¨
      * @throws Exception
      */
     public List<SysUser> findAll() throws Exception {
@@ -39,9 +39,9 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     /**
-     * ¸ù¾İÓÃ»§ÕË»§²éÑ¯ÓÃ»§
-     * @param yhzh ÓÃ»§ÕË»§
-     * @return ¶ÔÓ¦ÓÃ»§ĞÅÏ¢
+     * æ ¹æ®ç”¨æˆ·è´¦æˆ·æŸ¥è¯¢ç”¨æˆ·
+     * @param yhzh ç”¨æˆ·è´¦æˆ·
+     * @return å¯¹åº”ç”¨æˆ·ä¿¡æ¯
      */
     public SysUser findUserByYhzh(String yhzh) {
         SysUser users = userMapper.selectByYhzh(yhzh);
@@ -49,9 +49,9 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     /**
-     * ¸ù¾İÓÃ»§IDÉ¾³ıÓÃ»§
+     * æ ¹æ®ç”¨æˆ·IDåˆ é™¤ç”¨æˆ·
      * @param yhId
-     * @return ÊÇ·ñ³É¹¦
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean delUserById(Integer yhId) {
         if (userMapper.deleteByPrimaryKey(yhId))
@@ -61,9 +61,9 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     /**
-     * Ìí¼ÓÓÃ»§
-     * @param user Ìí¼ÓÓÃ»§µÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ·»åŠ ç”¨æˆ·
+     * @param user æ·»åŠ ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean addUser(SysUser user) {
         if (userMapper.insert(user))
@@ -73,9 +73,9 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     /**
-     * ¸üĞÂÓÃ»§
-     * @param user ¸üĞÂµÄÓÃ»§µÄĞÅÏ¢
-     * @return ÊÇ·ñ³É¹¦
+     * æ›´æ–°ç”¨æˆ·
+     * @param user æ›´æ–°çš„ç”¨æˆ·çš„ä¿¡æ¯
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean updateUser(SysUser user) {
         if (userMapper.updateByPrimaryKey(user))
