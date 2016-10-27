@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ×Öµä±í¹¤¾ßÀà
+ * å­—å…¸è¡¨å·¥å…·ç±»
  */
 @Controller
 @RequestMapping("/**/dict")
@@ -23,9 +23,9 @@ public class DictionaryUtil {
     private final static String DICTIONARY_CACHE = "dictionary";
 
     /**
-     * ¸ù¾İ´«ÈëÀàĞÍ²éÑ¯×ÖµäÊı¾İ
-     * @param request ÇëÇóÀàĞÍ
-     * @return ·ûºÏÇëÇóÀàĞÍµÄ×ÖµäÊı¾İÁĞ±í
+     * æ ¹æ®ä¼ å…¥ç±»å‹æŸ¥è¯¢å­—å…¸æ•°æ®
+     * @param request è¯·æ±‚ç±»å‹
+     * @return ç¬¦åˆè¯·æ±‚ç±»å‹çš„å­—å…¸æ•°æ®åˆ—è¡¨
      */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
@@ -45,9 +45,9 @@ public class DictionaryUtil {
     }
 
     /**
-     * ¸ù¾İ´«ÈëÀàĞÍ²éÑ¯×ÓÀà×ÖµäÊı¾İ
-     * @param request ÇëÇóÀàĞÍ
-     * @return ¸¸ÀàÎªÇëÇóÀàĞÍµÄ×ÖµäÊı¾İÁĞ±í
+     * æ ¹æ®ä¼ å…¥ç±»å‹æŸ¥è¯¢å­ç±»å­—å…¸æ•°æ®
+     * @param request è¯·æ±‚ç±»å‹
+     * @return çˆ¶ç±»ä¸ºè¯·æ±‚ç±»å‹çš„å­—å…¸æ•°æ®åˆ—è¡¨
      */
     @RequestMapping(value = "/findDictProgram", method = RequestMethod.GET)
     @ResponseBody
@@ -67,9 +67,9 @@ public class DictionaryUtil {
     }
 
     /**
-     * ¸ù¾İ´«ÈëÀàĞÍ²éÑ¯×ÓÀà×ÖµäÊı¾İ
-     * @param request ÇëÇóÀàĞÍ
-     * @return ÇëÇóÀàĞÍ°üº¬Æä¸¸ÀàµÄ×ÖµäÊı¾İÁĞ±í
+     * æ ¹æ®ä¼ å…¥ç±»å‹æŸ¥è¯¢å­ç±»å­—å…¸æ•°æ®
+     * @param request è¯·æ±‚ç±»å‹
+     * @return è¯·æ±‚ç±»å‹åŒ…å«å…¶çˆ¶ç±»çš„å­—å…¸æ•°æ®åˆ—è¡¨
      */
     @RequestMapping(value = "/findDict", method = RequestMethod.GET)
     @ResponseBody
@@ -89,9 +89,9 @@ public class DictionaryUtil {
     }
 
     /**
-     * ²éÑ¯×ÓÀàÁĞ±í
-     * @param request ÇëÇóÀàĞÍ
-     * @return ÇëÇóÀàĞÍµÄ×ÓÀàÁĞ±í
+     * æŸ¥è¯¢å­ç±»åˆ—è¡¨
+     * @param request è¯·æ±‚ç±»å‹
+     * @return è¯·æ±‚ç±»å‹çš„å­ç±»åˆ—è¡¨
      * @throws UnsupportedEncodingException
      */
     @RequestMapping(value = "/findDictType", method = RequestMethod.GET)
