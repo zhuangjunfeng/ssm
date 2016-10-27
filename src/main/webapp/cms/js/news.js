@@ -26,6 +26,9 @@ $(function () {
     });
     findAllNews();
     findLoginUser();
+    $("#find-by-title").click(function(){
+        findNewsByTitle();
+    });
 });
 // ----------------------独立方法------------------------------
 /**
@@ -58,9 +61,6 @@ function findAllNews() {
             $(".del-news").click(function () {
                 delNews($(this).attr("data-id"));
             });
-            $("#news-publish").click(function () {
-                publishNews();
-            })
         }
     });
 }
@@ -170,6 +170,38 @@ function findLoginUser() {
             });
         }
     });
+}
+function findNewsByTitle(){
+    $.ajax({
+        url:"/rest/news/findNewsByTitle",
+        type:"GET",
+        dataType:"json",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        data:{newsTitle:encodeURI($("#Title").val()),_method:"GET"},
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            if (XMLHttpRequest.responseText == "loginError") {
+                window.location.href = "/cms/login.html";
+            }
+        },
+        success: function (data) {
+            var newsList = data.data;
+            var newsListHtml = "<thead><tr><th>内容编号</th><th>内容标题</th><th>内容栏目</th><th>内容类型</th><th>操作</th></tr></thead><tbody>";
+            $.each(newsList, function (i, n) {
+                newsListHtml = newsListHtml + "<tr><td>"
+                    + n.newsId + "</td><td>"
+                    + n.newsTitle + "</td><td>"
+                    + n.newsProgram + "</td><td>"
+                    + n.newsType + "</td><td><a class='btn' href='news-editor.html?newsId="
+                    + n.newsId + "'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-news'  data-id='"
+                    + n.newsId + "'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
+            })
+            newsListHtml = newsListHtml + "</tbody>"
+            $(".table").html(newsListHtml);
+            $(".del-news").click(function () {
+                delNews($(this).attr("data-id"));
+            });
+        }
+    })
 }
 /**
  * 登出方法

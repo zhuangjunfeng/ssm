@@ -101,5 +101,10 @@ public class NewsServiceImpl implements NewsService {
         List<News> news = newsMapper.selectNewsByNewsType(newsType);
         return news;
     }
+
+    public List<News> findNewsByNewsTitle(String newsTitle) {
+        List<News> news = newsMapper.selectNewsByNewsTitle(newsTitle);
+        return news;
+    }
 }
 

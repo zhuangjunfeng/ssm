@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.List;
 
 /**
@@ -131,7 +133,6 @@ public class NewsController {
 
     /**
      * 根据新闻类型查询新闻
-     *
      * @param request 新闻类型
      * @return 新闻类型对应的新闻列表
      */
@@ -143,6 +144,13 @@ public class NewsController {
         return new JSONResult(news);
     }
 
+@RequestMapping(value = "/findNewsByTitle",method = RequestMethod.GET)
+@ResponseBody
+public JSONResult findNewsByTitle(HttpServletRequest request) throws UnsupportedEncodingException {
+    String NewsTitle = URLDecoder.decode(request.getParameter("newsTitle"), "UTF-8");
+    List<News> news=newsService.findNewsByNewsTitle(NewsTitle);
+    return  new JSONResult(news);
+}
     /**
      * 查询所有新闻
      *
@@ -172,7 +180,6 @@ public class NewsController {
 
     /**
      * 发布所有未发布的新闻
-     *
      * @return 成功与否信息
      */
     @RequestMapping(value = "/publishNews", method = RequestMethod.PUT)

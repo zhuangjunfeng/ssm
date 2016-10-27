@@ -69,4 +69,5 @@ public interface NewsMapper {
      * @return 对应新闻列表
      */
     List<News> selectNewsByNewsType(String newsType);
+    List<News> selectNewsByNewsTitle(String newsTitle);
 }

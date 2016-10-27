@@ -65,4 +65,5 @@ public interface NewsService {
      * @return 对应新闻列表
      */
     List<News> findNewsByNewsType(String newsType);
+    List<News> findNewsByNewsTitle(String newsTitle);
 }

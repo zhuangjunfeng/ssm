@@ -46,6 +46,12 @@
     FROM  news
     WHERE  NewsType = #{newsType,jdbcType=VARCHAR}
   </select>
+  <select id="selectNewsByNewsTitle"  resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM  news
+    WHERE  NewsTitle LIKE  CONCAT(CONCAT('%', #{newsTitle}), '%')
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from news
     where NewsId = #{newsId,jdbcType=INTEGER}

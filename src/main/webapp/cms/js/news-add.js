@@ -111,7 +111,8 @@ function addNews(newsAuthor){
             NewsAuthor: newsAuthor,
             NewsType: $("#newsType").val(),
             NewsProgram: $("#newsProgram").val(),
-            NewsContent: editor.getContent()
+            NewsContent: editor.getContent(),
+            method_:"POST"
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             if (XMLHttpRequest.responseText == "loginError") {
