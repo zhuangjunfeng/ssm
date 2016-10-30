@@ -1,6 +1,6 @@
 $(function () {
     //查找所有用户
-    findAllUser();
+    findAllUser(0);
     //查询登录用户信息
     findLoginUser();
 });
@@ -8,18 +8,20 @@ $(function () {
 /**
  * 查询所有用户
  */
-function findAllUser() {
+function findAllUser(page_id) {
     $.ajax({
         type: "GET",
-        url: "/rest/user",
+        url: "/rest/user/findUserByPageNo",
         dataType: "json",
+        data:{PageNo:page_id+1,PageSize:10,_method:"GET"},
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             if (XMLHttpRequest.responseText == "loginError") {
                 window.location.href = "/cms/login.html";
             }
         },
         success: function (data) {
-            var userList = data.data;
+            var userList = data.data.List;
+            var totalcount = data.data.count;
             var userListHtml = "<thead><tr><th>用户编号</th><th>用户账户</th><th>真实姓名</th><th>性别</th><th>用户角色</th><th>创建时间</th><th>操作</th></tr></thead><tbody>";
             $.each(userList, function (i, n) {
                 userListHtml = userListHtml + "<tr><td>"
@@ -34,6 +36,16 @@ function findAllUser() {
             })
             userListHtml = userListHtml + "</tbody>"
             $(".table").html(userListHtml);
+            $("#Pagination").pagination(totalcount, {
+                callback : pageselectCallback,
+                prev_text : "上一页",
+                next_text : "下一页 ",
+                items_per_page : 10,
+                prev_show_always : true,
+                next_show_always : true,
+                current_page : page_id,
+                link_to : "javascript:void(0)"
+            });
             $(".del-user").click(function () {
                 delUser($(this).attr("data-id"));
             });
@@ -54,7 +66,7 @@ function findAllUser() {
                 }
             },
             success: function () {
-                findAllUser();
+                findAllUser(0);
             }
         });
     }
@@ -108,4 +120,10 @@ function logout() {
             window.location.href = "/cms/login.html";
         }
     });
+}
+
+//翻页调用
+function pageselectCallback(page_id,jq){
+    scroll(0,0);
+    findAllUser(page_id);
 }

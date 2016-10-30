@@ -53,4 +53,6 @@ public interface SysUserService {
      * @return 是否成功
      */
     boolean updateUser(SysUser user);
+    List<SysUser> findUserByPageNo(int PageNo,int PageSize);
+    String count();
 }

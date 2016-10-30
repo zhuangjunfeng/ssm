@@ -66,6 +66,7 @@ public class NewsServiceImpl implements NewsService {
 
     /**
      * 查询全部新闻
+     *
      * @return 全部新闻列表
      */
     public List<News> findAllNews() {
@@ -75,6 +76,7 @@ public class NewsServiceImpl implements NewsService {
 
     /**
      * 根据新闻ID删除新闻
+     *
      * @param NewsId 新闻ID
      * @return 是否成功
      */
@@ -84,6 +86,7 @@ public class NewsServiceImpl implements NewsService {
 
     /**
      * 根据新闻栏目查询新闻
+     *
      * @param newsProgram 新闻栏目
      * @return 对应新闻列表
      */
@@ -94,6 +97,7 @@ public class NewsServiceImpl implements NewsService {
 
     /**
      * 根据新闻类型查询新闻
+     *
      * @param newsType 新闻类型
      * @return 对应新闻列表
      */
@@ -105,6 +109,15 @@ public class NewsServiceImpl implements NewsService {
     public List<News> findNewsByNewsTitle(String newsTitle) {
         List<News> news = newsMapper.selectNewsByNewsTitle(newsTitle);
         return news;
+    }
+
+    public List<News> findNews(int PageNo, int PageSize) {
+        int start = 0;
+        start = (PageNo - 1) * PageSize;
+        return newsMapper.selectNews(start, PageSize);
+    }
+    public String count(){
+        return newsMapper.count();
     }
 }
 

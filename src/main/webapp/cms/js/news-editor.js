@@ -49,10 +49,7 @@ function findNewsById() {
             $("#e_newsTitle").val(news.newsTitle);
             $("#e_newsProgram").val(news.newsProgram);
             $("#e_newsAuthor").val(news.newsAuthor);
-            var newsContent = news.newsContent;
-            editor.addListener("ready", function () {
-                editor.setContent(newsContent, true);
-            });
+            $("#newsContent").val(news.newsContent);
             var NewsProgram = $("#e_newsProgram").val();
             findDictType(NewsProgram);
             $("#e_newsProgram").change(function () {

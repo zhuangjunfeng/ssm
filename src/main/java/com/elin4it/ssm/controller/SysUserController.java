@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 /**
  * 内容管理平台用户模块控制层
  * Created by Administrator on 2016/8/31.
@@ -24,6 +27,7 @@ public class SysUserController {
 
     /**
      * 登录验证
+     *
      * @param session 存储用户
      * @return 用户信息
      */
@@ -52,6 +56,7 @@ public class SysUserController {
 
     /**
      * 登出方法
+     *
      * @param session 登录用户信息
      * @return null
      */
@@ -64,8 +69,9 @@ public class SysUserController {
 
     /**
      * 通过用户Id查询用户
-     * @throws Exception
+     *
      * @return 用户信息
+     * @throws Exception
      */
     @RequestMapping(value = "/findUser", method = RequestMethod.GET)
     @ResponseBody
@@ -77,6 +83,7 @@ public class SysUserController {
 
     /**
      * 查询全部用户
+     *
      * @return 用户表单
      * @throws Exception
      */
@@ -87,8 +94,34 @@ public class SysUserController {
         return new JSONResult(users);
     }
 
+    @RequestMapping(value = "/findUserByPageNo", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findUserByPageNo(HttpServletRequest request) throws Exception {
+        int pageNo, pageSize;
+        String pageindex = request.getParameter("PageNo");
+        String pagesize = request.getParameter("PageSize");
+        if (pageindex != null && !pageindex.equals("")) {
+            pageNo = Integer.valueOf(pageindex).intValue();
+        } else {
+            pageNo = 1;
+        }
+        if (pagesize != null && !pagesize.equals("")) {
+            pageSize = Integer.valueOf(pagesize).intValue();
+        } else {
+            pageSize = 10;
+        }
+        List<SysUser> user = userService.findUserByPageNo(pageNo, pageSize);
+        String userTotal = userService.count();
+        Map userMap=new HashMap();
+        userMap.put("List",user);
+        userMap.put("count",userTotal);
+        JSONResult result = new JSONResult(userMap);
+        return result;
+    }
+
     /**
      * 查询登录用户信息
+     *
      * @param request null
      * @return 登录用户信息
      */
@@ -107,6 +140,7 @@ public class SysUserController {
 
     /**
      * 通过用户Id删除用户
+     *
      * @return 是否成功信息
      */
     @RequestMapping(method = RequestMethod.DELETE)
@@ -123,6 +157,7 @@ public class SysUserController {
 
     /**
      * 添加用户
+     *
      * @return 返回添加成功与否
      */
     @RequestMapping(method = RequestMethod.POST)
@@ -134,7 +169,7 @@ public class SysUserController {
         String yhxm = request.getParameter("yhxm");
         String yhxb = request.getParameter("yhxb");
         String yhyx = request.getParameter("yhyx");
-        String yhjs =request.getParameter("yhjs");
+        String yhjs = request.getParameter("yhjs");
         SysUser user = new SysUser();
         user.setYhzh(yhzh);
         user.setPassword(password);
@@ -154,6 +189,7 @@ public class SysUserController {
 
     /**
      * 根据用户ID更新用户
+     *
      * @param request 用户ID
      * @return 是否成功信息
      */
@@ -167,7 +203,7 @@ public class SysUserController {
         String yhxm = request.getParameter("yhxm");
         String yhxb = request.getParameter("yhxb");
         String yhyx = request.getParameter("yhyx");
-        String yhjs =request.getParameter("yhjs");
+        String yhjs = request.getParameter("yhjs");
         SysUser user = new SysUser();
         user.setYhId(yhId);
         user.setYhzh(yhzh);

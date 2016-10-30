@@ -1,6 +1,7 @@
 package com.elin4it.ssm.mapper;
 
 import com.elin4it.ssm.pojo.News;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -70,4 +71,6 @@ public interface NewsMapper {
      */
     List<News> selectNewsByNewsType(String newsType);
     List<News> selectNewsByNewsTitle(String newsTitle);
+    List<News> selectNews(@Param("start")int start,@Param("PageSize")int PageSize);
+    String count();
 }

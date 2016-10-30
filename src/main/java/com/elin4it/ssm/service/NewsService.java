@@ -66,4 +66,6 @@ public interface NewsService {
      */
     List<News> findNewsByNewsType(String newsType);
     List<News> findNewsByNewsTitle(String newsTitle);
+    List<News> findNews(int PageNo,int PageSize);
+    String count();
 }

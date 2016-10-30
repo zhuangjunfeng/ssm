@@ -46,6 +46,16 @@
     FROM  news
     WHERE  NewsType = #{newsType,jdbcType=VARCHAR}
   </select>
+  <select id="selectNews" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM news ORDER BY EditorTime DESC limit #{start,jdbcType=INTEGER},#{PageSize,jdbcType=INTEGER}
+  </select>
+  <select id="count" resultType="String" parameterType="java.lang.String" >
+    select
+    COUNT(*)
+    from news
+  </select>
   <select id="selectNewsByNewsTitle"  resultMap="BaseResultMap" parameterType="java.lang.String">
     SELECT
     <include refid="Base_Column_List" />

@@ -1,6 +1,7 @@
 package com.elin4it.ssm.mapper;
 
 import com.elin4it.ssm.pojo.SysUser;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -53,4 +54,7 @@ public interface SysUserMapper {
      * @return 是否成功
      */
     boolean updateByPrimaryKey(SysUser record);
+
+    List<SysUser> selectUser(@Param("start")int PageNo,@Param("PageSize") int PageSize);
+    String count();
 }

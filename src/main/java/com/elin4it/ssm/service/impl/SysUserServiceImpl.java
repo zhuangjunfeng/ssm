@@ -19,6 +19,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 根据用户ID查询用户
+     *
      * @param yhId 用户ID
      * @return 目标用户信息
      * @throws Exception
@@ -30,6 +31,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 查询全部用户
+     *
      * @return 全部用户列表
      * @throws Exception
      */
@@ -40,6 +42,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 根据用户账户查询用户
+     *
      * @param yhzh 用户账户
      * @return 对应用户信息
      */
@@ -50,6 +53,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 根据用户ID删除用户
+     *
      * @param yhId
      * @return 是否成功
      */
@@ -62,6 +66,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 添加用户
+     *
      * @param user 添加用户的信息
      * @return 是否成功
      */
@@ -74,6 +79,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     /**
      * 更新用户
+     *
      * @param user 更新的用户的信息
      * @return 是否成功
      */
@@ -82,5 +88,15 @@ public class SysUserServiceImpl implements SysUserService {
             return true;
         else
             return false;
+    }
+
+    public List<SysUser> findUserByPageNo(int PageNo, int PageSize) {
+        int start = 0;
+        start = (PageNo - 1) * PageSize;
+        return userMapper.selectUser(start, PageSize);
+    }
+
+    public String count() {
+        return userMapper.count();
     }
 }

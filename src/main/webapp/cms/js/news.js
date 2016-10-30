@@ -24,9 +24,9 @@ $(function () {
             });
         }
     });
-    findAllNews();
+    findAllNews(0);
     findLoginUser();
-    $("#find-by-title").click(function(){
+    $("#find-by-title").click(function () {
         findNewsByTitle();
     });
 });
@@ -34,18 +34,24 @@ $(function () {
 /**
  * 查询所有新闻
  */
-function findAllNews() {
+function findAllNews(page_id) {
     $.ajax({
         type: "GET",
-        url: "/rest/news",
+        url: "/rest/news/findNews",
         dataType: "json",
+        data:{
+            PageNo: page_id+1,
+            PageSize: 10,
+            _method:"GET"
+        },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             if (XMLHttpRequest.responseText == "loginError") {
                 window.location.href = "/cms/login.html";
             }
         },
         success: function (data) {
-            var newsList = data.data;
+            var newsList = data.data.List;
+            var totalcount = data.data.count;
             var newsListHtml = "<thead><tr><th>内容编号</th><th>内容标题</th><th>内容栏目</th><th>内容类型</th><th>操作</th></tr></thead><tbody>";
             $.each(newsList, function (i, n) {
                 newsListHtml = newsListHtml + "<tr><td>"
@@ -58,6 +64,18 @@ function findAllNews() {
             })
             newsListHtml = newsListHtml + "</tbody>"
             $(".table").html(newsListHtml);
+            // 分页-只初始化一次
+            $("#Pagination").pagination(totalcount, {
+                callback : pageselectCallback,
+                prev_text : "上一页",
+                next_text : "下一页 ",
+                items_per_page : 10,
+                prev_show_always : true,
+                next_show_always : true,
+                current_page : page_id,
+                link_to : "javascript:void(0)"
+            });
+
             $(".del-news").click(function () {
                 delNews($(this).attr("data-id"));
             });
@@ -79,34 +97,11 @@ function delNews(newsId) {
             }
         },
         success: function () {
-            findAllNews();
+            findAllNews(0);
         }
     });
 }
-/**
- * 发布所有未发布新闻
- */
-function publishNews() {
-    $.ajax({
-        type: "POST",
-        url: "/rest/news/publishNews",
-        dataType: "json",
-        data: {_method: "PUT"},
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            if (XMLHttpRequest.responseText == "loginError") {
-                window.location.href = "cms/login.html";
-            }
-        },
-        success: function (data) {
-            if (data.message == "success") {
-                alert("发布成功");
-            }
-            else {
-                alert("发布失败");
-            }
-        }
-    });
-}
+
 /**
  * 查询新闻类型
  * @param newsProgram 新闻栏目
@@ -171,13 +166,18 @@ function findLoginUser() {
         }
     });
 }
-function findNewsByTitle(){
+function findNewsByTitle() {
     $.ajax({
-        url:"/rest/news/findNewsByTitle",
-        type:"GET",
-        dataType:"json",
+        url: "/rest/news/findNewsByTitle",
+        type: "GET",
+        dataType: "json",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-        data:{newsTitle:encodeURI($("#Title").val()),_method:"GET"},
+        data: {
+            newsTitle: encodeURI($("#Title").val()),
+            _method: "GET",
+            PageNo: 1,
+            PageSize: 10
+        },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             if (XMLHttpRequest.responseText == "loginError") {
                 window.location.href = "/cms/login.html";
@@ -215,3 +215,10 @@ function logout() {
         }
     });
 }
+
+//翻页调用
+function pageselectCallback(page_id,jq){
+    scroll(0,0);
+    findAllNews(page_id);
+}
+

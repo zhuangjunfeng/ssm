@@ -12,7 +12,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 内容管理平台新闻模块控制层
@@ -23,6 +25,7 @@ import java.util.List;
 public class NewsController {
     @Resource
     private NewsService newsService;
+
     /**
      * 添加新闻
      *
@@ -133,6 +136,7 @@ public class NewsController {
 
     /**
      * 根据新闻类型查询新闻
+     *
      * @param request 新闻类型
      * @return 新闻类型对应的新闻列表
      */
@@ -144,13 +148,39 @@ public class NewsController {
         return new JSONResult(news);
     }
 
-@RequestMapping(value = "/findNewsByTitle",method = RequestMethod.GET)
-@ResponseBody
-public JSONResult findNewsByTitle(HttpServletRequest request) throws UnsupportedEncodingException {
-    String NewsTitle = URLDecoder.decode(request.getParameter("newsTitle"), "UTF-8");
-    List<News> news=newsService.findNewsByNewsTitle(NewsTitle);
-    return  new JSONResult(news);
-}
+    @RequestMapping(value = "/findNewsByTitle", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findNewsByTitle(HttpServletRequest request) throws UnsupportedEncodingException {
+        String NewsTitle = URLDecoder.decode(request.getParameter("newsTitle"), "UTF-8");
+        List<News> news = newsService.findNewsByNewsTitle(NewsTitle);
+        return new JSONResult(news);
+    }
+
+    @RequestMapping(value = "/findNews", method = RequestMethod.GET)
+    @ResponseBody
+    public JSONResult findNews(HttpServletRequest request) {
+        int pageNo,pageSize;
+        String pageindex = request.getParameter("PageNo");
+        String pagesize = request.getParameter("PageSize");
+        if (pageindex != null && !pageindex.equals("")) {
+            pageNo = Integer.valueOf(pageindex).intValue();
+        } else {
+            pageNo = 1;
+        }
+        if (pagesize != null && !pagesize.equals("")) {
+            pageSize = Integer.valueOf(pagesize).intValue();
+        } else {
+            pageSize = 10;
+        }
+        List<News> news = newsService.findNews(pageNo, pageSize);
+        String newsTotal = newsService.count();
+        Map newsMap=new HashMap();
+        newsMap.put("List",news);
+        newsMap.put("count",newsTotal);
+        JSONResult result=new JSONResult(newsMap);
+        return result;
+    }
+
     /**
      * 查询所有新闻
      *
@@ -180,6 +210,7 @@ public JSONResult findNewsByTitle(HttpServletRequest request) throws Unsupported
 
     /**
      * 发布所有未发布的新闻
+     *
      * @return 成功与否信息
      */
     @RequestMapping(value = "/publishNews", method = RequestMethod.PUT)

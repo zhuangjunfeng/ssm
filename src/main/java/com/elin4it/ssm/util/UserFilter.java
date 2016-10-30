@@ -64,6 +64,7 @@ public class UserFilter implements Filter {
         List<String> authAll = new ArrayList<String>();
         authAll.add(0, "rest/.*");
         authAll.add(0, "cms/");
+        authAll.add(0, "cms/.*.html");
         Boolean rs = false;
         for (int i = 0; i < authAll.size(); i++) {
             if (realUri.matches(authAll.get(i))) {
@@ -87,7 +88,7 @@ public class UserFilter implements Filter {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {
-                if (accept.contains("application/json")) {
+                if (realUri.contains("application/json")) {
                     loginJsonPath(arg0, arg1, arg2);
                 } else {
                     loginPath(arg0, arg1, arg2);

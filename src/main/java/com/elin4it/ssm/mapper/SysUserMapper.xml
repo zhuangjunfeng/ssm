@@ -31,6 +31,16 @@
     from sysuser
     where yhzh = #{yhzh,jdbcType=VARCHAR}
   </select>
+  <select id="selectUser" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sysuser limit #{start,jdbcType=INTEGER},#{PageSize,jdbcType=INTEGER}
+  </select>
+  <select id="count" resultType="String" parameterType="java.lang.String" >
+    select
+    COUNT(*)
+    from sysuser
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from sysuser
     where yhId = #{yhId,jdbcType=INTEGER}
