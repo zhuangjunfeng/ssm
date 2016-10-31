@@ -48,7 +48,7 @@ public class NewsServiceImpl implements NewsService {
      * @return 是否成功
      */
     public boolean updateNews(News news) {
-        if (newsMapper.updateByPrimaryKey(news))
+        if (newsMapper.updateByPrimaryKeySelective(news))
             return true;
         else
             return false;

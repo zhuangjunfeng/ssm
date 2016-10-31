@@ -12,9 +12,8 @@ import java.util.List;
 public interface NewsMapper {
     /**
      * 根据用户ID删除新闻
-     *
      * @param newsId 新闻ID
-     * @return是否成功
+     * @return 是否成功
      */
     boolean deleteByPrimaryKey(Integer newsId);
 
@@ -22,10 +21,15 @@ public interface NewsMapper {
      * 添加新闻
      *
      * @param record 添加新闻的信息
-     * @return是否成功
+     * @return 是否成功
      */
     boolean insert(News record);
 
+    /**
+     * 选择性插入新闻
+     * @param record 新闻实体
+     * @return 返回结果
+     */
     int insertSelective(News record);
 
     /**
@@ -41,7 +45,12 @@ public interface NewsMapper {
      */
     List<News> selectAllNews();
 
-    int updateByPrimaryKeySelective(News record);
+    /**
+     * 部分更新新闻
+     * @param record 新闻实体
+     * @return 返回结果
+     */
+    boolean updateByPrimaryKeySelective(News record);
 
     /**
      * 更新新闻
@@ -70,7 +79,25 @@ public interface NewsMapper {
      * @return 对应新闻列表
      */
     List<News> selectNewsByNewsType(String newsType);
+
+    /**
+     * 根据新闻标题模糊查询新闻
+     * @param newsTitle  新闻标题
+     * @return 新闻列表
+     */
     List<News> selectNewsByNewsTitle(String newsTitle);
+
+    /**
+     * 分页查询新闻列表
+     * @param start  起始记录
+     * @param PageSize  每页条数
+     * @return 新闻列表
+     */
     List<News> selectNews(@Param("start")int start,@Param("PageSize")int PageSize);
+
+    /**
+     * 查询新闻总数
+     * @return 新闻总数
+     */
     String count();
 }
