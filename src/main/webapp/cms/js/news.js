@@ -59,7 +59,8 @@ function findAllNews(page_id) {
                     + n.newsTitle + "</td><td>"
                     + n.newsProgram + "</td><td>"
                     + n.newsType + "</td><td><a class='btn' href='news-editor.html?newsId="
-                    + n.newsId + "'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-news'  data-id='"
+                    + n.newsId + "&newProgram="
+                    + n.newsProgram+"'><i class='fa fa-edit'></i> 编辑</a><a class='btn del-news'  data-id='"
                     + n.newsId + "'><i class='fa fa-trash-o'></i> 删除</a></td></tr>"
             })
             newsListHtml = newsListHtml + "</tbody>"

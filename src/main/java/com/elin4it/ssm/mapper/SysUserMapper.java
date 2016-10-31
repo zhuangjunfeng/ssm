@@ -46,7 +46,7 @@ public interface SysUserMapper {
      */
     SysUser selectByYhzh(String yhzh);
 
-    int updateByPrimaryKeySelective(SysUser record);
+    boolean updateByPrimaryKeySelective(SysUser record);
 
     /**
      * 更新用户

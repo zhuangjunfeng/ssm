@@ -84,18 +84,28 @@ public class SysUserServiceImpl implements SysUserService {
      * @return 是否成功
      */
     public boolean updateUser(SysUser user) {
-        if (userMapper.updateByPrimaryKey(user))
+        if (userMapper.updateByPrimaryKeySelective(user))
             return true;
         else
             return false;
     }
 
+    /**
+     * 分页查询所有用户
+     * @param PageNo 页码
+     * @param PageSize 每页记录条数
+     * @return
+     */
     public List<SysUser> findUserByPageNo(int PageNo, int PageSize) {
         int start = 0;
         start = (PageNo - 1) * PageSize;
         return userMapper.selectUser(start, PageSize);
     }
 
+    /**
+     * 查询用户总数
+     * @return 用户总数
+     */
     public String count() {
         return userMapper.count();
     }

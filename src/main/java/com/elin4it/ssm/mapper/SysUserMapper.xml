@@ -143,7 +143,6 @@
       yhyx = #{yhyx,jdbcType=VARCHAR},
       yhzh = #{yhzh,jdbcType=VARCHAR},
       yhjs = #{yhjs,jdbcType=VARCHAR},
-      cjsj = #{cjsj,jdbcType=VARCHAR}
     where yhId = #{yhId,jdbcType=INTEGER}
   </update>
 </mapper>

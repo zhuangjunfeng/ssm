@@ -106,11 +106,22 @@ public class NewsServiceImpl implements NewsService {
         return news;
     }
 
+    /**
+     * 根据新闻标题查询新闻
+     * @param newsTitle 新闻标题
+     * @return 符合条件的新闻列表
+     */
     public List<News> findNewsByNewsTitle(String newsTitle) {
         List<News> news = newsMapper.selectNewsByNewsTitle(newsTitle);
         return news;
     }
 
+    /**
+     * 分页查询新闻
+     * @param PageNo 页码
+     * @param PageSize 每页记录条数
+     * @return 新闻列表
+     */
     public List<News> findNews(int PageNo, int PageSize) {
         int start = 0;
         start = (PageNo - 1) * PageSize;

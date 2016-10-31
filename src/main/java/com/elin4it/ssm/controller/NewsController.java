@@ -148,6 +148,12 @@ public class NewsController {
         return new JSONResult(news);
     }
 
+    /**
+     * 根据新闻标题查询新闻
+     * @param request 新闻标题
+     * @return 新闻列表
+     * @throws UnsupportedEncodingException
+     */
     @RequestMapping(value = "/findNewsByTitle", method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findNewsByTitle(HttpServletRequest request) throws UnsupportedEncodingException {
@@ -156,6 +162,11 @@ public class NewsController {
         return new JSONResult(news);
     }
 
+    /**
+     * 分页查询新闻
+     * @param request 查询请求
+     * @return 指定记录条数的新闻列表
+     */
     @RequestMapping(value = "/findNews", method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findNews(HttpServletRequest request) {

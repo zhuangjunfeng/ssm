@@ -94,6 +94,12 @@ public class SysUserController {
         return new JSONResult(users);
     }
 
+    /**
+     * 分页查询用户
+     * @param request 查询请求
+     * @return 指定记录条数的用户列表
+     * @throws Exception
+     */
     @RequestMapping(value = "/findUserByPageNo", method = RequestMethod.GET)
     @ResponseBody
     public JSONResult findUserByPageNo(HttpServletRequest request) throws Exception {

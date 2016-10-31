@@ -20,6 +20,7 @@ $(function () {
                 programHtml += "<option>" + n.dictName + "</option>";
             });
             $("#e_newsProgram").html(programHtml);
+            findDictType(GetRequest().newProgram);
         }
     });
     //更新新闻方法
@@ -50,8 +51,7 @@ function findNewsById() {
             $("#e_newsProgram").val(news.newsProgram);
             $("#e_newsAuthor").val(news.newsAuthor);
             $("#newsContent").val(news.newsContent);
-            var NewsProgram = $("#e_newsProgram").val();
-            findDictType(NewsProgram);
+            $("#e_newsType").val(news.newsType);
             $("#e_newsProgram").change(function () {
                 findDictType($("#e_newsProgram").val());
             });
@@ -96,7 +96,7 @@ function GetRequest() {
         var str = url.substr(1);
         strs = str.split("&");
         for (var i = 0; i < strs.length; i++) {
-            theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+            theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
         }
     }
     return theRequest;
