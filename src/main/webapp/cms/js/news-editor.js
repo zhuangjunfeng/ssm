@@ -2,6 +2,7 @@ var userName;
 $(function () {
     //查询登录用户信息
     findLoginUser();
+    findDictType(GetRequest().newProgram);
     //查询新闻栏目和新闻类型
     $.ajax({
         url: "/rest/dict/findDictProgram",
@@ -20,7 +21,7 @@ $(function () {
                 programHtml += "<option>" + n.dictName + "</option>";
             });
             $("#e_newsProgram").html(programHtml);
-            findDictType(GetRequest().newProgram);
+
         }
     });
     //更新新闻方法
