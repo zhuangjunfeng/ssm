@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 
@@ -60,19 +58,10 @@ public class UserFilter implements Filter {
      * 2016-8-2下午7:28:06
      * zhuangjf
      */
-    public Boolean isAuth(String realUri) {
-        List<String> authAll = new ArrayList<String>();
-        authAll.add(0, "rest/.*");
-        authAll.add(0, "(/cms|cms)/.*");
-        Boolean rs = false;
-        for (int i = 0; i < authAll.size(); i++) {
-            if (realUri.matches(authAll.get(i))) {
-                LOGGER.info(realUri + "被监听");
-                rs = true;
-                break;
-            }
-        }
-        return rs;
+    public boolean isAuth(String realUri) {
+       boolean isAuth=realUri.matches("(/cms|cms)/.*|(/rest|rest)/.*");
+       boolean noAuth=!realUri.matches("(/cms|cms)/(js|dist|plugins|bootstrap)/.*|(/rest|rest)/comweb/.*|(/rest|rest)/user/login");
+       return isAuth&&noAuth;
     }
 
     public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2) {
@@ -82,14 +71,11 @@ public class UserFilter implements Filter {
         String realUri = uri.replace(req.getContextPath().toString(),"");
         String accept = req.getHeader("Accept");
 
-        if (isAuth(realUri)&&!realUri.contains(".js")
-                &&!realUri.contains(".css")
-                && !realUri.contains("/login")
-                && !realUri.contains("/comweb")) {
+        if (isAuth(realUri)) {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {
-                if (realUri.contains("application/json")) {
+                if (accept.contains("application/json")) {
                     loginJsonPath(arg0, arg1, arg2);
                 } else {
                     loginPath(arg0, arg1, arg2);
