@@ -63,8 +63,7 @@ public class UserFilter implements Filter {
     public Boolean isAuth(String realUri) {
         List<String> authAll = new ArrayList<String>();
         authAll.add(0, "rest/.*");
-        authAll.add(0, "cms/");
-        authAll.add(0, "cms/.*.html");
+        authAll.add(0, "(/cms|cms)/.*");
         Boolean rs = false;
         for (int i = 0; i < authAll.size(); i++) {
             if (realUri.matches(authAll.get(i))) {
@@ -80,11 +79,13 @@ public class UserFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) arg0;
         HttpSession session = req.getSession();
         String uri = req.getRequestURI();
-        int length = req.getContextPath().length();
-        String realUri = uri.substring(length + 1, uri.length());
+        String realUri = uri.replace(req.getContextPath().toString(),"");
         String accept = req.getHeader("Accept");
 
-        if (isAuth(realUri) && !realUri.contains("/login") && !realUri.contains("/comweb")) {
+        if (isAuth(realUri)&&!realUri.contains(".js")
+                &&!realUri.contains(".css")
+                && !realUri.contains("/login")
+                && !realUri.contains("/comweb")) {
             SysUser sysUser = null;
             sysUser = (SysUser) session.getAttribute("user");
             if (sysUser == null) {
