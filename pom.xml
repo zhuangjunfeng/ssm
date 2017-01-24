@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.elin4it.ssm</groupId>
+  <groupId>com.ssm</groupId>
   <artifactId>ssm</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>ssm Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <build>
-    <finalName>ssm</finalName>
+    <finalName>ROOT</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
