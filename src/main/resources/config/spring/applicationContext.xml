@@ -17,7 +17,7 @@
                            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <mvc:annotation-driven/>
-    <context:component-scan base-package="com.elin4it.ssm"/>
+    <context:component-scan base-package="com.ssm"/>
     <!--获取数据库配置文件-->
     <context:property-placeholder location="classpath:config/db.properties"/>
 
@@ -37,12 +37,12 @@
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="configLocation" value="classpath:config/mybatis/SqlMapConfig.xml"/>
         <property name="dataSource" ref="dataSource"/>
-        <property name="mapperLocations" value="classpath:com/elin4it/ssm/mapper/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/ssm/mapper/*.xml"/>
     </bean>
 
     <!--自动扫描mapper接口，并注入sqlsession-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.elin4it.ssm.mapper"/>
+        <property name="basePackage" value="com.ssm.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSession"/>
     </bean>
     <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
@@ -57,6 +57,6 @@
         </tx:attributes>
     </tx:advice>
     <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.elin4it.ssm.service..*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.ssm.service..*(..))"/>
     </aop:config>
 </beans>

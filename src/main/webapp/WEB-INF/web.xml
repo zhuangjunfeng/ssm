@@ -18,7 +18,7 @@
     <!--配置用户过滤器-->
     <filter>
         <filter-name>sessionFilter</filter-name>
-        <filter-class>com.elin4it.ssm.util.UserFilter</filter-class>
+        <filter-class>com.ssm.util.UserFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>sessionFilter</filter-name>

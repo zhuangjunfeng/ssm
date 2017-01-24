@@ -55,7 +55,7 @@
         </settings>
 
         <typeAliases>
-                <package name="com.elin4it.ssm.pojo"/>
+                <package name="com.ssm.pojo"/>
         </typeAliases>
 
 
